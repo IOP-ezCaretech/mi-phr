@@ -1,0 +1,158 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "miphr-diagnostic-report-pathology",
+  "url": "http://example.org/StructureDefinition/miphr-diagnostic-report-pathology",
+  "name": "MIPHRDiagnosticReportPathology",
+  "title": "MIPHRDiagnosticReportPathology",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.identifier",
+        "path": "DiagnosticReport.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DiagnosticReport.identifier.system",
+        "path": "DiagnosticReport.identifier.system",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.identifier.value",
+        "path": "DiagnosticReport.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.status",
+        "path": "DiagnosticReport.status",
+        "fixedCode": "final"
+      },
+      {
+        "id": "DiagnosticReport.category",
+        "path": "DiagnosticReport.category",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://nrces.in/ndhm/fhir/r4/ValueSet/ndhm-diagnostic-report-type"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding",
+        "path": "DiagnosticReport.category.coding",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.category.coding.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "DiagnosticReport.category.coding.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.code.coding.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://hira.or.kr/CodeSystem/result-code"
+      },
+      {
+        "id": "DiagnosticReport.code.coding.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.subject.reference",
+        "path": "DiagnosticReport.subject.reference",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.encounter",
+        "path": "DiagnosticReport.encounter",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.encounter.reference",
+        "path": "DiagnosticReport.encounter.reference",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.effective[x]",
+        "path": "DiagnosticReport.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter",
+        "path": "DiagnosticReport.resultsInterpreter",
+        "max": "1"
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter.reference",
+        "path": "DiagnosticReport.resultsInterpreter.reference",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.imagingStudy",
+        "path": "DiagnosticReport.imagingStudy",
+        "max": "1"
+      },
+      {
+        "id": "DiagnosticReport.imagingStudy.reference",
+        "path": "DiagnosticReport.imagingStudy.reference",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.media.link.reference",
+        "path": "DiagnosticReport.media.link.reference",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.conclusion",
+        "path": "DiagnosticReport.conclusion",
+        "min": 1
+      }
+    ]
+  }
+}

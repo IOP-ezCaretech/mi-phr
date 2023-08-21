@@ -1,0 +1,134 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "miphr-imaging-study",
+  "url": "http://example.org/StructureDefinition/miphr-imaging-study",
+  "name": "MIPHRImagingStudy",
+  "title": "MIPHRImagingStudy",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "dicom",
+      "uri": "http://nema.org/dicom",
+      "name": "DICOM Tag Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ImagingStudy",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ImagingStudy.identifier",
+        "path": "ImagingStudy.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ImagingStudy.identifier.system",
+        "path": "ImagingStudy.identifier.system",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.identifier.value",
+        "path": "ImagingStudy.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.subject.reference",
+        "path": "ImagingStudy.subject.reference",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.encounter",
+        "path": "ImagingStudy.encounter",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.encounter.reference",
+        "path": "ImagingStudy.encounter.reference",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.started",
+        "path": "ImagingStudy.started",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.endpoint",
+        "path": "ImagingStudy.endpoint",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ImagingStudy.endpoint.reference",
+        "path": "ImagingStudy.endpoint.reference",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.series",
+        "path": "ImagingStudy.series",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.series.modality.system",
+        "path": "ImagingStudy.series.modality.system",
+        "min": 1,
+        "fixedUri": "http://dicom.nema.org/resources/ontology/DCM"
+      },
+      {
+        "id": "ImagingStudy.series.modality.code",
+        "path": "ImagingStudy.series.modality.code",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.series.description",
+        "path": "ImagingStudy.series.description",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.series.endpoint",
+        "path": "ImagingStudy.series.endpoint",
+        "max": "1"
+      },
+      {
+        "id": "ImagingStudy.series.endpoint.reference",
+        "path": "ImagingStudy.series.endpoint.reference",
+        "min": 1
+      },
+      {
+        "id": "ImagingStudy.series.bodySite.system",
+        "path": "ImagingStudy.series.bodySite.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "ImagingStudy.series.bodySite.code",
+        "path": "ImagingStudy.series.bodySite.code",
+        "min": 1
+      }
+    ]
+  }
+}

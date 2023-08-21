@@ -1,0 +1,81 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "miphr-practitioner-role",
+  "url": "http://example.org/StructureDefinition/miphr-practitioner-role",
+  "name": "MIPHRPractitionerRole",
+  "title": "MIPHRPractitionerRole",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.practitioner.reference",
+        "path": "PractitionerRole.practitioner.reference",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.organization.reference",
+        "path": "PractitionerRole.organization.reference",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.specialty.coding",
+        "path": "PractitionerRole.specialty.coding",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.specialty.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "min": 1,
+        "fixedUri": "https://hira.or.kr/CodeSystem/medical-subject"
+      },
+      {
+        "id": "PractitionerRole.specialty.coding.code",
+        "path": "PractitionerRole.specialty.coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

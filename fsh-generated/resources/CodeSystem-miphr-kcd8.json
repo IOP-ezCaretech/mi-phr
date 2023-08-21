@@ -1,0 +1,2531 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "KCD8",
+  "id": "miphr-kcd8",
+  "description": "KCD8 CodeSystem",
+  "url": "http://example.org/CodeSystem/miphr-kcd8",
+  "concept": [
+    {
+      "code": "A00",
+      "display": "콜레라",
+      "definition": "콜레라",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cholera"
+        }
+      ]
+    },
+    {
+      "code": "A00.0",
+      "display": "비브리오 콜레라 01 콜레라형균에 의한 콜레라",
+      "definition": "비브리오 콜레라 01 콜레라형균에 의한 콜레라",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cholera due to Vibrio cholerae 01, biovar cholerae"
+        }
+      ]
+    },
+    {
+      "code": "A00.1",
+      "display": "비브리오 콜레라 01 엘토르형균에 의한 콜레라",
+      "definition": "비브리오 콜레라 01 엘토르형균에 의한 콜레라",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cholera due to Vibrio cholerae 01, biovar eltor"
+        }
+      ]
+    },
+    {
+      "code": "A00.9",
+      "display": "상세불명의 콜레라",
+      "definition": "상세불명의 콜레라",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cholera, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A01",
+      "display": "장티푸스 및 파라티푸스",
+      "definition": "장티푸스 및 파라티푸스",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Typhoid and paratyphoid fevers"
+        }
+      ]
+    },
+    {
+      "code": "A01.0",
+      "display": "장티푸스",
+      "definition": "장티푸스",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Typhoid fever"
+        }
+      ]
+    },
+    {
+      "code": "A01.1",
+      "display": "파라티푸스 A",
+      "definition": "파라티푸스 A",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Paratyphoid fever A"
+        }
+      ]
+    },
+    {
+      "code": "A01.2",
+      "display": "파라티푸스 B",
+      "definition": "파라티푸스 B",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Paratyphoid fever B"
+        }
+      ]
+    },
+    {
+      "code": "A01.3",
+      "display": "파라티푸스 C",
+      "definition": "파라티푸스 C",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Paratyphoid fever C"
+        }
+      ]
+    },
+    {
+      "code": "A01.4",
+      "display": "상세불명의 파라티푸스",
+      "definition": "상세불명의 파라티푸스",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Paratyphoid fever, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A02",
+      "display": "기타 살모넬라감염",
+      "definition": "기타 살모넬라감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other salmonella infections"
+        }
+      ]
+    },
+    {
+      "code": "A02.0",
+      "display": "살모넬라장염",
+      "definition": "살모넬라장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Salmonella enteritis"
+        }
+      ]
+    },
+    {
+      "code": "A02.1",
+      "display": "살모넬라패혈증",
+      "definition": "살모넬라패혈증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Salmonella sepsis"
+        }
+      ]
+    },
+    {
+      "code": "A02.2",
+      "display": "국소적 살모넬라감염",
+      "definition": "국소적 살모넬라감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Localized salmonella infections"
+        }
+      ]
+    },
+    {
+      "code": "A02.8",
+      "display": "기타 명시된 살모넬라감염",
+      "definition": "기타 명시된 살모넬라감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other specified salmonella infections"
+        }
+      ]
+    },
+    {
+      "code": "A02.9",
+      "display": "상세불명의 살모넬라감염",
+      "definition": "상세불명의 살모넬라감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Salmonella infection, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A03",
+      "display": "시겔라증",
+      "definition": "시겔라증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Shigellosis"
+        }
+      ]
+    },
+    {
+      "code": "A03.0",
+      "display": "이질이질균에 의한 시겔라증",
+      "definition": "이질이질균에 의한 시겔라증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Shigellosis due to Shigella dysenteriae"
+        }
+      ]
+    },
+    {
+      "code": "A03.1",
+      "display": "플렉스네리이질균에 의한 시겔라증",
+      "definition": "플렉스네리이질균에 의한 시겔라증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Shigellosis due to Shigella flexneri"
+        }
+      ]
+    },
+    {
+      "code": "A03.2",
+      "display": "보이디이질균에 의한 시겔라증",
+      "definition": "보이디이질균에 의한 시겔라증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Shigellosis due to Shigella boydii"
+        }
+      ]
+    },
+    {
+      "code": "A03.3",
+      "display": "소네이이질균에 의한 시겔라증",
+      "definition": "소네이이질균에 의한 시겔라증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Shigellosis due to Shigella sonnei"
+        }
+      ]
+    },
+    {
+      "code": "A03.8",
+      "display": "기타 시겔라증",
+      "definition": "기타 시겔라증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other shigellosis"
+        }
+      ]
+    },
+    {
+      "code": "A03.9",
+      "display": "상세불명의 시겔라증",
+      "definition": "상세불명의 시겔라증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Shigellosis, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A04",
+      "display": "기타 세균성 장감염",
+      "definition": "기타 세균성 장감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other bacterial intestinal infections"
+        }
+      ]
+    },
+    {
+      "code": "A04.0",
+      "display": "장병원성 대장균감염",
+      "definition": "장병원성 대장균감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Enteropathogenic Escherichia coli infection"
+        }
+      ]
+    },
+    {
+      "code": "A04.1",
+      "display": "장독소생산 대장균감염",
+      "definition": "장독소생산 대장균감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Enterotoxigenic Escherichia coli infection"
+        }
+      ]
+    },
+    {
+      "code": "A04.2",
+      "display": "장침투성 대장균감염",
+      "definition": "장침투성 대장균감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Enteroinvasive Escherichia coli infection"
+        }
+      ]
+    },
+    {
+      "code": "A04.3",
+      "display": "장출혈성 대장균감염",
+      "definition": "장출혈성 대장균감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Enterohaemorrhagic Escherichia coli infection"
+        }
+      ]
+    },
+    {
+      "code": "A04.4",
+      "display": "기타 장대장균감염",
+      "definition": "기타 장대장균감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other intestinal Escherichia coli infection"
+        }
+      ]
+    },
+    {
+      "code": "A04.5",
+      "display": "캄필로박터장염",
+      "definition": "캄필로박터장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Campylobacter enteritis"
+        }
+      ]
+    },
+    {
+      "code": "A04.6",
+      "display": "예르시니아 엔테로콜리티카에 의한 장염",
+      "definition": "예르시니아 엔테로콜리티카에 의한 장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Enteritis due to Yersinia enterocolitica"
+        }
+      ]
+    },
+    {
+      "code": "A04.7",
+      "display": "클로스트리듐 디피실리에 의한 장결장염",
+      "definition": "클로스트리듐 디피실리에 의한 장결장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Enterocolitis due to Clostridium difficile"
+        }
+      ]
+    },
+    {
+      "code": "A04.8",
+      "display": "기타 명시된 세균성 장감염",
+      "definition": "기타 명시된 세균성 장감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other specified bacterial intestinal infections"
+        }
+      ]
+    },
+    {
+      "code": "A04.9",
+      "display": "상세불명의 세균성 장감염",
+      "definition": "상세불명의 세균성 장감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Bacterial intestinal infection, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A05",
+      "display": "달리 분류되지 않은 기타 세균성 음식매개중독",
+      "definition": "달리 분류되지 않은 기타 세균성 음식매개중독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other bacterial foodborne intoxications, NEC"
+        }
+      ]
+    },
+    {
+      "code": "A05.0",
+      "display": "음식매개포도알균중독",
+      "definition": "음식매개포도알균중독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Foodborne staphylococcal intoxication"
+        }
+      ]
+    },
+    {
+      "code": "A05.1",
+      "display": "보틀리눔중독",
+      "definition": "보틀리눔중독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Botulism"
+        }
+      ]
+    },
+    {
+      "code": "A05.2",
+      "display": "클로스트리듐 퍼프린젠스[클로스트리듐 웰치]에 의한 식중독",
+      "definition": "클로스트리듐 퍼프린젠스[클로스트리듐 웰치]에 의한 식중독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Foodborne Clostridium perfringens [Clostridium welchii] intoxication"
+        }
+      ]
+    },
+    {
+      "code": "A05.3",
+      "display": "장염비브리오균에 의한 식중독",
+      "definition": "장염비브리오균에 의한 식중독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Foodborne Vibrio parahaemolyticus intoxication"
+        }
+      ]
+    },
+    {
+      "code": "A05.4",
+      "display": "바실루스 세레우스에 의한 식중독",
+      "definition": "바실루스 세레우스에 의한 식중독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Foodborne Bacillus cereus intoxication"
+        }
+      ]
+    },
+    {
+      "code": "A05.8",
+      "display": "기타 명시된 세균성 식중독",
+      "definition": "기타 명시된 세균성 식중독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other specified bacterial foodborne intoxications"
+        }
+      ]
+    },
+    {
+      "code": "A05.9",
+      "display": "상세불명의 세균성 식중독",
+      "definition": "상세불명의 세균성 식중독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Bacterial foodborne intoxication, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A06",
+      "display": "아메바증",
+      "definition": "아메바증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Amoebiasis"
+        }
+      ]
+    },
+    {
+      "code": "A06.0",
+      "display": "급성 아메바이질",
+      "definition": "급성 아메바이질",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Acute amoebic dysentery"
+        }
+      ]
+    },
+    {
+      "code": "A06.1",
+      "display": "만성 장아메바증",
+      "definition": "만성 장아메바증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Chronic intestinal amoebiasis"
+        }
+      ]
+    },
+    {
+      "code": "A06.2",
+      "display": "아메바성 비이질성 결장염",
+      "definition": "아메바성 비이질성 결장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Amoebic nondysenteric colitis"
+        }
+      ]
+    },
+    {
+      "code": "A06.3",
+      "display": "장의 아메바종",
+      "definition": "장의 아메바종",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Amoeboma of intestine"
+        }
+      ]
+    },
+    {
+      "code": "A06.4",
+      "display": "아메바성 간농양(K77.0*)",
+      "definition": "아메바성 간농양(K77.0*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Amoebic liver abscess(K77.0*)"
+        }
+      ]
+    },
+    {
+      "code": "A06.5",
+      "display": "아메바성 폐농양",
+      "definition": "아메바성 폐농양",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Amoebic lung abscess"
+        }
+      ]
+    },
+    {
+      "code": "A06.6",
+      "display": "아메바성 뇌농양(G07*)",
+      "definition": "아메바성 뇌농양(G07*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Amoebic brain abscess(G07*)"
+        }
+      ]
+    },
+    {
+      "code": "A06.7",
+      "display": "피부아메바증",
+      "definition": "피부아메바증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cutaneous amoebiasis"
+        }
+      ]
+    },
+    {
+      "code": "A06.8",
+      "display": "기타 부위의 아메바성 감염",
+      "definition": "기타 부위의 아메바성 감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Amoebic infection of other sites"
+        }
+      ]
+    },
+    {
+      "code": "A06.9",
+      "display": "상세불명의 아메바증",
+      "definition": "상세불명의 아메바증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Amoebiasis, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A07",
+      "display": "기타 원충성 장질환",
+      "definition": "기타 원충성 장질환",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other protozoal intestinal diseases"
+        }
+      ]
+    },
+    {
+      "code": "A07.0",
+      "display": "대장섬모충증",
+      "definition": "대장섬모충증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Balantidiasis"
+        }
+      ]
+    },
+    {
+      "code": "A07.1",
+      "display": "편모충증[람블편모충증]",
+      "definition": "편모충증[람블편모충증]",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Giardiasis [lambliasis]"
+        }
+      ]
+    },
+    {
+      "code": "A07.2",
+      "display": "와포자충증",
+      "definition": "와포자충증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cryptosporidiosis"
+        }
+      ]
+    },
+    {
+      "code": "A07.3",
+      "display": "등포자충증",
+      "definition": "등포자충증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Isosporiasis"
+        }
+      ]
+    },
+    {
+      "code": "A07.8",
+      "display": "기타 명시된 원충성 장질환",
+      "definition": "기타 명시된 원충성 장질환",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other specified protozoal intestinal diseases"
+        }
+      ]
+    },
+    {
+      "code": "A07.9",
+      "display": "상세불명의 원충성 장질환",
+      "definition": "상세불명의 원충성 장질환",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Protozoal intestinal disease, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A08",
+      "display": "바이러스성 및 기타 명시된 장감염",
+      "definition": "바이러스성 및 기타 명시된 장감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Viral and other specified intestinal infections"
+        }
+      ]
+    },
+    {
+      "code": "A08.0",
+      "display": "로타바이러스장염",
+      "definition": "로타바이러스장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rotaviral enteritis"
+        }
+      ]
+    },
+    {
+      "code": "A08.1",
+      "display": "노로바이러스에 의한 급성 위장병증",
+      "definition": "노로바이러스에 의한 급성 위장병증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Acute gastroenteropathy due to Norovirus"
+        }
+      ]
+    },
+    {
+      "code": "A08.2",
+      "display": "아데노바이러스장염",
+      "definition": "아데노바이러스장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Adenoviral enteritis"
+        }
+      ]
+    },
+    {
+      "code": "A08.3",
+      "display": "기타 바이러스장염",
+      "definition": "기타 바이러스장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other viral enteritis"
+        }
+      ]
+    },
+    {
+      "code": "A08.30",
+      "display": "사포바이러스 위장염",
+      "definition": "사포바이러스 위장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Sapoviral gastroenteritis"
+        }
+      ]
+    },
+    {
+      "code": "A08.31",
+      "display": "아스트로바이러스 위장염",
+      "definition": "아스트로바이러스 위장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Astroviral gastroenteritis"
+        }
+      ]
+    },
+    {
+      "code": "A08.38",
+      "display": "기타 바이러스장염",
+      "definition": "기타 바이러스장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other viral enteritis"
+        }
+      ]
+    },
+    {
+      "code": "A08.4",
+      "display": "상세불명의 바이러스성 장감염",
+      "definition": "상세불명의 바이러스성 장감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Viral intestinal infection, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A08.5",
+      "display": "기타 명시된 장감염",
+      "definition": "기타 명시된 장감염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other specified intestinal infections"
+        }
+      ]
+    },
+    {
+      "code": "A09",
+      "display": "감염성 및 상세불명 기원의 기타 위장염 및 결장염",
+      "definition": "감염성 및 상세불명 기원의 기타 위장염 및 결장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other gastroenteritis and colitis of infectious and unspecified origin"
+        }
+      ]
+    },
+    {
+      "code": "A09.0",
+      "display": "감염성 기원의 기타 및 상세불명의 위장염 및 결장염",
+      "definition": "감염성 기원의 기타 및 상세불명의 위장염 및 결장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other and unspecified gastroenteritis and colitis of infectious origin"
+        }
+      ]
+    },
+    {
+      "code": "A09.9",
+      "display": "상세불명 기원의 위장염 및 결장염",
+      "definition": "상세불명 기원의 위장염 및 결장염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Gastroenteritis and colitis of unspecified origin"
+        }
+      ]
+    },
+    {
+      "code": "A15",
+      "display": "세균학적 및 조직학적으로 확인된 호흡기결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Respiratory tuberculosis, bacteriologically and histologically confirmed"
+        }
+      ]
+    },
+    {
+      "code": "A15.0",
+      "display": "배양 유무에 관계없이 가래 현미경 검사로 확인된 폐결핵",
+      "definition": "배양 유무에 관계없이 가래 현미경 검사로 확인된 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung, confirmed by sputum microscopy with or without culture"
+        }
+      ]
+    },
+    {
+      "code": "A15.00",
+      "display": "배양 유무에 관계없이 가래 현미경 검사로 확인된 공동이 있는 폐결핵",
+      "definition": "배양 유무에 관계없이 가래 현미경 검사로 확인된 공동이 있는 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung with cavitation, confirmed by sputum microscopy with or without culture"
+        }
+      ]
+    },
+    {
+      "code": "A15.01",
+      "display": "배양 유무에 관계없이 가래 현미경 검사로 확인된 공동이 없거나 상세불명의 폐결핵",
+      "definition": "배양 유무에 관계없이 가래 현미경 검사로 확인된 공동이 없거나 상세불명의 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung without cavitation or unspecified, confirmed by sputum microscopy with or without culture"
+        }
+      ]
+    },
+    {
+      "code": "A15.1",
+      "display": "배양만으로 확인된 폐결핵",
+      "definition": "배양만으로 확인된 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung, confirmed by culture only"
+        }
+      ]
+    },
+    {
+      "code": "A15.10",
+      "display": "배양만으로 확인된 공동이 있는 폐결핵",
+      "definition": "배양만으로 확인된 공동이 있는 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung with cavitation, confirmed by culture only"
+        }
+      ]
+    },
+    {
+      "code": "A15.11",
+      "display": "배양만으로 확인된 공동이 없거나 상세불명의 폐결핵",
+      "definition": "배양만으로 확인된 공동이 없거나 상세불명의 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung without cavitation or unspecified, confirmed by culture only"
+        }
+      ]
+    },
+    {
+      "code": "A15.2",
+      "display": "조직학적으로 확인된 폐결핵",
+      "definition": "조직학적으로 확인된 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung, confirmed histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.20",
+      "display": "조직학적으로 확인된 공동이 있는 폐결핵",
+      "definition": "조직학적으로 확인된 공동이 있는 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung with cavitation, confirmed histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.21",
+      "display": "조직학적으로 확인된 공동이 없거나 상세불명의 폐결핵",
+      "definition": "조직학적으로 확인된 공동이 없거나 상세불명의 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung without cavitation or unspecified, confirmed histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.3",
+      "display": "상세불명의 수단으로 확인된 폐결핵",
+      "definition": "상세불명의 수단으로 확인된 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung, confirmed by unspecified means"
+        }
+      ]
+    },
+    {
+      "code": "A15.30",
+      "display": "상세불명의 수단으로 확인된 공동이 있는 폐결핵",
+      "definition": "상세불명의 수단으로 확인된 공동이 있는 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung with cavitation, confirmed by unspecified means"
+        }
+      ]
+    },
+    {
+      "code": "A15.31",
+      "display": "상세불명의 수단으로 확인된 공동이 없거나 상세불명의 폐결핵",
+      "definition": "상세불명의 수단으로 확인된 공동이 없거나 상세불명의 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung without cavitation or unspecified, confirmed by unspecified means"
+        }
+      ]
+    },
+    {
+      "code": "A15.4",
+      "display": "세균학적 및 조직학적으로 확인된 흉곽내림프절의 결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 흉곽내림프절의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of intrathoracic lymph nodes, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.40",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 있는 흉곽내림프절의 결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 있는 흉곽내림프절의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of intrathoracic lymph nodes with cavitation, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.41",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 흉곽내림프절의 결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 흉곽내림프절의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of intrathoracic lymph nodes without cavitation or unspecified, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.5",
+      "display": "세균학적 및 조직학적으로 확인된 후두, 기관 및 기관지의 결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 후두, 기관 및 기관지의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of larynx, trachea and bronchus, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.50",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 있는 후두, 기관 및 기관지의 결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 있는 후두, 기관 및 기관지의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of larynx with cavitation, trachea and bronchus with cavitation, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.51",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 후두, 기관 및 기관지의 결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 후두, 기관 및 기관지의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of larynx, trachea and bronchus without cavitation or unspecified, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.6",
+      "display": "세균학적 및 조직학적으로 확인된 결핵성 흉막염",
+      "definition": "세균학적 및 조직학적으로 확인된 결핵성 흉막염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous pleurisy, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.60",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 있는 결핵성 흉막염",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 있는 결핵성 흉막염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous pleurisy with cavitation, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.61",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 결핵성 흉막염",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 결핵성 흉막염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous pleurisy without cavitation or unspecified, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.7",
+      "display": "세균학적 및 조직학적으로 확인된 일차호흡기결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 일차호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Primary respiratory tuberculosis, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.70",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 있는 일차호흡기결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 있는 일차호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Primary respiratory tuberculosis with cavitation, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.71",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 일차호흡기결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 일차호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Primary respiratory tuberculosis without cavitation or unspecified, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.8",
+      "display": "세균학적 및 조직학적으로 확인된 기타 호흡기결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 기타 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other respiratory tuberculosis, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.80",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 있는 기타 호흡기결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 있는 기타 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other respiratory tuberculosis with cavitation, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.81",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 기타 호흡기결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 기타 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other respiratory tuberculosis without cavitation or unspecified, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.9",
+      "display": "세균학적 및 조직학적으로 확인된 상세불명의 호흡기결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 상세불명의 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Respiratory tuberculosis unspecified, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.90",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 있는 상세불명의 호흡기결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 있는 상세불명의 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Respiratory tuberculosis unspecified with cavitation, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A15.91",
+      "display": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 상세불명의 호흡기결핵",
+      "definition": "세균학적 및 조직학적으로 확인된 공동이 없거나 상세불명의 상세불명의 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Respiratory tuberculosis unspecified without cavitation or unspecified, confirmed bacteriologically and histologically"
+        }
+      ]
+    },
+    {
+      "code": "A16",
+      "display": "세균학적으로나 조직학적으로 확인되지 않은 호흡기결핵",
+      "definition": "세균학적으로나 조직학적으로 확인되지 않은 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Respiratory tuberculosis, not confirmed bacteriologically or histologically"
+        }
+      ]
+    },
+    {
+      "code": "A16.0",
+      "display": "세균학적 및 조직학적으로 음성인 폐결핵",
+      "definition": "세균학적 및 조직학적으로 음성인 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung, bacteriologically and histologically negative"
+        }
+      ]
+    },
+    {
+      "code": "A16.00",
+      "display": "세균학적 및 조직학적으로 음성인 공동이 있는 폐결핵",
+      "definition": "세균학적 및 조직학적으로 음성인 공동이 있는 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung with cavitation, bacteriologically and histologically negative"
+        }
+      ]
+    },
+    {
+      "code": "A16.01",
+      "display": "세균학적 및 조직학적으로 음성인 공동이 없거나 상세불명의 폐결핵",
+      "definition": "세균학적 및 조직학적으로 음성인 공동이 없거나 상세불명의 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung without cavitation or unspecified, bacteriologically and histologically negative"
+        }
+      ]
+    },
+    {
+      "code": "A16.1",
+      "display": "세균학적 및 조직학적 검사를 하지 않은 폐결핵",
+      "definition": "세균학적 및 조직학적 검사를 하지 않은 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung, bacteriological and histological examination not done"
+        }
+      ]
+    },
+    {
+      "code": "A16.10",
+      "display": "세균학적 및 조직학적 검사를 하지 않은 공동이 있는 폐결핵",
+      "definition": "세균학적 및 조직학적 검사를 하지 않은 공동이 있는 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung with cavitation, bacteriological and histological examination not done"
+        }
+      ]
+    },
+    {
+      "code": "A16.11",
+      "display": "세균학적 및 조직학적 검사를 하지 않은 공동이 없거나 상세불명의 폐결핵",
+      "definition": "세균학적 및 조직학적 검사를 하지 않은 공동이 없거나 상세불명의 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung without cavitation or unspecified, bacteriological and histological examination not done"
+        }
+      ]
+    },
+    {
+      "code": "A16.2",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 폐결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.20",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 폐결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung with cavitation, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.21",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 폐결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 폐결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of lung without cavitation or unspecified, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.3",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 흉곽내림프절의 결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 흉곽내림프절의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of intrathoracic lymph nodes, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.30",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 흉곽내림프절의 결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 흉곽내림프절의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of intrathoracic lymph nodes with cavitation, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.31",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 흉곽내림프절의 결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 흉곽내림프절의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of intrathoracic lymph nodes without cavitation or unspecified, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.4",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 후두, 기관 및 기관지 결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 후두, 기관 및 기관지 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of larynx, trachea and bronchus, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.40",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 후두, 기관 및 기관지 결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 후두, 기관 및 기관지 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of larynx with cavitation, trachea and bronchus with cavitation, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.41",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 후두, 기관 및 기관지 결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 후두, 기관 및 기관지 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of larynx, trachea and bronchus without cavitation or unspecified, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.5",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 결핵성 흉막염",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 결핵성 흉막염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous pleurisy, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.50",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 결핵성 흉막염",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 결핵성 흉막염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous pleurisy with cavitation, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.51",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 결핵성 흉막염",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 결핵성 흉막염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous pleurisy without cavitation or unspecified, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.7",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 일차호흡기결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 일차호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Primary respiratory tuberculosis , without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.70",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 일차호흡기결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 일차호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Primary respiratory tuberculosis with cavitation, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.71",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 일차호흡기결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 일차호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Primary respiratory tuberculosis without cavitation or unspecified, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.8",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 기타 호흡기결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 기타 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other respiratory tuberculosis, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.80",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 기타 호흡기결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 기타 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other respiratory tuberculosis with cavitation, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.81",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 기타 호흡기결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 기타 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other respiratory tuberculosis without cavitation or unspecified, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.9",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 상세불명의 호흡기결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 상세불명의 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Respiratory tuberculosis unspecified, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.90",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 상세불명의 호흡기결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 있는 상세불명의 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Respiratory tuberculosis unspecified with cavitation, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A16.91",
+      "display": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 호흡기결핵",
+      "definition": "세균학적 또는 조직학적 확인에 대한 언급이 없는 공동이 없거나 상세불명의 호흡기결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Respiratory tuberculosis unspecified without cavitation or unspecified, without mention of bacteriological or histological confirmation"
+        }
+      ]
+    },
+    {
+      "code": "A17",
+      "display": "신경계통의 결핵",
+      "definition": "신경계통의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of nervous system"
+        }
+      ]
+    },
+    {
+      "code": "A17.0",
+      "display": "결핵성 수막염(G01*)",
+      "definition": "결핵성 수막염(G01*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous meningitis(G01*)"
+        }
+      ]
+    },
+    {
+      "code": "A17.1",
+      "display": "수막결핵종(G07*)",
+      "definition": "수막결핵종(G07*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Meningeal tuberculoma(G07*)"
+        }
+      ]
+    },
+    {
+      "code": "A17.8",
+      "display": "기타 신경계통의 결핵",
+      "definition": "기타 신경계통의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other tuberculosis of nervous system"
+        }
+      ]
+    },
+    {
+      "code": "A17.80",
+      "display": "뇌 및 척수의 결핵종(G07*)",
+      "definition": "뇌 및 척수의 결핵종(G07*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculoma of brain and spinal cord(G07*)"
+        }
+      ]
+    },
+    {
+      "code": "A17.81",
+      "display": "결핵성 수막뇌염(G05.0*)",
+      "definition": "결핵성 수막뇌염(G05.0*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous meningoencephalitis(G05.0*)"
+        }
+      ]
+    },
+    {
+      "code": "A17.82",
+      "display": "결핵성 신경염",
+      "definition": "결핵성 신경염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous neuritis"
+        }
+      ]
+    },
+    {
+      "code": "A17.88",
+      "display": "기타 신경계통의 결핵",
+      "definition": "기타 신경계통의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other tuberculosis of nervous system"
+        }
+      ]
+    },
+    {
+      "code": "A17.9",
+      "display": "신경계통의 상세불명 결핵(G99.8*)",
+      "definition": "신경계통의 상세불명 결핵(G99.8*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of nervous system, unspecified(G99.8*)"
+        }
+      ]
+    },
+    {
+      "code": "A18",
+      "display": "기타 기관의 결핵",
+      "definition": "기타 기관의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of other organs"
+        }
+      ]
+    },
+    {
+      "code": "A18.0",
+      "display": "골 및 관절의 결핵",
+      "definition": "골 및 관절의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of bones and joints"
+        }
+      ]
+    },
+    {
+      "code": "A18.00",
+      "display": "척추의 결핵(M49.0*)",
+      "definition": "척추의 결핵(M49.0*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of spine(M49.0*)"
+        }
+      ]
+    },
+    {
+      "code": "A18.01",
+      "display": "기타 관절의 결핵성 관절염(M01.1*)",
+      "definition": "기타 관절의 결핵성 관절염(M01.1*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous arthritis of other joints(M01.1*)"
+        }
+      ]
+    },
+    {
+      "code": "A18.02",
+      "display": "기타 뼈의 결핵",
+      "definition": "기타 뼈의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of other bones"
+        }
+      ]
+    },
+    {
+      "code": "A18.08",
+      "display": "기타 관절의 결핵",
+      "definition": "기타 관절의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of other joints"
+        }
+      ]
+    },
+    {
+      "code": "A18.1",
+      "display": "비뇨생식계통의 결핵",
+      "definition": "비뇨생식계통의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of genitourinary system"
+        }
+      ]
+    },
+    {
+      "code": "A18.10",
+      "display": "신장의 결핵(N29.1*)",
+      "definition": "신장의 결핵(N29.1*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of kidney(N29.1*)"
+        }
+      ]
+    },
+    {
+      "code": "A18.11",
+      "display": "방광의 결핵(N33.0*)",
+      "definition": "방광의 결핵(N33.0*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of bladder(N33.0*)"
+        }
+      ]
+    },
+    {
+      "code": "A18.12",
+      "display": "기타 비뇨기관의 결핵",
+      "definition": "기타 비뇨기관의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of other urinary organs"
+        }
+      ]
+    },
+    {
+      "code": "A18.14",
+      "display": "남성생식기관의 결핵(N51.-*)",
+      "definition": "남성생식기관의 결핵(N51.-*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of male genital organs(N51.-*)"
+        }
+      ]
+    },
+    {
+      "code": "A18.17",
+      "display": "여성생식기관의 결핵",
+      "definition": "여성생식기관의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of female genital organs"
+        }
+      ]
+    },
+    {
+      "code": "A18.18",
+      "display": "요관의 결핵(N29.1*)",
+      "definition": "요관의 결핵(N29.1*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of ureter(N29.1*)"
+        }
+      ]
+    },
+    {
+      "code": "A18.19",
+      "display": "비뇨생식계통의 상세불명 결핵",
+      "definition": "비뇨생식계통의 상세불명 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of genitourinary system, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A18.2",
+      "display": "결핵성 말초림프절병증",
+      "definition": "결핵성 말초림프절병증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous peripheral lymphadenopathy"
+        }
+      ]
+    },
+    {
+      "code": "A18.3",
+      "display": "장, 복막 및 장간막 림프절의 결핵",
+      "definition": "장, 복막 및 장간막 림프절의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of intestines, peritoneum and mesenteric glands"
+        }
+      ]
+    },
+    {
+      "code": "A18.30",
+      "display": "결핵성 복막염(K67.3*)",
+      "definition": "결핵성 복막염(K67.3*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous peritonitis(K67.3*)"
+        }
+      ]
+    },
+    {
+      "code": "A18.31",
+      "display": "결핵성 장염(K93.0*)",
+      "definition": "결핵성 장염(K93.0*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculous enteritis(K93.0*)"
+        }
+      ]
+    },
+    {
+      "code": "A18.32",
+      "display": "장간막림프절의 결핵(K93.0*)",
+      "definition": "장간막림프절의 결핵(K93.0*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of mesenteric glands(K93.0*)"
+        }
+      ]
+    },
+    {
+      "code": "A18.4",
+      "display": "피부 및 피하조직의 결핵",
+      "definition": "피부 및 피하조직의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of skin and subcutaneous tissue"
+        }
+      ]
+    },
+    {
+      "code": "A18.5",
+      "display": "눈의 결핵",
+      "definition": "눈의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of eye"
+        }
+      ]
+    },
+    {
+      "code": "A18.6",
+      "display": "귀의 결핵",
+      "definition": "귀의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of ear"
+        }
+      ]
+    },
+    {
+      "code": "A18.7",
+      "display": "부신의 결핵(E35.1*)",
+      "definition": "부신의 결핵(E35.1*)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of adrenal glands(E35.1*)"
+        }
+      ]
+    },
+    {
+      "code": "A18.8",
+      "display": "기타 명시된 기관의 결핵",
+      "definition": "기타 명시된 기관의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of other specified organs"
+        }
+      ]
+    },
+    {
+      "code": "A18.82",
+      "display": "달리 분류되지 않은 소화기관의 결핵",
+      "definition": "달리 분류되지 않은 소화기관의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of digestive tract organs, not elsewhere classified"
+        }
+      ]
+    },
+    {
+      "code": "A18.83",
+      "display": "심장의 결핵",
+      "definition": "심장의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of heart"
+        }
+      ]
+    },
+    {
+      "code": "A18.88",
+      "display": "기타 부위의 결핵",
+      "definition": "기타 부위의 결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tuberculosis of other sites"
+        }
+      ]
+    },
+    {
+      "code": "A19",
+      "display": "좁쌀결핵",
+      "definition": "좁쌀결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Miliary tuberculosis"
+        }
+      ]
+    },
+    {
+      "code": "A19.0",
+      "display": "하나로 명시된 부위의 급성 좁쌀결핵",
+      "definition": "하나로 명시된 부위의 급성 좁쌀결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Acute miliary tuberculosis of a single specified site"
+        }
+      ]
+    },
+    {
+      "code": "A19.1",
+      "display": "여러 부위의 급성 좁쌀결핵",
+      "definition": "여러 부위의 급성 좁쌀결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Acute miliary tuberculosis of multiple sites"
+        }
+      ]
+    },
+    {
+      "code": "A19.2",
+      "display": "상세불명의 급성 좁쌀결핵",
+      "definition": "상세불명의 급성 좁쌀결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Acute miliary tuberculosis, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A19.8",
+      "display": "기타 좁쌀결핵",
+      "definition": "기타 좁쌀결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other miliary tuberculosis"
+        }
+      ]
+    },
+    {
+      "code": "A19.9",
+      "display": "상세불명의 좁쌀결핵",
+      "definition": "상세불명의 좁쌀결핵",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Miliary tuberculosis, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A20",
+      "display": "페스트",
+      "definition": "페스트",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Plague"
+        }
+      ]
+    },
+    {
+      "code": "A20.0",
+      "display": "림프절형페스트",
+      "definition": "림프절형페스트",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Bubonic plague"
+        }
+      ]
+    },
+    {
+      "code": "A20.1",
+      "display": "연조직피부형페스트",
+      "definition": "연조직피부형페스트",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cellulocutaneous plague"
+        }
+      ]
+    },
+    {
+      "code": "A20.2",
+      "display": "폐렴형페스트",
+      "definition": "폐렴형페스트",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Pneumonic plague"
+        }
+      ]
+    },
+    {
+      "code": "A20.3",
+      "display": "페스트수막염",
+      "definition": "페스트수막염",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Plague meningitis"
+        }
+      ]
+    },
+    {
+      "code": "A20.7",
+      "display": "패혈증형페스트",
+      "definition": "패혈증형페스트",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Septicaemic plague"
+        }
+      ]
+    },
+    {
+      "code": "A20.8",
+      "display": "기타 형태의 페스트",
+      "definition": "기타 형태의 페스트",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other forms of plague"
+        }
+      ]
+    },
+    {
+      "code": "A20.9",
+      "display": "상세불명의 페스트",
+      "definition": "상세불명의 페스트",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Plague, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A21",
+      "display": "야생토끼병",
+      "definition": "야생토끼병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tularaemia"
+        }
+      ]
+    },
+    {
+      "code": "A21.0",
+      "display": "궤양림프절야생토끼병",
+      "definition": "궤양림프절야생토끼병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ulceroglandular tularaemia"
+        }
+      ]
+    },
+    {
+      "code": "A21.1",
+      "display": "눈림프절야생토끼병",
+      "definition": "눈림프절야생토끼병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Oculoglandular tularaemia"
+        }
+      ]
+    },
+    {
+      "code": "A21.2",
+      "display": "폐야생토끼병",
+      "definition": "폐야생토끼병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Pulmonary tularaemia"
+        }
+      ]
+    },
+    {
+      "code": "A21.3",
+      "display": "위장야생토끼병",
+      "definition": "위장야생토끼병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Gastrointestinal tularaemia"
+        }
+      ]
+    },
+    {
+      "code": "A21.7",
+      "display": "전신야생토끼병",
+      "definition": "전신야생토끼병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Generalized tularaemia"
+        }
+      ]
+    },
+    {
+      "code": "A21.8",
+      "display": "기타 형태의 야생토끼병",
+      "definition": "기타 형태의 야생토끼병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other forms of tularaemia"
+        }
+      ]
+    },
+    {
+      "code": "A21.9",
+      "display": "상세불명의 야생토끼병",
+      "definition": "상세불명의 야생토끼병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tularaemia, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A22",
+      "display": "탄저병",
+      "definition": "탄저병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Anthrax"
+        }
+      ]
+    },
+    {
+      "code": "A22.0",
+      "display": "피부탄저병",
+      "definition": "피부탄저병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cutaneous anthrax"
+        }
+      ]
+    },
+    {
+      "code": "A22.1",
+      "display": "폐탄저병",
+      "definition": "폐탄저병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Pulmonary anthrax"
+        }
+      ]
+    },
+    {
+      "code": "A22.2",
+      "display": "위장탄저병",
+      "definition": "위장탄저병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Gastrointestinal anthrax"
+        }
+      ]
+    },
+    {
+      "code": "A22.7",
+      "display": "탄저병패혈증",
+      "definition": "탄저병패혈증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Anthrax sepsis"
+        }
+      ]
+    },
+    {
+      "code": "A22.8",
+      "display": "기타 형태의 탄저병",
+      "definition": "기타 형태의 탄저병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other forms of anthrax"
+        }
+      ]
+    },
+    {
+      "code": "A22.9",
+      "display": "상세불명의 탄저병",
+      "definition": "상세불명의 탄저병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Anthrax, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A23",
+      "display": "브루셀라병",
+      "definition": "브루셀라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Brucellosis"
+        }
+      ]
+    },
+    {
+      "code": "A23.0",
+      "display": "브루셀라 멜리텐시스에 의한 브루셀라병",
+      "definition": "브루셀라 멜리텐시스에 의한 브루셀라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Brucellosis due to Brucella melitensis"
+        }
+      ]
+    },
+    {
+      "code": "A23.1",
+      "display": "브루셀라 아보르투스에 의한 브루셀라병",
+      "definition": "브루셀라 아보르투스에 의한 브루셀라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Brucellosis due to Brucella abortus"
+        }
+      ]
+    },
+    {
+      "code": "A23.2",
+      "display": "브루셀라 수이스에 의한 브루셀라병",
+      "definition": "브루셀라 수이스에 의한 브루셀라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Brucellosis due to Brucella suis"
+        }
+      ]
+    },
+    {
+      "code": "A23.3",
+      "display": "브루셀라 카니스에 의한 브루셀라병",
+      "definition": "브루셀라 카니스에 의한 브루셀라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Brucellosis due to Brucella canis"
+        }
+      ]
+    },
+    {
+      "code": "A23.8",
+      "display": "기타 브루셀라병",
+      "definition": "기타 브루셀라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other brucellosis"
+        }
+      ]
+    },
+    {
+      "code": "A23.9",
+      "display": "상세불명의 브루셀라병",
+      "definition": "상세불명의 브루셀라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Brucellosis, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A24",
+      "display": "마비저 및 유사비저",
+      "definition": "마비저 및 유사비저",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Glanders and Melioidosis"
+        }
+      ]
+    },
+    {
+      "code": "A24.0",
+      "display": "마비저",
+      "definition": "마비저",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Glanders"
+        }
+      ]
+    },
+    {
+      "code": "A24.1",
+      "display": "급성 및 전격성 유사비저",
+      "definition": "급성 및 전격성 유사비저",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Acute and fulminating melioidosis"
+        }
+      ]
+    },
+    {
+      "code": "A24.2",
+      "display": "아급성 및 만성 유사비저",
+      "definition": "아급성 및 만성 유사비저",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Subacute and chronic melioidosis"
+        }
+      ]
+    },
+    {
+      "code": "A24.3",
+      "display": "기타 유사비저",
+      "definition": "기타 유사비저",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other melioidosis"
+        }
+      ]
+    },
+    {
+      "code": "A24.4",
+      "display": "상세불명의 유사비저",
+      "definition": "상세불명의 유사비저",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Melioidosis, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A25",
+      "display": "쥐물음열",
+      "definition": "쥐물음열",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rat-bite fevers"
+        }
+      ]
+    },
+    {
+      "code": "A25.0",
+      "display": "스피릴룸증",
+      "definition": "스피릴룸증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Spirillosis"
+        }
+      ]
+    },
+    {
+      "code": "A25.1",
+      "display": "연쇄막대균증",
+      "definition": "연쇄막대균증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Streptobacillosis"
+        }
+      ]
+    },
+    {
+      "code": "A25.9",
+      "display": "상세불명의 쥐물음열",
+      "definition": "상세불명의 쥐물음열",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rat-bite fever, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A26",
+      "display": "유사단독",
+      "definition": "유사단독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Erysipeloid"
+        }
+      ]
+    },
+    {
+      "code": "A26.0",
+      "display": "피부유사단독",
+      "definition": "피부유사단독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cutaneous erysipeloid"
+        }
+      ]
+    },
+    {
+      "code": "A26.7",
+      "display": "에리시펠로트릭스 패혈증",
+      "definition": "에리시펠로트릭스 패혈증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Erysipelothrix sepsis"
+        }
+      ]
+    },
+    {
+      "code": "A26.8",
+      "display": "기타 형태의 유사단독",
+      "definition": "기타 형태의 유사단독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other forms of erysipeloid"
+        }
+      ]
+    },
+    {
+      "code": "A26.9",
+      "display": "상세불명의 유사단독",
+      "definition": "상세불명의 유사단독",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Erysipeloid, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A27",
+      "display": "렙토스피라병",
+      "definition": "렙토스피라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Leptospirosis"
+        }
+      ]
+    },
+    {
+      "code": "A27.0",
+      "display": "황달출혈성 렙토스피라병",
+      "definition": "황달출혈성 렙토스피라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Leptospirosis icterohaemorrhagica"
+        }
+      ]
+    },
+    {
+      "code": "A27.8",
+      "display": "기타 형태의 렙토스피라병",
+      "definition": "기타 형태의 렙토스피라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other forms of leptospirosis"
+        }
+      ]
+    },
+    {
+      "code": "A27.9",
+      "display": "상세불명의 렙토스피라병",
+      "definition": "상세불명의 렙토스피라병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Leptospirosis, unspecified"
+        }
+      ]
+    },
+    {
+      "code": "A28",
+      "display": "달리 분류되지 않은 기타 동물매개의 세균성 질환",
+      "definition": "달리 분류되지 않은 기타 동물매개의 세균성 질환",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other zoonotic bacterial diseases, NEC"
+        }
+      ]
+    },
+    {
+      "code": "A28.0",
+      "display": "파스퇴렐라증",
+      "definition": "파스퇴렐라증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Pasteurellosis"
+        }
+      ]
+    },
+    {
+      "code": "A28.1",
+      "display": "고양이할큄병",
+      "definition": "고양이할큄병",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cat-scratch disease"
+        }
+      ]
+    },
+    {
+      "code": "A28.2",
+      "display": "장외예르시니아증",
+      "definition": "장외예르시니아증",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Extraintestinal yersiniosis"
+        }
+      ]
+    },
+    {
+      "code": "A28.8",
+      "display": "달리 분류되지 않은 기타 명시된 동물매개의 세균성 질환",
+      "definition": "달리 분류되지 않은 기타 명시된 동물매개의 세균성 질환",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Other specified zoonotic bacterial diseases, NEC"
+        }
+      ]
+    },
+    {
+      "code": "A28.9",
+      "display": "상세불명의 동물매개의 세균성 질환",
+      "definition": "상세불명의 동물매개의 세균성 질환",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Zoonotic bacterial disease, unspecified"
+        }
+      ]
+    }
+  ],
+  "count": 229
+}

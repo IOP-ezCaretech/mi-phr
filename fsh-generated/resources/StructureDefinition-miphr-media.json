@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "miphr-media",
+  "url": "http://example.org/StructureDefinition/miphr-media",
+  "name": "MIPHRMedia",
+  "title": "MIPHRMedia",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "dicom",
+      "uri": "http://nema.org/dicom",
+      "name": "DICOM Tag Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Media",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Media",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Media.identifier",
+        "path": "Media.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Media.identifier.system",
+        "path": "Media.identifier.system",
+        "min": 1
+      },
+      {
+        "id": "Media.identifier.value",
+        "path": "Media.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Media.type.coding.system",
+        "path": "Media.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/media-type"
+      },
+      {
+        "id": "Media.type.coding.code",
+        "path": "Media.type.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Media.modality.coding.system",
+        "path": "Media.modality.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Media.modality.coding.code",
+        "path": "Media.modality.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Media.subject",
+        "path": "Media.subject",
+        "min": 1
+      },
+      {
+        "id": "Media.subject.reference",
+        "path": "Media.subject.reference",
+        "min": 1
+      },
+      {
+        "id": "Media.encounter",
+        "path": "Media.encounter",
+        "min": 1
+      },
+      {
+        "id": "Media.encounter.reference",
+        "path": "Media.encounter.reference",
+        "min": 1
+      },
+      {
+        "id": "Media.created[x]",
+        "path": "Media.created[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Media.bodySite",
+        "path": "Media.bodySite",
+        "min": 1
+      },
+      {
+        "id": "Media.bodySite.coding.system",
+        "path": "Media.bodySite.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Media.bodySite.coding.code",
+        "path": "Media.bodySite.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Media.deviceName",
+        "path": "Media.deviceName",
+        "min": 1
+      },
+      {
+        "id": "Media.content.data",
+        "path": "Media.content.data",
+        "min": 1
+      }
+    ]
+  }
+}

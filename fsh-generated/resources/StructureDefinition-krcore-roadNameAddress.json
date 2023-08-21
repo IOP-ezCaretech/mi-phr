@@ -1,0 +1,152 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "krcore-roadNameAddress",
+  "url": "http://example.org/StructureDefinition/krcore-roadNameAddress",
+  "name": "RoadNameAddress",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Address"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 3
+      },
+      {
+        "id": "Extension.extension:district",
+        "path": "Extension.extension",
+        "sliceName": "district",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:district.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:district.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "district"
+      },
+      {
+        "id": "Extension.extension:district.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:roadName",
+        "path": "Extension.extension",
+        "sliceName": "roadName",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:roadName.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:roadName.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "roadName"
+      },
+      {
+        "id": "Extension.extension:roadName.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:detailedAddress",
+        "path": "Extension.extension",
+        "sliceName": "detailedAddress",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:detailedAddress.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:detailedAddress.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "detailedAddress"
+      },
+      {
+        "id": "Extension.extension:detailedAddress.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:complements",
+        "path": "Extension.extension",
+        "sliceName": "complements",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:complements.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:complements.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "complements"
+      },
+      {
+        "id": "Extension.extension:complements.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/StructureDefinition/krcore-roadNameAddress"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

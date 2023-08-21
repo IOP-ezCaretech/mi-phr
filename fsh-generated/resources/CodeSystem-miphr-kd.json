@@ -1,0 +1,2641 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "KD",
+  "id": "miphr-kd",
+  "description": "KD CodeSystem",
+  "url": "http://example.org/CodeSystem/miphr-kd",
+  "concept": [
+    {
+      "code": "8800501000101",
+      "display": "아셀렉스캡슐2밀리그램(폴마콕시브)_(2mg/1캡슐)",
+      "definition": "아셀렉스캡슐2밀리그램(폴마콕시브)_(2mg/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Acelex"
+        }
+      ]
+    },
+    {
+      "code": "8800504000108",
+      "display": "옵디보주100mg(니볼루맙,유전자재조합)_(0.1g/10mL)",
+      "definition": "옵디보주100mg(니볼루맙,유전자재조합)_(0.1g/10mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Opdivo"
+        }
+      ]
+    },
+    {
+      "code": "8800504000207",
+      "display": "옵디보주20mg(니볼루맙,유전자재조합)_(20mg/2mL)",
+      "definition": "옵디보주20mg(니볼루맙,유전자재조합)_(20mg/2mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Opdivo"
+        }
+      ]
+    },
+    {
+      "code": "8800508000104",
+      "display": "리브감마에스앤주[말토즈첨가사람면역글로불린(pH4.25)]_(0.5g/10mL)",
+      "definition": "리브감마에스앤주[말토즈첨가사람면역글로불린(pH4.25)]_(0.5g/10mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Liv-Gamma SN"
+        }
+      ]
+    },
+    {
+      "code": "8800508000203",
+      "display": "리브감마에스앤주[말토즈첨가사람면역글로불린(pH4.25)]_(1g/20mL)",
+      "definition": "리브감마에스앤주[말토즈첨가사람면역글로불린(pH4.25)]_(1g/20mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Liv-Gamma SN"
+        }
+      ]
+    },
+    {
+      "code": "8800508000302",
+      "display": "리브감마에스앤주[말토즈첨가사람면역글로불린(pH4.25)]_(2.5g/50mL)",
+      "definition": "리브감마에스앤주[말토즈첨가사람면역글로불린(pH4.25)]_(2.5g/50mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Liv-Gamma SN"
+        }
+      ]
+    },
+    {
+      "code": "8800508000500",
+      "display": "리브감마에스앤주[말토즈첨가사람면역글로불린(pH4.25)]_(3g/60mL)",
+      "definition": "리브감마에스앤주[말토즈첨가사람면역글로불린(pH4.25)]_(3g/60mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Liv-Gamma SN"
+        }
+      ]
+    },
+    {
+      "code": "8800508000708",
+      "display": "리브감마에스앤주[말토즈첨가사람면역글로불린(pH4.25)]_(5g/100mL)",
+      "definition": "리브감마에스앤주[말토즈첨가사람면역글로불린(pH4.25)]_(5g/100mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Liv-Gamma SN"
+        }
+      ]
+    },
+    {
+      "code": "8800508000906",
+      "display": "리브감마주(말토즈첨가사람면역글로불린pH4.25)(수출명: S/D Treated Immunoglobuline Inj.,글로부셀,노글로빈,감마렌,하이아이지,플라스마글로브,엘-글로브,아이브이아이지)_(1g/20mL)",
+      "definition": "리브감마주(말토즈첨가사람면역글로불린pH4.25)(수출명: S/D Treated Immunoglobuline Inj.,글로부셀,노글로빈,감마렌,하이아이지,플라스마글로브,엘-글로브,아이브이아이지)_(1g/20mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Liv-Gamma"
+        }
+      ]
+    },
+    {
+      "code": "8800508001002",
+      "display": "리브감마주(말토즈첨가사람면역글로불린pH4.25)(수출명: S/D Treated Immunoglobuline Inj.,글로부셀,노글로빈,감마렌,하이아이지,플라스마글로브,엘-글로브,아이브이아이지)_(2.5g/50mL)",
+      "definition": "리브감마주(말토즈첨가사람면역글로불린pH4.25)(수출명: S/D Treated Immunoglobuline Inj.,글로부셀,노글로빈,감마렌,하이아이지,플라스마글로브,엘-글로브,아이브이아이지)_(2.5g/50mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Liv-Gamma"
+        }
+      ]
+    },
+    {
+      "code": "8800508001507",
+      "display": "에스케이알부민5%주(사람혈청알부민)(수출명:Solbumin5%,Albumin5%,SKAlbumin5%inj)_(12.5g/250mL)",
+      "definition": "에스케이알부민5%주(사람혈청알부민)(수출명:Solbumin5%,Albumin5%,SKAlbumin5%inj)_(12.5g/250mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Albumin"
+        }
+      ]
+    },
+    {
+      "code": "8800508001903",
+      "display": "테타불린에스앤주(항파상풍사람면역글로불린)(수출명: T-Globulin: Tetanus Human Immunoglobulin Inj.)_(250I.U/1mL)",
+      "definition": "테타불린에스앤주(항파상풍사람면역글로불린)(수출명: T-Globulin: Tetanus Human Immunoglobulin Inj.)_(250I.U/1mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tetabulin SN"
+        }
+      ]
+    },
+    {
+      "code": "8800508002009",
+      "display": "에스케이항트롬빈III주500단위(건조농축사람항트롬빈III)_(500I.U/1병)",
+      "definition": "에스케이항트롬빈III주500단위(건조농축사람항트롬빈III)_(500I.U/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Antithrombin III"
+        }
+      ]
+    },
+    {
+      "code": "8800508002108",
+      "display": "에트비주250단위(건조농축사람 혈액응고제VIII인자(건조열처리))_(250I.U)",
+      "definition": "에트비주250단위(건조농축사람 혈액응고제VIII인자(건조열처리))_(250I.U)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Etbi"
+        }
+      ]
+    },
+    {
+      "code": "8800508002207",
+      "display": "에스케이알부민20%주(사람혈청알부민)(수출명:Solbumin20%,Albumin20%,DSAlbumin20%inj, 알부셀, 휴민20, 알부렌, 알부맥스)_(10g/50mL)",
+      "definition": "에스케이알부민20%주(사람혈청알부민)(수출명:Solbumin20%,Albumin20%,DSAlbumin20%inj, 알부셀, 휴민20, 알부렌, 알부맥스)_(10g/50mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Albumin"
+        }
+      ]
+    },
+    {
+      "code": "8800508002306",
+      "display": "에스케이알부민20%주(사람혈청알부민)(수출명:Solbumin20%,Albumin20%,DSAlbumin20%inj, 알부셀, 휴민20, 알부렌, 알부맥스)_(20g/100mL)",
+      "definition": "에스케이알부민20%주(사람혈청알부민)(수출명:Solbumin20%,Albumin20%,DSAlbumin20%inj, 알부셀, 휴민20, 알부렌, 알부맥스)_(20g/100mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Albumin"
+        }
+      ]
+    },
+    {
+      "code": "8800508002405",
+      "display": "정주용 헤파불린에스앤주(정맥주사용 B형 간염 사람면역글로불린)_(2KI.U/10mL)",
+      "definition": "정주용 헤파불린에스앤주(정맥주사용 B형 간염 사람면역글로불린)_(2KI.U/10mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Hepabulin SN"
+        }
+      ]
+    },
+    {
+      "code": "8800508003808",
+      "display": "정주용 헤파불린에스앤주(정맥주사용 B형 간염 사람면역글로불린)_(10KI.U/50mL)",
+      "definition": "정주용 헤파불린에스앤주(정맥주사용 B형 간염 사람면역글로불린)_(10KI.U/50mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Hepabulin SN"
+        }
+      ]
+    },
+    {
+      "code": "8800515000104",
+      "display": "에톨로체50밀리그램프리필드시린지(에타너셉트)_(50mg/1관)",
+      "definition": "에톨로체50밀리그램프리필드시린지(에타너셉트)_(50mg/1관)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Etoloche"
+        }
+      ]
+    },
+    {
+      "code": "8800515000203",
+      "display": "레마로체주100밀리그램(인플릭시맵)(단클론항체,유전자재조합)_(0.1g/1병)",
+      "definition": "레마로체주100밀리그램(인플릭시맵)(단클론항체,유전자재조합)_(0.1g/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Remaloce"
+        }
+      ]
+    },
+    {
+      "code": "8800515000302",
+      "display": "삼페넷주150밀리그램(트라스투주맙)_(0.15g/1병)",
+      "definition": "삼페넷주150밀리그램(트라스투주맙)_(0.15g/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Samfenet"
+        }
+      ]
+    },
+    {
+      "code": "8800516001308",
+      "display": "라미실크림1%(테르비나핀염산염)_(0.3g/30g)",
+      "definition": "라미실크림1%(테르비나핀염산염)_(0.3g/30g)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lamisil"
+        }
+      ]
+    },
+    {
+      "code": "8800516001407",
+      "display": "라미실외용액(염산테르비나핀)_(0.3g/30mL)",
+      "definition": "라미실외용액(염산테르비나핀)_(0.3g/30mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lamisil"
+        }
+      ]
+    },
+    {
+      "code": "8800516001605",
+      "display": "볼타렌에멀겔(디클로페낙디에칠암모늄)_(0.58g/50g)",
+      "definition": "볼타렌에멀겔(디클로페낙디에칠암모늄)_(0.58g/50g)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Voltaren"
+        }
+      ]
+    },
+    {
+      "code": "8800517000102",
+      "display": "엔유린오디프스산0.1밀리그램(데스모프레신아세트산염)_(0.1mg/0.45g)",
+      "definition": "엔유린오디프스산0.1밀리그램(데스모프레신아세트산염)_(0.1mg/0.45g)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Enurine ODiFS"
+        }
+      ]
+    },
+    {
+      "code": "8800517000201",
+      "display": "엔유린오디프스산0.2밀리그램(데스모프레신아세트산염)_(0.2mg/0.45g)",
+      "definition": "엔유린오디프스산0.2밀리그램(데스모프레신아세트산염)_(0.2mg/0.45g)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Enurine ODiFS"
+        }
+      ]
+    },
+    {
+      "code": "8800517000300",
+      "display": "에이케어정9.96밀리그램(솔리페나신푸마르산염)_(9.96mg/1정)",
+      "definition": "에이케어정9.96밀리그램(솔리페나신푸마르산염)_(9.96mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "A-care"
+        }
+      ]
+    },
+    {
+      "code": "8800517000409",
+      "display": "에이케어정4.98밀리그램(솔리페나신푸마르산염)_(4.98mg/1정)",
+      "definition": "에이케어정4.98밀리그램(솔리페나신푸마르산염)_(4.98mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "A-care"
+        }
+      ]
+    },
+    {
+      "code": "8800518000101",
+      "display": "카이바이오텍에프디지주사액(2-데옥시-2-플루오로-D-글루코스(18F)액)",
+      "definition": "카이바이오텍에프디지주사액(2-데옥시-2-플루오로-D-글루코스(18F)액)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "FDG"
+        }
+      ]
+    },
+    {
+      "code": "8800523000202",
+      "display": "키프롤리스주60밀리그램(카르필조밉)_(61.8mg/1병)",
+      "definition": "키프롤리스주60밀리그램(카르필조밉)_(61.8mg/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Kyprolis"
+        }
+      ]
+    },
+    {
+      "code": "8800523000301",
+      "display": "블린사이토주35마이크로그램(블리나투모맙, 유전자재조합)_(38.5μg/1병)",
+      "definition": "블린사이토주35마이크로그램(블리나투모맙, 유전자재조합)_(38.5μg/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Blincyto"
+        }
+      ]
+    },
+    {
+      "code": "8800523000400",
+      "display": "프롤리아프리필드시린지(데노수맙)_(60mg/1mL)",
+      "definition": "프롤리아프리필드시린지(데노수맙)_(60mg/1mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Prolia"
+        }
+      ]
+    },
+    {
+      "code": "8800523000608",
+      "display": "엑스지바주(데노수맙)_(0.12g/1.7mL)",
+      "definition": "엑스지바주(데노수맙)_(0.12g/1.7mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Xgeva"
+        }
+      ]
+    },
+    {
+      "code": "8800523000707",
+      "display": "키프롤리스주30밀리그램(카르필조밉)_(32mg/1병)",
+      "definition": "키프롤리스주30밀리그램(카르필조밉)_(32mg/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Kyprolis"
+        }
+      ]
+    },
+    {
+      "code": "8800523000905",
+      "display": "레파타주프리필드펜(에볼로쿠맙)_(0.14g/1mL)",
+      "definition": "레파타주프리필드펜(에볼로쿠맙)_(0.14g/1mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Repatha"
+        }
+      ]
+    },
+    {
+      "code": "8800524000102",
+      "display": "레트로진정(레보드로프로피진)_(60mg/1정)",
+      "definition": "레트로진정(레보드로프로피진)_(60mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Letrozine"
+        }
+      ]
+    },
+    {
+      "code": "8800524000300",
+      "display": "인시크란네오시럽[아목시실린·클라불란산칼륨(14:1)]_(50mL)",
+      "definition": "인시크란네오시럽[아목시실린·클라불란산칼륨(14:1)]_(50mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Inxiclan Neo"
+        }
+      ]
+    },
+    {
+      "code": "8800524000409",
+      "display": "라시딘정150mg(라니티딘염산염)_(0.168g/1정)",
+      "definition": "라시딘정150mg(라니티딘염산염)_(0.168g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Racidine"
+        }
+      ]
+    },
+    {
+      "code": "8800524000508",
+      "display": "인렉스정(에페리손염산염)_(50mg/1정)",
+      "definition": "인렉스정(에페리손염산염)_(50mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Inrex"
+        }
+      ]
+    },
+    {
+      "code": "8800524000607",
+      "display": "미르디스정40mg(텔미사르탄)_(40mg/1정)",
+      "definition": "미르디스정40mg(텔미사르탄)_(40mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Mirdis"
+        }
+      ]
+    },
+    {
+      "code": "8800524000706",
+      "display": "오메프라캡슐(오메프라졸)_(20mg/1캡슐)",
+      "definition": "오메프라캡슐(오메프라졸)_(20mg/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Omepra"
+        }
+      ]
+    },
+    {
+      "code": "8800524000805",
+      "display": "인듀엣정5mg/20mg_(1정)",
+      "definition": "인듀엣정5mg/20mg_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Induet 5mg/20mg"
+        }
+      ]
+    },
+    {
+      "code": "8800524000904",
+      "display": "인듀엣정5mg/10mg_(1정)",
+      "definition": "인듀엣정5mg/10mg_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Induet 5mg/10mg"
+        }
+      ]
+    },
+    {
+      "code": "8800524001109",
+      "display": "미르디스정80mg(텔미사르탄)_(80mg/1정)",
+      "definition": "미르디스정80mg(텔미사르탄)_(80mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Mirdis"
+        }
+      ]
+    },
+    {
+      "code": "8800524001208",
+      "display": "인페나신정5mg(솔리페나신숙신산염)_(5mg/1정)",
+      "definition": "인페나신정5mg(솔리페나신숙신산염)_(5mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Infenacin"
+        }
+      ]
+    },
+    {
+      "code": "8800524001307",
+      "display": "인페나신정10mg(솔리페나신숙신산염)_(10mg/1정)",
+      "definition": "인페나신정10mg(솔리페나신숙신산염)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Infenacin"
+        }
+      ]
+    },
+    {
+      "code": "8800524001406",
+      "display": "로슈바정20mg(로수바스타틴칼슘)_(20.8mg/1정)",
+      "definition": "로슈바정20mg(로수바스타틴칼슘)_(20.8mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rosuva"
+        }
+      ]
+    },
+    {
+      "code": "8800524001505",
+      "display": "로슈바정10mg(로수바스타틴칼슘)_(10.4mg/1정)",
+      "definition": "로슈바정10mg(로수바스타틴칼슘)_(10.4mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rosuva"
+        }
+      ]
+    },
+    {
+      "code": "8800524001604",
+      "display": "루코에스캡슐(플루코나졸)_(50mg/1캡슐)",
+      "definition": "루코에스캡슐(플루코나졸)_(50mg/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Luco-S"
+        }
+      ]
+    },
+    {
+      "code": "8800524001703",
+      "display": "발사탄아이정80mg(발사르탄)_(80mg/1정)",
+      "definition": "발사탄아이정80mg(발사르탄)_(80mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Valsartan-I"
+        }
+      ]
+    },
+    {
+      "code": "8800524001802",
+      "display": "리피틴정10mg(아토르바스타틴칼슘수화물)_(10.85mg/1정)",
+      "definition": "리피틴정10mg(아토르바스타틴칼슘수화물)_(10.85mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lipitin"
+        }
+      ]
+    },
+    {
+      "code": "8800524001901",
+      "display": "피나스테이트아이정5mg(피나스테리드)_(5mg/1정)",
+      "definition": "피나스테이트아이정5mg(피나스테리드)_(5mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Finastate-I"
+        }
+      ]
+    },
+    {
+      "code": "8800524002007",
+      "display": "벨프란정10mg(라베프라졸나트륨)_(10mg/1정)",
+      "definition": "벨프란정10mg(라베프라졸나트륨)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Belpran"
+        }
+      ]
+    },
+    {
+      "code": "8800524002205",
+      "display": "록세린정(록소프로펜나트륨수화물)_(68.1mg/1정)",
+      "definition": "록세린정(록소프로펜나트륨수화물)_(68.1mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Loxerin"
+        }
+      ]
+    },
+    {
+      "code": "8800524002403",
+      "display": "인시크란정375mg(아목시실린-클라불란산칼륨)_(1정)",
+      "definition": "인시크란정375mg(아목시실린-클라불란산칼륨)_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Inxiclan 375mg"
+        }
+      ]
+    },
+    {
+      "code": "8800524002601",
+      "display": "벨프란정20mg(라베프라졸나트륨)_(20mg/1정)",
+      "definition": "벨프란정20mg(라베프라졸나트륨)_(20mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Belpran"
+        }
+      ]
+    },
+    {
+      "code": "8800524002700",
+      "display": "로사탄아이정100mg(로사르탄칼륨)_(0.1g/1정)",
+      "definition": "로사탄아이정100mg(로사르탄칼륨)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Losatan-I"
+        }
+      ]
+    },
+    {
+      "code": "8800524002908",
+      "display": "세파크로캡슐250mg(세파클러수화물)_(0.25g/1캡슐)",
+      "definition": "세파크로캡슐250mg(세파클러수화물)_(0.25g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cefaclo"
+        }
+      ]
+    },
+    {
+      "code": "8800524003103",
+      "display": "인시크란정625mg(아목시실린-클라불란산칼륨)_(1정)",
+      "definition": "인시크란정625mg(아목시실린-클라불란산칼륨)_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Inxiclan 625mg"
+        }
+      ]
+    },
+    {
+      "code": "8800524003202",
+      "display": "클라오정250mg(클래리트로마이신)_(0.25g/1정)",
+      "definition": "클라오정250mg(클래리트로마이신)_(0.25g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Clao"
+        }
+      ]
+    },
+    {
+      "code": "8800524003608",
+      "display": "위프라졸정20mg(에스오메프라졸마그네슘이수화물)_(21.69mg/1정)",
+      "definition": "위프라졸정20mg(에스오메프라졸마그네슘이수화물)_(21.69mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Weprazole"
+        }
+      ]
+    },
+    {
+      "code": "8800524003707",
+      "display": "위프라졸정40mg(에스오메프라졸마그네슘이수화물)_(43.38mg/1정)",
+      "definition": "위프라졸정40mg(에스오메프라졸마그네슘이수화물)_(43.38mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Weprazole"
+        }
+      ]
+    },
+    {
+      "code": "8800524003905",
+      "display": "인비스디정_(1정)",
+      "definition": "인비스디정_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Inbis D"
+        }
+      ]
+    },
+    {
+      "code": "8800524004001",
+      "display": "레디프리산_(2000mL)",
+      "definition": "레디프리산_(2000mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Readyfree"
+        }
+      ]
+    },
+    {
+      "code": "8800524004100",
+      "display": "아이스타정80/5mg_(1정)",
+      "definition": "아이스타정80/5mg_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-sta 80/5mg"
+        }
+      ]
+    },
+    {
+      "code": "8800524004209",
+      "display": "이노쿨산_(45.26g)",
+      "definition": "이노쿨산_(45.26g)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Inocool"
+        }
+      ]
+    },
+    {
+      "code": "8800524004308",
+      "display": "미르디스플러스정80/12.5mg_(1정)",
+      "definition": "미르디스플러스정80/12.5mg_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Mirdis Plus"
+        }
+      ]
+    },
+    {
+      "code": "8800524004407",
+      "display": "아르테민정(애엽95%에탄올연조엑스(20→1))_(60mg/1정)",
+      "definition": "아르테민정(애엽95%에탄올연조엑스(20→1))_(60mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Artemin"
+        }
+      ]
+    },
+    {
+      "code": "8800524004506",
+      "display": "아이렉손정25mg(날트렉손염산염)_(25mg/1정)",
+      "definition": "아이렉손정25mg(날트렉손염산염)_(25mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-rexone"
+        }
+      ]
+    },
+    {
+      "code": "8800524004605",
+      "display": "아이스타정40/5mg_(1정)",
+      "definition": "아이스타정40/5mg_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-sta 40/5mg"
+        }
+      ]
+    },
+    {
+      "code": "8800524004704",
+      "display": "아이스타정40/10mg_(1정)",
+      "definition": "아이스타정40/10mg_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-sta 40/10mg"
+        }
+      ]
+    },
+    {
+      "code": "8800524004902",
+      "display": "아이세트정_(1정)",
+      "definition": "아이세트정_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ltracet"
+        }
+      ]
+    },
+    {
+      "code": "8800524005008",
+      "display": "아이세트세미정_(1정)",
+      "definition": "아이세트세미정_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ltracet Semi"
+        }
+      ]
+    },
+    {
+      "code": "8800524005206",
+      "display": "아이스틴정10밀리그램(베포타스틴베실산염)_(10mg/1정)",
+      "definition": "아이스틴정10밀리그램(베포타스틴베실산염)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-stine"
+        }
+      ]
+    },
+    {
+      "code": "8800524005305",
+      "display": "아이모틴정20밀리그램(파모티딘)_(20mg/1정)",
+      "definition": "아이모틴정20밀리그램(파모티딘)_(20mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-motine"
+        }
+      ]
+    },
+    {
+      "code": "8800524005404",
+      "display": "아멜록스캡슐7.5밀리그램(멜록시캄)_(7.5mg/1캡슐)",
+      "definition": "아멜록스캡슐7.5밀리그램(멜록시캄)_(7.5mg/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Amelox"
+        }
+      ]
+    },
+    {
+      "code": "8800524005503",
+      "display": "플루아이점안액0.1%(플루오로메톨론)_(6mg/6mL)",
+      "definition": "플루아이점안액0.1%(플루오로메톨론)_(6mg/6mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Flu-I"
+        }
+      ]
+    },
+    {
+      "code": "8800524005602",
+      "display": "도브라정500밀리그램(도베실산칼슘수화물)_(0.5g/1정)",
+      "definition": "도브라정500밀리그램(도베실산칼슘수화물)_(0.5g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Dobra"
+        }
+      ]
+    },
+    {
+      "code": "8800524005701",
+      "display": "레보아점안액0.5%(레보플록사신)_(30mg/6mL)",
+      "definition": "레보아점안액0.5%(레보플록사신)_(30mg/6mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Levoa"
+        }
+      ]
+    },
+    {
+      "code": "8800524005800",
+      "display": "디클로아이주(디클로페낙나트륨)_(75mg/2mL)",
+      "definition": "디클로아이주(디클로페낙나트륨)_(75mg/2mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Diclo-I"
+        }
+      ]
+    },
+    {
+      "code": "8800524005909",
+      "display": "도브라정250밀리그램(도베실산칼슘수화물)_(0.25g/1정)",
+      "definition": "도브라정250밀리그램(도베실산칼슘수화물)_(0.25g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Dobra"
+        }
+      ]
+    },
+    {
+      "code": "8800524006005",
+      "display": "아이콜린정(콜린알포세레이트)_(0.4g/1정)",
+      "definition": "아이콜린정(콜린알포세레이트)_(0.4g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-Choline"
+        }
+      ]
+    },
+    {
+      "code": "8800524006104",
+      "display": "뉴로시드정(알티옥트산트로메타민염)_(0.48g/1정)",
+      "definition": "뉴로시드정(알티옥트산트로메타민염)_(0.48g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Neurocid"
+        }
+      ]
+    },
+    {
+      "code": "8800524006302",
+      "display": "클로메디정(클로피도그렐황산수소염)_(97.875mg/1정)",
+      "definition": "클로메디정(클로피도그렐황산수소염)_(97.875mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Clomedi"
+        }
+      ]
+    },
+    {
+      "code": "8800524006401",
+      "display": "로팜시정(팜시클로비르)_(0.25g/1정)",
+      "definition": "로팜시정(팜시클로비르)_(0.25g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lofamci"
+        }
+      ]
+    },
+    {
+      "code": "8800524006500",
+      "display": "엘부틴정(트리메부틴말레산염)_(0.15g/1정)",
+      "definition": "엘부틴정(트리메부틴말레산염)_(0.15g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "L-butine"
+        }
+      ]
+    },
+    {
+      "code": "8800524006906",
+      "display": "로페낙정(아세클로페낙)_(0.1g/1정)",
+      "definition": "로페낙정(아세클로페낙)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lofenac"
+        }
+      ]
+    },
+    {
+      "code": "8800524007101",
+      "display": "목시아이점안액0.5%(목시플록사신염산염)_(27.25mg/5mL)",
+      "definition": "목시아이점안액0.5%(목시플록사신염산염)_(27.25mg/5mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Moxi-I"
+        }
+      ]
+    },
+    {
+      "code": "8800524007408",
+      "display": "엘솔론정(메틸프레드니솔론)_(4mg/1정)",
+      "definition": "엘솔론정(메틸프레드니솔론)_(4mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "L-Solon"
+        }
+      ]
+    },
+    {
+      "code": "8800524007507",
+      "display": "세레민정40mg(은행엽엑스)_(40mg/1정)",
+      "definition": "세레민정40mg(은행엽엑스)_(40mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ceremin"
+        }
+      ]
+    },
+    {
+      "code": "8800524007606",
+      "display": "히아린점안액0.15%(히알루론산나트륨)_(7.5mg/5mL)",
+      "definition": "히아린점안액0.15%(히알루론산나트륨)_(7.5mg/5mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Hyalin"
+        }
+      ]
+    },
+    {
+      "code": "8800524007705",
+      "display": "로스테인캡슐(아세틸시스테인)_(0.2g/1캡슐)",
+      "definition": "로스테인캡슐(아세틸시스테인)_(0.2g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Losteine"
+        }
+      ]
+    },
+    {
+      "code": "8800524007804",
+      "display": "티오피정(티로프라미드염산염)_(0.1g/1정)",
+      "definition": "티오피정(티로프라미드염산염)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "TOP"
+        }
+      ]
+    },
+    {
+      "code": "8800524007903",
+      "display": "가스트리액(시메티콘)_(10g/500mL)",
+      "definition": "가스트리액(시메티콘)_(10g/500mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Gastry"
+        }
+      ]
+    },
+    {
+      "code": "8800524008009",
+      "display": "가스트리액(시메티콘)_(0.2g/10mL)",
+      "definition": "가스트리액(시메티콘)_(0.2g/10mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Gastry"
+        }
+      ]
+    },
+    {
+      "code": "8800524008306",
+      "display": "아시클로정(아시클로버)_(0.2g/1정)",
+      "definition": "아시클로정(아시클로버)_(0.2g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Acyclo"
+        }
+      ]
+    },
+    {
+      "code": "8800524008603",
+      "display": "레오핀정(레바미피드)_(0.1g/1정)",
+      "definition": "레오핀정(레바미피드)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Reopin"
+        }
+      ]
+    },
+    {
+      "code": "8800524008702",
+      "display": "모사킴정(모사프리드시트르산염수화물)_(5.29mg/1정)",
+      "definition": "모사킴정(모사프리드시트르산염수화물)_(5.29mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Mosakim"
+        }
+      ]
+    },
+    {
+      "code": "8800524008801",
+      "display": "하이듀주(프리필드)(히알루론산나트륨)_(20mg/2mL)",
+      "definition": "하이듀주(프리필드)(히알루론산나트륨)_(20mg/2mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Highdue"
+        }
+      ]
+    },
+    {
+      "code": "8800524008900",
+      "display": "로바스크정(암로디핀베실산염)_(6.944mg/1정)",
+      "definition": "로바스크정(암로디핀베실산염)_(6.944mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lovasc"
+        }
+      ]
+    },
+    {
+      "code": "8800524009006",
+      "display": "아이콜린연질캡슐(콜린알포세레이트)_(0.4g/1캡슐)",
+      "definition": "아이콜린연질캡슐(콜린알포세레이트)_(0.4g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-Choline"
+        }
+      ]
+    },
+    {
+      "code": "8800524009204",
+      "display": "아이그렐정(사르포그렐레이트염산염)_(0.1g/1정)",
+      "definition": "아이그렐정(사르포그렐레이트염산염)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-grel"
+        }
+      ]
+    },
+    {
+      "code": "8800524009303",
+      "display": "아이리토정20mg(아토르바스타틴칼슘수화물)_(21.7mg/1정)",
+      "definition": "아이리토정20mg(아토르바스타틴칼슘수화물)_(21.7mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-rito"
+        }
+      ]
+    },
+    {
+      "code": "8800524009402",
+      "display": "아이카민정(펠라고니움시도이데스11%에탄올건조엑스(5.5~6.6→1))_(20mg/1정)",
+      "definition": "아이카민정(펠라고니움시도이데스11%에탄올건조엑스(5.5~6.6→1))_(20mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-kamin"
+        }
+      ]
+    },
+    {
+      "code": "8800524009501",
+      "display": "오파딘점안액0.1%(올로파타딘염산염)_(5.55mg/5mL)",
+      "definition": "오파딘점안액0.1%(올로파타딘염산염)_(5.55mg/5mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Opadin"
+        }
+      ]
+    },
+    {
+      "code": "8800524009600",
+      "display": "아이브렉스캡슐100mg(세레콕시브)_(0.1g/1캡슐)",
+      "definition": "아이브렉스캡슐100mg(세레콕시브)_(0.1g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ibrex"
+        }
+      ]
+    },
+    {
+      "code": "8800524009709",
+      "display": "아이브렉스캡슐200mg(세레콕시브)_(0.2g/1캡슐)",
+      "definition": "아이브렉스캡슐200mg(세레콕시브)_(0.2g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ibrex"
+        }
+      ]
+    },
+    {
+      "code": "8800524011306",
+      "display": "리포시드정(티옥트산)_(0.6g/1정)",
+      "definition": "리포시드정(티옥트산)_(0.6g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lipocid"
+        }
+      ]
+    },
+    {
+      "code": "8800524011405",
+      "display": "로슈바정5mg(로수바스타틴칼슘)_(5.2mg/1정)",
+      "definition": "로슈바정5mg(로수바스타틴칼슘)_(5.2mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rosuva"
+        }
+      ]
+    },
+    {
+      "code": "8800524012006",
+      "display": "제라미콤주_(500mL)",
+      "definition": "제라미콤주_(500mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Jeramicom"
+        }
+      ]
+    },
+    {
+      "code": "8800524012105",
+      "display": "아이도스캡슐(에르도스테인)_(0.3g/1캡슐)",
+      "definition": "아이도스캡슐(에르도스테인)_(0.3g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-dos"
+        }
+      ]
+    },
+    {
+      "code": "8800524012204",
+      "display": "아이프린캡슐(아세브로필린)_(0.1g/1캡슐)",
+      "definition": "아이프린캡슐(아세브로필린)_(0.1g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-pline"
+        }
+      ]
+    },
+    {
+      "code": "8800524012303",
+      "display": "아이셉트정5밀리그램(도네페질염산염)_(5mg/1정)",
+      "definition": "아이셉트정5밀리그램(도네페질염산염)_(5mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Icept"
+        }
+      ]
+    },
+    {
+      "code": "8800524012402",
+      "display": "아이셉트정10밀리그램(도네페질염산염)_(10mg/1정)",
+      "definition": "아이셉트정10밀리그램(도네페질염산염)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Icept"
+        }
+      ]
+    },
+    {
+      "code": "8800524012501",
+      "display": "로프리드정(이토프리드염산염)_(50mg/1정)",
+      "definition": "로프리드정(이토프리드염산염)_(50mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ropride"
+        }
+      ]
+    },
+    {
+      "code": "8800524012600",
+      "display": "글리메디정(글리메피리드)_(2mg/1정)",
+      "definition": "글리메디정(글리메피리드)_(2mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Glimedi"
+        }
+      ]
+    },
+    {
+      "code": "8800524012709",
+      "display": "로마코연질캡슐(오메가-3-산에틸에스테르90)_(1g/1캡슐)",
+      "definition": "로마코연질캡슐(오메가-3-산에틸에스테르90)_(1g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Romaco"
+        }
+      ]
+    },
+    {
+      "code": "8800524012808",
+      "display": "인귤레어정10mg(몬테루카스트나트륨)_(10.4mg/1정)",
+      "definition": "인귤레어정10mg(몬테루카스트나트륨)_(10.4mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ingulair"
+        }
+      ]
+    },
+    {
+      "code": "8800524012907",
+      "display": "인귤레어츄정5mg(몬테루카스트나트륨)_(5.2mg/1정)",
+      "definition": "인귤레어츄정5mg(몬테루카스트나트륨)_(5.2mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ingulair Chew"
+        }
+      ]
+    },
+    {
+      "code": "8800524013003",
+      "display": "인비스정_(1정)",
+      "definition": "인비스정_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Inbis"
+        }
+      ]
+    },
+    {
+      "code": "8800524013201",
+      "display": "아이세린캡슐(디아세레인)_(50mg/1캡슐)",
+      "definition": "아이세린캡슐(디아세레인)_(50mg/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-cerin"
+        }
+      ]
+    },
+    {
+      "code": "8800524013300",
+      "display": "아이메타점비액(모메타손푸로에이트)_(7mg/140회)",
+      "definition": "아이메타점비액(모메타손푸로에이트)_(7mg/140회)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "I-meta"
+        }
+      ]
+    },
+    {
+      "code": "8800524013409",
+      "display": "오파딘점안액0.2%(올로파타딘염산염)_(6.66mg/3mL)",
+      "definition": "오파딘점안액0.2%(올로파타딘염산염)_(6.66mg/3mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Opadin"
+        }
+      ]
+    },
+    {
+      "code": "8800524013508",
+      "display": "인귤레어츄정4mg(몬테루카스트나트륨)_(4.16mg/1정)",
+      "definition": "인귤레어츄정4mg(몬테루카스트나트륨)_(4.16mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ingulair Chew"
+        }
+      ]
+    },
+    {
+      "code": "8800524013805",
+      "display": "인귤레어세립4mg(몬테루카스트나트륨)_(4.16mg/1포)",
+      "definition": "인귤레어세립4mg(몬테루카스트나트륨)_(4.16mg/1포)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ingulair"
+        }
+      ]
+    },
+    {
+      "code": "8800524013904",
+      "display": "로픽심정(세프포독심프록세틸)_(0.1g/1정)",
+      "definition": "로픽심정(세프포독심프록세틸)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rofixime"
+        }
+      ]
+    },
+    {
+      "code": "8800524014000",
+      "display": "실로스서방캡슐100밀리그램(실로스타졸)_(0.1g/1캡슐)",
+      "definition": "실로스서방캡슐100밀리그램(실로스타졸)_(0.1g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cilos XR"
+        }
+      ]
+    },
+    {
+      "code": "8800524014109",
+      "display": "실로스서방캡슐200밀리그램(실로스타졸)_(0.2g/1캡슐)",
+      "definition": "실로스서방캡슐200밀리그램(실로스타졸)_(0.2g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cilos XR"
+        }
+      ]
+    },
+    {
+      "code": "8800524014208",
+      "display": "엘푸록심정(세푸록심악세틸)_(0.33072g/1정)",
+      "definition": "엘푸록심정(세푸록심악세틸)_(0.33072g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Elfuroxime"
+        }
+      ]
+    },
+    {
+      "code": "8800525000101",
+      "display": "보테벨주3.5밀리그램(보르테조밉삼합체)_(3.3mg/1병)",
+      "definition": "보테벨주3.5밀리그램(보르테조밉삼합체)_(3.3mg/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Bortebel"
+        }
+      ]
+    },
+    {
+      "code": "8800526000100",
+      "display": "아이맥스이오헥솔300주_(323.5g/500mL)",
+      "definition": "아이맥스이오헥솔300주_(323.5g/500mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Imax Iohexol 300"
+        }
+      ]
+    },
+    {
+      "code": "8800526000209",
+      "display": "아이맥스이오헥솔350주_(377.5g/500mL)",
+      "definition": "아이맥스이오헥솔350주_(377.5g/500mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Imax Iohexol 350"
+        }
+      ]
+    },
+    {
+      "code": "8800527000109",
+      "display": "글리피드정2mg(글리메피리드)_(2mg/1정)",
+      "definition": "글리피드정2mg(글리메피리드)_(2mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Glipid"
+        }
+      ]
+    },
+    {
+      "code": "8800527000208",
+      "display": "사프닐정100밀리그램(사포그릴레이트염산염)_(0.1g/1정)",
+      "definition": "사프닐정100밀리그램(사포그릴레이트염산염)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Sapnil"
+        }
+      ]
+    },
+    {
+      "code": "8800527000307",
+      "display": "멕소자임정_(1정)",
+      "definition": "멕소자임정_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Mexozyme"
+        }
+      ]
+    },
+    {
+      "code": "8800527000406",
+      "display": "로테인정(로사르탄칼륨)_(50mg/1정)",
+      "definition": "로테인정(로사르탄칼륨)_(50mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lotein"
+        }
+      ]
+    },
+    {
+      "code": "8800527000505",
+      "display": "라베나정20밀리그램(라베프라졸나트륨)_(20mg/1정)",
+      "definition": "라베나정20밀리그램(라베프라졸나트륨)_(20mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rabena"
+        }
+      ]
+    },
+    {
+      "code": "8800527000604",
+      "display": "가나프리드정(이토프리드염산염)_(50mg/1정)",
+      "definition": "가나프리드정(이토프리드염산염)_(50mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ganapride"
+        }
+      ]
+    },
+    {
+      "code": "8800527000703",
+      "display": "레트라정100밀리그램(레바미피드)_(0.1g/1정)",
+      "definition": "레트라정100밀리그램(레바미피드)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Letra"
+        }
+      ]
+    },
+    {
+      "code": "8800527000802",
+      "display": "메자이캡슐(상황균사체엑스)_(0.55g/1캡슐)",
+      "definition": "메자이캡슐(상황균사체엑스)_(0.55g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Mezai"
+        }
+      ]
+    },
+    {
+      "code": "8800527000901",
+      "display": "애니티딘캡슐150밀리그램(니자티딘)_(0.15g/1캡슐)",
+      "definition": "애니티딘캡슐150밀리그램(니자티딘)_(0.15g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Anitidine"
+        }
+      ]
+    },
+    {
+      "code": "8800527001007",
+      "display": "클빅스정75밀리그램(클로피도그렐황산염)_(97.875mg/1정)",
+      "definition": "클빅스정75밀리그램(클로피도그렐황산염)_(97.875mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Clvix"
+        }
+      ]
+    },
+    {
+      "code": "8800527001106",
+      "display": "에이드정(모사프리드시트르산염이수화물)_(5.29mg/1정)",
+      "definition": "에이드정(모사프리드시트르산염이수화물)_(5.29mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Aid"
+        }
+      ]
+    },
+    {
+      "code": "8800527001304",
+      "display": "메만티정10밀리그램(메만틴염산염)_(10mg/1정)",
+      "definition": "메만티정10밀리그램(메만틴염산염)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Memanti"
+        }
+      ]
+    },
+    {
+      "code": "8800527001403",
+      "display": "비티코나졸정(이트라코나졸고체분산체)_(0.253g/1정)",
+      "definition": "비티코나졸정(이트라코나졸고체분산체)_(0.253g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "BT-conazole"
+        }
+      ]
+    },
+    {
+      "code": "8800527001502",
+      "display": "레보리드정(레보설피리드)_(25mg/1정)",
+      "definition": "레보리드정(레보설피리드)_(25mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Levoride"
+        }
+      ]
+    },
+    {
+      "code": "8800527001601",
+      "display": "칼리신정50단위(칼리디노게나제)_(50I.U/1정)",
+      "definition": "칼리신정50단위(칼리디노게나제)_(50I.U/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Kalicin"
+        }
+      ]
+    },
+    {
+      "code": "8800527001809",
+      "display": "티오셋정_(1정)",
+      "definition": "티오셋정_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tiocet"
+        }
+      ]
+    },
+    {
+      "code": "8800527001908",
+      "display": "세로콕캡슐200밀리그램(세레콕시브)_(0.2g/1캡슐)",
+      "definition": "세로콕캡슐200밀리그램(세레콕시브)_(0.2g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Cerocox"
+        }
+      ]
+    },
+    {
+      "code": "8800527002103",
+      "display": "폴라콘정(아플로쿠알론)_(20mg/1정)",
+      "definition": "폴라콘정(아플로쿠알론)_(20mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Polacon"
+        }
+      ]
+    },
+    {
+      "code": "8800527002202",
+      "display": "메이신주(아미카신황산염)_(0.25g/2mL)",
+      "definition": "메이신주(아미카신황산염)_(0.25g/2mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Maysine"
+        }
+      ]
+    },
+    {
+      "code": "8800527002301",
+      "display": "파누엘정2.5밀리그램(레트로졸)_(2.5mg/1정)",
+      "definition": "파누엘정2.5밀리그램(레트로졸)_(2.5mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Panuel"
+        }
+      ]
+    },
+    {
+      "code": "8800527002400",
+      "display": "린코마인주(린코마이신염산염수화물)_(0.3g/1mL)",
+      "definition": "린코마인주(린코마이신염산염수화물)_(0.3g/1mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lincomine"
+        }
+      ]
+    },
+    {
+      "code": "8800527002509",
+      "display": "린코마인주(린코마이신염산염수화물)_(0.6g/2mL)",
+      "definition": "린코마인주(린코마이신염산염수화물)_(0.6g/2mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lincomine"
+        }
+      ]
+    },
+    {
+      "code": "8800527002608",
+      "display": "라베나정10밀리그램(라베프라졸나트륨)_(10mg/1정)",
+      "definition": "라베나정10밀리그램(라베프라졸나트륨)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rabena"
+        }
+      ]
+    },
+    {
+      "code": "8800527002806",
+      "display": "본맥스정70밀리그람(알렌드론산나트륨수화물)_(91.37mg/1정)",
+      "definition": "본맥스정70밀리그람(알렌드론산나트륨수화물)_(91.37mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Bonmax"
+        }
+      ]
+    },
+    {
+      "code": "8800527002905",
+      "display": "메작탐주사500밀리그램(아즈트레오남)[수출명:인바이오넷메작탐주사500밀리그램(아즈트레오남)]_(0.5g/1병)",
+      "definition": "메작탐주사500밀리그램(아즈트레오남)[수출명:인바이오넷메작탐주사500밀리그램(아즈트레오남)]_(0.5g/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Mezactam"
+        }
+      ]
+    },
+    {
+      "code": "8800527003001",
+      "display": "피오리정15밀리그램(피오글리타존염산염)_(16.53mg/1정)",
+      "definition": "피오리정15밀리그램(피오글리타존염산염)_(16.53mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Pioli"
+        }
+      ]
+    },
+    {
+      "code": "8800527003100",
+      "display": "트라돌주사액(트라마돌염산염)[수출명:인바이오넷트라돌주사액(트라마돌염산염)]_(50mg/1mL)",
+      "definition": "트라돌주사액(트라마돌염산염)[수출명:인바이오넷트라돌주사액(트라마돌염산염)]_(50mg/1mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tradol"
+        }
+      ]
+    },
+    {
+      "code": "8800527003308",
+      "display": "소타론정(소타롤염산염)_(40mg/1정)",
+      "definition": "소타론정(소타롤염산염)_(40mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Sotaron"
+        }
+      ]
+    },
+    {
+      "code": "8800527003407",
+      "display": "세이크캡슐250밀리그램(세파클러수화물)(수출명:인바이오넷인비클러캡슐250mg)_(0.25g/1캡슐)",
+      "definition": "세이크캡슐250밀리그램(세파클러수화물)(수출명:인바이오넷인비클러캡슐250mg)_(0.25g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Sake"
+        }
+      ]
+    },
+    {
+      "code": "8800527003506",
+      "display": "오스론정(오소판물질)_(0.83g/1정)",
+      "definition": "오스론정(오소판물질)_(0.83g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Osron"
+        }
+      ]
+    },
+    {
+      "code": "8800527003605",
+      "display": "메작탐주사1그램(아즈트레오남)[수출명:인바이오넷메작탐주사1g(아즈트레오남)]_(1g/1병)",
+      "definition": "메작탐주사1그램(아즈트레오남)[수출명:인바이오넷메작탐주사1g(아즈트레오남)]_(1g/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Mezactam"
+        }
+      ]
+    },
+    {
+      "code": "8800527003704",
+      "display": "케페낙정100밀리그램(아세클로페낙)_(0.1g/1정)",
+      "definition": "케페낙정100밀리그램(아세클로페낙)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Kefenac"
+        }
+      ]
+    },
+    {
+      "code": "8800527003902",
+      "display": "파로마정(프로시클리딘염산염)_(5mg/1정)",
+      "definition": "파로마정(프로시클리딘염산염)_(5mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Paroma"
+        }
+      ]
+    },
+    {
+      "code": "8800527004008",
+      "display": "탈리겐정(탈니플루메이트)_(0.37g/1정)",
+      "definition": "탈리겐정(탈니플루메이트)_(0.37g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Taligen"
+        }
+      ]
+    },
+    {
+      "code": "8800527004107",
+      "display": "파모디틴정20mg(파모티딘)_(20mg/1정)",
+      "definition": "파모디틴정20mg(파모티딘)_(20mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Famoditine"
+        }
+      ]
+    },
+    {
+      "code": "8800527004404",
+      "display": "프레스틴정5밀리그램(암로디핀베실산염)_(6.944mg/1정)",
+      "definition": "프레스틴정5밀리그램(암로디핀베실산염)_(6.944mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Prestin"
+        }
+      ]
+    },
+    {
+      "code": "8800527004503",
+      "display": "엘도캡슐(에르도스테인)_(0.3g/1캡슐)",
+      "definition": "엘도캡슐(에르도스테인)_(0.3g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Eldo"
+        }
+      ]
+    },
+    {
+      "code": "8800527005203",
+      "display": "티오셋세미정_(1정)",
+      "definition": "티오셋세미정_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tiocet Semi"
+        }
+      ]
+    },
+    {
+      "code": "8800527005302",
+      "display": "알세진정10밀리그램(세티리진염산염)_(10mg/1정)",
+      "definition": "알세진정10밀리그램(세티리진염산염)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Alcezine"
+        }
+      ]
+    },
+    {
+      "code": "8800527005401",
+      "display": "티로스파정(티로프라미드염산염)_(0.1g/1정)",
+      "definition": "티로스파정(티로프라미드염산염)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tirospa"
+        }
+      ]
+    },
+    {
+      "code": "8800527005500",
+      "display": "로테인플러스에프정_(1정)",
+      "definition": "로테인플러스에프정_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lotein Plus F"
+        }
+      ]
+    },
+    {
+      "code": "8800527005609",
+      "display": "로디오캡슐(미분화에토돌락)_(0.2g/1캡슐)",
+      "definition": "로디오캡슐(미분화에토돌락)_(0.2g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lodio"
+        }
+      ]
+    },
+    {
+      "code": "8800527005708",
+      "display": "트리엠정100밀리그램(트리메부틴말레산염)_(0.1g/1정)",
+      "definition": "트리엠정100밀리그램(트리메부틴말레산염)_(0.1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tri-M"
+        }
+      ]
+    },
+    {
+      "code": "8800527005807",
+      "display": "이부프로딘정400밀리그램(이부프로펜)_(0.4g/1정)",
+      "definition": "이부프로딘정400밀리그램(이부프로펜)_(0.4g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ibuprodin"
+        }
+      ]
+    },
+    {
+      "code": "8800527006200",
+      "display": "바소프릴정10mg(에날라프릴말레산염)_(10mg/1정)",
+      "definition": "바소프릴정10mg(에날라프릴말레산염)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Basopril"
+        }
+      ]
+    },
+    {
+      "code": "8800527006309",
+      "display": "유비펜캡슐_(1캡슐)",
+      "definition": "유비펜캡슐_(1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ubiphen"
+        }
+      ]
+    },
+    {
+      "code": "8800527006408",
+      "display": "나프록신정(나프록센나트륨)_(0.275g/1정)",
+      "definition": "나프록신정(나프록센나트륨)_(0.275g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Naproxin"
+        }
+      ]
+    },
+    {
+      "code": "8800527006507",
+      "display": "케록시드정(록소프로펜나트륨수화물)_(68.1mg/1정)",
+      "definition": "케록시드정(록소프로펜나트륨수화물)_(68.1mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Keroxid"
+        }
+      ]
+    },
+    {
+      "code": "8800527006606",
+      "display": "모나돈정(돔페리돈말레산염)_(12.72mg/1정)",
+      "definition": "모나돈정(돔페리돈말레산염)_(12.72mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Monadon"
+        }
+      ]
+    },
+    {
+      "code": "8800527006705",
+      "display": "인바이오넷염산라니티딘정150mg(염산라니티딘)_(0.168g/1정)",
+      "definition": "인바이오넷염산라니티딘정150mg(염산라니티딘)_(0.168g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ranitidine HCl"
+        }
+      ]
+    },
+    {
+      "code": "8800527006903",
+      "display": "티라드주(티로프라미드염산염)_(50.1mg/3mL)",
+      "definition": "티라드주(티로프라미드염산염)_(50.1mg/3mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Tirad"
+        }
+      ]
+    },
+    {
+      "code": "8800527007009",
+      "display": "인푸트크림(테르비나핀염산염)_(0.3g/30g)",
+      "definition": "인푸트크림(테르비나핀염산염)_(0.3g/30g)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Infoot"
+        }
+      ]
+    },
+    {
+      "code": "8800527007207",
+      "display": "멜록신캡슐(멜록시캄)_(7.5mg/1캡슐)",
+      "definition": "멜록신캡슐(멜록시캄)_(7.5mg/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Meloxin"
+        }
+      ]
+    },
+    {
+      "code": "8800527007306",
+      "display": "아모시연듀오시럽(아목시실린·클라불란산칼륨(7:1))_(500mL)",
+      "definition": "아모시연듀오시럽(아목시실린·클라불란산칼륨(7:1))_(500mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Amoxyeon Duo"
+        }
+      ]
+    },
+    {
+      "code": "8800527009409",
+      "display": "덱시콘정300밀리그램(덱시부프로펜 디.씨.)_(0.3g/1정)",
+      "definition": "덱시콘정300밀리그램(덱시부프로펜 디.씨.)_(0.3g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Dexicon"
+        }
+      ]
+    },
+    {
+      "code": "8800527009607",
+      "display": "에포리스정(에페리손염산염)_(50mg/1정)",
+      "definition": "에포리스정(에페리손염산염)_(50mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Eporis"
+        }
+      ]
+    },
+    {
+      "code": "8800527009904",
+      "display": "리세플러스정_(1정)",
+      "definition": "리세플러스정_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rise Plus"
+        }
+      ]
+    },
+    {
+      "code": "8800527010504",
+      "display": "에이티스타정40/5밀리그램_(1정)",
+      "definition": "에이티스타정40/5밀리그램_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "ATsta 40/5mg"
+        }
+      ]
+    },
+    {
+      "code": "8800527010603",
+      "display": "에이티스타정40/10밀리그램_(1정)",
+      "definition": "에이티스타정40/10밀리그램_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "ATsta 40/10mg"
+        }
+      ]
+    },
+    {
+      "code": "8800527010702",
+      "display": "에이티스타정80/5밀리그램_(1정)",
+      "definition": "에이티스타정80/5밀리그램_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "ATsta 80/5mg"
+        }
+      ]
+    },
+    {
+      "code": "8800527010801",
+      "display": "알파스타틴정10밀리그램(아토르바스타틴칼슘삼수화물)_(10.85mg/1정)",
+      "definition": "알파스타틴정10밀리그램(아토르바스타틴칼슘삼수화물)_(10.85mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Alphastatin"
+        }
+      ]
+    },
+    {
+      "code": "8800527010900",
+      "display": "알파스타틴정20밀리그램(아토르바스타틴칼슘삼수화물)_(21.7mg/1정)",
+      "definition": "알파스타틴정20밀리그램(아토르바스타틴칼슘삼수화물)_(21.7mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Alphastatin"
+        }
+      ]
+    },
+    {
+      "code": "8800527011006",
+      "display": "부티렌정(애엽95%에탄올연조엑스(20→1))_(60mg/1정)",
+      "definition": "부티렌정(애엽95%에탄올연조엑스(20→1))_(60mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Butillen"
+        }
+      ]
+    },
+    {
+      "code": "8800527011105",
+      "display": "플루스칸캡슐50밀리그램(플루코나졸)_(50mg/1캡슐)",
+      "definition": "플루스칸캡슐50밀리그램(플루코나졸)_(50mg/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Fluscan"
+        }
+      ]
+    },
+    {
+      "code": "8800527011204",
+      "display": "몬테스탈정10밀리그램(몬테루카스트나트륨)_(10.4mg/1정)",
+      "definition": "몬테스탈정10밀리그램(몬테루카스트나트륨)_(10.4mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Montestal"
+        }
+      ]
+    },
+    {
+      "code": "8800527011303",
+      "display": "이메프라정40밀리그램(에스오메프라졸마그네슘이수화물)_(43.38mg/1정)",
+      "definition": "이메프라정40밀리그램(에스오메프라졸마그네슘이수화물)_(43.38mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Emepra"
+        }
+      ]
+    },
+    {
+      "code": "8800527011402",
+      "display": "이메프라정20밀리그램(에스오메프라졸마그네슘이수화물)_(21.69mg/1정)",
+      "definition": "이메프라정20밀리그램(에스오메프라졸마그네슘이수화물)_(21.69mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Emepra"
+        }
+      ]
+    },
+    {
+      "code": "8800527011501",
+      "display": "플리스탑정75밀리그램(나프토피딜)_(75mg/1정)",
+      "definition": "플리스탑정75밀리그램(나프토피딜)_(75mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Flistop"
+        }
+      ]
+    },
+    {
+      "code": "8800527011600",
+      "display": "에이바스타정10/160밀리그램_(1정)",
+      "definition": "에이바스타정10/160밀리그램_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "A-vasta 10/160m"
+        }
+      ]
+    },
+    {
+      "code": "8800527011709",
+      "display": "에이바스타정5/160밀리그램_(1정)",
+      "definition": "에이바스타정5/160밀리그램_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "A-vasta 5/160mg"
+        }
+      ]
+    },
+    {
+      "code": "8800527011808",
+      "display": "에이바스타정5/80밀리그램_(1정)",
+      "definition": "에이바스타정5/80밀리그램_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "A-vasta 5/80mg"
+        }
+      ]
+    },
+    {
+      "code": "8800527011907",
+      "display": "크리스탈로수바스타틴정5밀리그램(로수바스타틴칼슘)_(5.2mg/1정)",
+      "definition": "크리스탈로수바스타틴정5밀리그램(로수바스타틴칼슘)_(5.2mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rosuvastatin"
+        }
+      ]
+    },
+    {
+      "code": "8800527012003",
+      "display": "크리스탈로수바스타틴정10밀리그램(로수바스타틴칼슘)_(10.4mg/1정)",
+      "definition": "크리스탈로수바스타틴정10밀리그램(로수바스타틴칼슘)_(10.4mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rosuvastatin"
+        }
+      ]
+    },
+    {
+      "code": "8800527012102",
+      "display": "크리스탈로수바스타틴정20밀리그램(로수바스타틴칼슘)_(20.8mg/1정)",
+      "definition": "크리스탈로수바스타틴정20밀리그램(로수바스타틴칼슘)_(20.8mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rosuvastatin"
+        }
+      ]
+    },
+    {
+      "code": "8800527012201",
+      "display": "타리스정10밀리그램(베포타스틴베실산염)_(10mg/1정)",
+      "definition": "타리스정10밀리그램(베포타스틴베실산염)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Talis"
+        }
+      ]
+    },
+    {
+      "code": "8800527012607",
+      "display": "플루스칸캡슐150밀리그램(플루코나졸)_(0.15g/1캡슐)",
+      "definition": "플루스칸캡슐150밀리그램(플루코나졸)_(0.15g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Fluscan"
+        }
+      ]
+    },
+    {
+      "code": "8800527013000",
+      "display": "도네린정10밀리그램(도네페질염산염)_(10mg/1정)",
+      "definition": "도네린정10밀리그램(도네페질염산염)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Donerin"
+        }
+      ]
+    },
+    {
+      "code": "8800527013109",
+      "display": "도네린정5밀리그램(도네페질염산염)_(5mg/1정)",
+      "definition": "도네린정5밀리그램(도네페질염산염)_(5mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Donerin"
+        }
+      ]
+    },
+    {
+      "code": "8800527013208",
+      "display": "사프닐SR정300밀리그램(사르포그렐레이트염산염)_(0.3g/1정)",
+      "definition": "사프닐SR정300밀리그램(사르포그렐레이트염산염)_(0.3g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Sapnil SR"
+        }
+      ]
+    },
+    {
+      "code": "8800528000108",
+      "display": "메자반트엑스엘장용정1200밀리그램(메살라진)_(1.2g/1정)",
+      "definition": "메자반트엑스엘장용정1200밀리그램(메살라진)_(1.2g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Mezavant XL"
+        }
+      ]
+    },
+    {
+      "code": "8800528000207",
+      "display": "아그릴린캡슐0.5밀리그램(아나그렐리드염산염)_(0.61mg/1캡슐)",
+      "definition": "아그릴린캡슐0.5밀리그램(아나그렐리드염산염)_(0.61mg/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Agrylin"
+        }
+      ]
+    },
+    {
+      "code": "8800528000306",
+      "display": "비프리브주(베라글루세라제알파)_(400I.U/1병)",
+      "definition": "비프리브주(베라글루세라제알파)_(400I.U/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Vpriv"
+        }
+      ]
+    },
+    {
+      "code": "8800528000405",
+      "display": "레프라갈주(아갈시다제알파)_(3.5mg/3.5mL)",
+      "definition": "레프라갈주(아갈시다제알파)_(3.5mg/3.5mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Replagal"
+        }
+      ]
+    },
+    {
+      "code": "8800528000504",
+      "display": "릭수비스주(혈액응고인자IX, 노나코그감마(유전자재조합))_(3KI.U/1병)",
+      "definition": "릭수비스주(혈액응고인자IX, 노나코그감마(유전자재조합))_(3KI.U/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rixubis"
+        }
+      ]
+    },
+    {
+      "code": "8800528000603",
+      "display": "애드베이트주(혈액응고인자 VIII, 유전자재조합)_(1.5KI.U/1병)",
+      "definition": "애드베이트주(혈액응고인자 VIII, 유전자재조합)_(1.5KI.U/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Advate"
+        }
+      ]
+    },
+    {
+      "code": "8800528000702",
+      "display": "피라지르프리필드시린지(이카티반트아세테이트)_(31.41mg/3mL)",
+      "definition": "피라지르프리필드시린지(이카티반트아세테이트)_(31.41mg/3mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Firazyr"
+        }
+      ]
+    },
+    {
+      "code": "8800528000900",
+      "display": "애디노베이트주[루리옥토코그알파페골(혈액응고인자VIII, 유전자재조합)]_(2KI.U/1병)",
+      "definition": "애디노베이트주[루리옥토코그알파페골(혈액응고인자VIII, 유전자재조합)]_(2KI.U/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Adynovate"
+        }
+      ]
+    },
+    {
+      "code": "8800529000107",
+      "display": "가비르정주500밀리그램(간시클로비르)_(0.5g/1병)",
+      "definition": "가비르정주500밀리그램(간시클로비르)_(0.5g/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Gavir"
+        }
+      ]
+    },
+    {
+      "code": "8800529000503",
+      "display": "비가비르정450밀리그램(발간시클로비르염산염)_(0.4963g/1정)",
+      "definition": "비가비르정450밀리그램(발간시클로비르염산염)_(0.4963g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "V-Gavir"
+        }
+      ]
+    },
+    {
+      "code": "8800529000602",
+      "display": "탈라이드캡슐100mg(탈리도마이드)_(0.1g/1캡슐)",
+      "definition": "탈라이드캡슐100mg(탈리도마이드)_(0.1g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Thalide"
+        }
+      ]
+    },
+    {
+      "code": "8800529000701",
+      "display": "탈라이드캡슐50mg(탈리도마이드)_(50mg/1캡슐)",
+      "definition": "탈라이드캡슐50mg(탈리도마이드)_(50mg/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Thalide"
+        }
+      ]
+    },
+    {
+      "code": "8800529000800",
+      "display": "아시트리주(삼산화비소)_(10mg/10mL)",
+      "definition": "아시트리주(삼산화비소)_(10mg/10mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Arsitri"
+        }
+      ]
+    },
+    {
+      "code": "8800529001005",
+      "display": "로르딘주(오메프라졸나트륨)_(42.6mg/1병)",
+      "definition": "로르딘주(오메프라졸나트륨)_(42.6mg/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rordin"
+        }
+      ]
+    },
+    {
+      "code": "8800532000408",
+      "display": "코리오몬주(태반성성선자극호르몬)_(5KI.U/1병)",
+      "definition": "코리오몬주(태반성성선자극호르몬)_(5KI.U/1병)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Choriomon"
+        }
+      ]
+    },
+    {
+      "code": "8800533000100",
+      "display": "중헌 알마게이트정_(0.5g/1정)",
+      "definition": "중헌 알마게이트정_(0.5g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Almagate"
+        }
+      ]
+    },
+    {
+      "code": "8800533000407",
+      "display": "나메린정(나부메톤)_(0.5g/1정)",
+      "definition": "나메린정(나부메톤)_(0.5g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Namerin"
+        }
+      ]
+    },
+    {
+      "code": "8800533000506",
+      "display": "본플러스디정_(1정)",
+      "definition": "본플러스디정_(1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Boneplus D"
+        }
+      ]
+    },
+    {
+      "code": "8800533000704",
+      "display": "포스닐정150밀리그램(리세드론산나트륨일수화물)_(0.1589g/1정)",
+      "definition": "포스닐정150밀리그램(리세드론산나트륨일수화물)_(0.1589g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Posnil"
+        }
+      ]
+    },
+    {
+      "code": "8800533000902",
+      "display": "락토셀캡슐(바실루스리케니포르미스균)_(0.25g/1캡슐)",
+      "definition": "락토셀캡슐(바실루스리케니포르미스균)_(0.25g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Lactocell"
+        }
+      ]
+    },
+    {
+      "code": "8800533001107",
+      "display": "중헌리바비린캡슐200밀리그램_(0.2g/1캡슐)",
+      "definition": "중헌리바비린캡슐200밀리그램_(0.2g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Ribavirin"
+        }
+      ]
+    },
+    {
+      "code": "8800533001206",
+      "display": "알마천정(알마게이트)_(1g/1정)",
+      "definition": "알마천정(알마게이트)_(1g/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Almachun"
+        }
+      ]
+    },
+    {
+      "code": "8800533001305",
+      "display": "트리알주(프리필드)(히알루론산나트륨)_(20mg/2mL)",
+      "definition": "트리알주(프리필드)(히알루론산나트륨)_(20mg/2mL)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Trial"
+        }
+      ]
+    },
+    {
+      "code": "8800533001503",
+      "display": "콕시원캡슐(세레콕시브)_(0.2g/1캡슐)",
+      "definition": "콕시원캡슐(세레콕시브)_(0.2g/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Coxione"
+        }
+      ]
+    },
+    {
+      "code": "8800533001602",
+      "display": "모라드정(모사프리드시트르산염수화물)_(5.29mg/1정)",
+      "definition": "모라드정(모사프리드시트르산염수화물)_(5.29mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Morad"
+        }
+      ]
+    },
+    {
+      "code": "8800533001701",
+      "display": "록캄캡슐(멜록시캄)_(7.5mg/1캡슐)",
+      "definition": "록캄캡슐(멜록시캄)_(7.5mg/1캡슐)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Locam"
+        }
+      ]
+    },
+    {
+      "code": "8800533001800",
+      "display": "타리안정10밀리그램(베포타스틴베실산염)_(10mg/1정)",
+      "definition": "타리안정10밀리그램(베포타스틴베실산염)_(10mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Talian"
+        }
+      ]
+    },
+    {
+      "code": "8800533001909",
+      "display": "안티플라정(클로피도그렐황산수소염)_(97.875mg/1정)",
+      "definition": "안티플라정(클로피도그렐황산수소염)_(97.875mg/1정)",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Anti-pla"
+        }
+      ]
+    }
+  ],
+  "count": 239
+}

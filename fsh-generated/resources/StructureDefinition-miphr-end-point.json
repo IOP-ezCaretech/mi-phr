@@ -1,0 +1,88 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "miphr-end-point",
+  "url": "http://example.org/StructureDefinition/miphr-end-point",
+  "name": "MIPHREndpoint",
+  "title": "MIPHREndpoint",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Endpoint",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Endpoint",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Endpoint.identifier",
+        "path": "Endpoint.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Endpoint.identifier.system",
+        "path": "Endpoint.identifier.system",
+        "min": 1
+      },
+      {
+        "id": "Endpoint.identifier.value",
+        "path": "Endpoint.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Endpoint.status",
+        "path": "Endpoint.status",
+        "fixedCode": "active"
+      },
+      {
+        "id": "Endpoint.connectionType.system",
+        "path": "Endpoint.connectionType.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+      },
+      {
+        "id": "Endpoint.connectionType.code",
+        "path": "Endpoint.connectionType.code",
+        "min": 1
+      },
+      {
+        "id": "Endpoint.name",
+        "path": "Endpoint.name",
+        "min": 1
+      },
+      {
+        "id": "Endpoint.managingOrganization",
+        "path": "Endpoint.managingOrganization",
+        "min": 1
+      },
+      {
+        "id": "Endpoint.managingOrganization.reference",
+        "path": "Endpoint.managingOrganization.reference",
+        "min": 1
+      },
+      {
+        "id": "Endpoint.payloadType",
+        "path": "Endpoint.payloadType",
+        "max": "1"
+      },
+      {
+        "id": "Endpoint.payloadType.text",
+        "path": "Endpoint.payloadType.text",
+        "min": 1,
+        "fixedString": "urn:khis:myhw:md:2022"
+      }
+    ]
+  }
+}

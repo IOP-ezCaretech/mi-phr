@@ -5,6 +5,6 @@
 
 ### CodeSystems
 
-- [KCD8](Codesystem-miphr-kcd8.html)
-- [KD](Codesystem-miphr-kd.html)
-- [EDI](Codesystem-miphr-edi.html)
+- [KCD8](CodeSystem-miphr-kcd8.html)
+- [KD](CodeSystem-miphr-kd.html)
+- [EDI](CodeSystem-miphr-edi.html)

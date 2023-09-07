@@ -61,6 +61,136 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/krcore-edi-procedure-codes"
+        },
+        "name": "KR Core EDI Procedure Codes",
+        "description": "KR Core EDI 진료행위 코드집합",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/krcore-insuranceTypes"
+        },
+        "name": "KR Core Insurance Types Extension",
+        "description": "환자의 건강보험유형을 표기하기 위한 확장",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/krcore-roadNameAddress"
+        },
+        "name": "KR Core Road Name Address Extension",
+        "description": "한국의 도로명 주소를 표기하기 위한 확장",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/krcore-testRequestDateTime"
+        },
+        "name": "KR Core Test Request DateTime Extension",
+        "description": "검사의뢰일을 표기하기 위한 확장",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-condition"
+        },
+        "name": "MI PHR Condition Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-diagnostic-report-imaging"
+        },
+        "name": "MI PHR DiagnosticReport Imaging Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-diagnostic-report-pathology"
+        },
+        "name": "MI PHR DiagnosticReport Pathology Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-encounter"
+        },
+        "name": "MI PHR Encounter Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-end-point"
+        },
+        "name": "MI PHR Endpoint Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-imaging-study"
+        },
+        "name": "MI PHR ImagingStudy Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-media"
+        },
+        "name": "MI PHR Media Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-medication-request"
+        },
+        "name": "MI PHR MedicationRequest Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-observation-exam"
+        },
+        "name": "MI PHR Observation Exam Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-observation-laboratory"
+        },
+        "name": "MI PHR Observation Laboratory Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-organization"
+        },
+        "name": "MI PHR Organization Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-patient"
+        },
+        "name": "MI PHR Patient Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-practitioner"
+        },
+        "name": "MI PHR Practitioner Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-practitioner-role"
+        },
+        "name": "MI PHR PractitionerRole Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/miphr-allergy-intolerance"
         },
         "name": "MIPHRAllergyIntolerance",
@@ -68,108 +198,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-condition"
-        },
-        "name": "MIPHRCondition",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-diagnostic-report-imaging"
-        },
-        "name": "MIPHRDiagnosticReportImaging",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-diagnostic-report-pathology"
-        },
-        "name": "MIPHRDiagnosticReportPathology",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/miphr-document-reference"
         },
         "name": "MIPHRDocumentReference",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-encounter"
-        },
-        "name": "MIPHREncounter",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-end-point"
-        },
-        "name": "MIPHREndpoint",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-imaging-study"
-        },
-        "name": "MIPHRImagingStudy",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-media"
-        },
-        "name": "MIPHRMedia",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-medication-request"
-        },
-        "name": "MIPHRMedicationRequest",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-observation-exam"
-        },
-        "name": "MIPHRObservationExam",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-observation-laboratory"
-        },
-        "name": "MIPHRObservationLaboratory",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-organization"
-        },
-        "name": "MIPHRPatient",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-patient"
-        },
-        "name": "MIPHRPatient",
-        "description": "MI PHR Patient Profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-practitioner"
-        },
-        "name": "MIPHRPractitioner",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-practitioner-role"
-        },
-        "name": "MIPHRPractitionerRole",
         "exampleBoolean": false
       },
       {
@@ -191,13 +222,6 @@
           "reference": "ValueSet/myhealthway-medication-request"
         },
         "name": "MyHealthway MedicationRequest",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/krcore-roadNameAddress"
-        },
-        "name": "RoadNameAddress",
         "exampleBoolean": false
       }
     ],

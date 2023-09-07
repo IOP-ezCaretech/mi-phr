@@ -3,7 +3,7 @@
   "id": "miphr-medication-request",
   "url": "http://example.org/StructureDefinition/miphr-medication-request",
   "name": "MIPHRMedicationRequest",
-  "title": "MIPHRMedicationRequest",
+  "title": "MI PHR MedicationRequest Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -43,147 +43,188 @@
       {
         "id": "MedicationRequest.identifier",
         "path": "MedicationRequest.identifier",
+        "short": "약물 처방 정보 식별자",
         "min": 1,
         "max": "1"
       },
       {
         "id": "MedicationRequest.identifier.system",
         "path": "MedicationRequest.identifier.system",
+        "short": "식별체계",
         "min": 1
       },
       {
         "id": "MedicationRequest.identifier.value",
         "path": "MedicationRequest.identifier.value",
+        "short": "식별자",
         "min": 1
       },
       {
         "id": "MedicationRequest.status",
         "path": "MedicationRequest.status",
-        "fixedCode": "completed"
+        "short": "처방 상태: active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown",
+        "patternCode": "completed",
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.intent",
         "path": "MedicationRequest.intent",
-        "fixedCode": "order"
+        "short": "처방 의도: order | proposal | plan +",
+        "patternCode": "order",
+        "mustSupport": true
       },
       {
-        "id": "MedicationRequest.reported[x]",
-        "path": "MedicationRequest.reported[x]",
+        "id": "MedicationRequest.subject",
+        "path": "MedicationRequest.subject",
+        "short": "처방 대상",
         "type": [
           {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "id": "MedicationRequest.medication[x]",
-        "path": "MedicationRequest.medication[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-patient"
+            ]
           }
         ],
-        "binding": {
-          "strength": "example",
-          "valueSet": "http://example.org/ValueSet/myhealthway-medication-request"
-        }
-      },
-      {
-        "id": "MedicationRequest.medication[x].coding.system",
-        "path": "MedicationRequest.medication[x].coding.system",
-        "min": 1
-      },
-      {
-        "id": "MedicationRequest.medication[x].coding.code",
-        "path": "MedicationRequest.medication[x].coding.code",
-        "min": 1
-      },
-      {
-        "id": "MedicationRequest.subject.reference",
-        "path": "MedicationRequest.subject.reference",
-        "min": 1
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.encounter",
         "path": "MedicationRequest.encounter",
-        "min": 1
-      },
-      {
-        "id": "MedicationRequest.encounter.reference",
-        "path": "MedicationRequest.encounter.reference",
-        "min": 1
+        "short": "내원정보 식별자",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.authoredOn",
         "path": "MedicationRequest.authoredOn",
-        "min": 1
-      },
-      {
-        "id": "MedicationRequest.requester.reference",
-        "path": "MedicationRequest.requester.reference",
-        "min": 1
+        "short": "처방 일시",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction",
         "path": "MedicationRequest.dosageInstruction",
-        "min": 1
+        "short": "약물 투여 및 복용 지침",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.text",
         "path": "MedicationRequest.dosageInstruction.text",
-        "min": 1
+        "short": "용법",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing",
         "path": "MedicationRequest.dosageInstruction.timing",
-        "min": 1
+        "short": "약품 투여 및 복용 시기",
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat",
         "path": "MedicationRequest.dosageInstruction.timing.repeat",
-        "min": 1
+        "short": "약품 투여 및 복용 반복 정보",
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.frequency",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.frequency",
-        "min": 1
+        "short": "주기 당 약품 투여 및 복용 횟수",
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.period",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.period",
-        "min": 1
+        "short": "약품 투여 및 복용 주기 수치",
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
-        "min": 1
+        "short": "약품 투여 및 복용 주기 단위: s | min | h | d | wk | mo | a",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/units-of-time|4.0.1"
+        }
       },
       {
         "id": "MedicationRequest.dosageInstruction.route",
         "path": "MedicationRequest.dosageInstruction.route",
-        "min": 1
+        "short": "약물 투여 경로",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding",
+        "path": "MedicationRequest.dosageInstruction.route.coding",
+        "short": "정의된 코드"
       },
       {
         "id": "MedicationRequest.dosageInstruction.route.coding.system",
         "path": "MedicationRequest.dosageInstruction.route.coding.system",
+        "short": "투여 경로 코드체계",
         "min": 1,
-        "fixedUri": "http://snomed.info/sct"
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.route.coding.code",
         "path": "MedicationRequest.dosageInstruction.route.coding.code",
-        "min": 1
+        "short": "투여 경로 코드",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding.display",
+        "path": "MedicationRequest.dosageInstruction.route.coding.display",
+        "short": "투여 경로 코드명"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.text",
+        "path": "MedicationRequest.dosageInstruction.route.text",
+        "short": "투여 경로 텍스트"
       },
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate",
         "path": "MedicationRequest.dosageInstruction.doseAndRate",
+        "short": "투여 및 복용량",
         "min": 1,
-        "max": "1"
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "1회량",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
+        "sliceName": "doseQuantity",
+        "short": "1회량 수치 정보",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "Quantity",
@@ -191,17 +232,84 @@
               "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
           }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/ucum-units"
+        }
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
+        "sliceName": "doseRange",
+        "short": "1회량 범위 정보",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].low",
+        "short": "최소",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/ucum-units"
+        }
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].high",
+        "short": "최대",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/ucum-units"
+        }
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest",
+        "path": "MedicationRequest.dispenseRequest",
+        "short": "처방 요청",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.quantity",
+        "path": "MedicationRequest.dispenseRequest.quantity",
+        "short": "총량",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/ucum-units"
+        }
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.expectedSupplyDuration",
+        "path": "MedicationRequest.dispenseRequest.expectedSupplyDuration",
+        "short": "처방 기간: s | min | h | d | wk | mo | a",
+        "mustSupport": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "UnitsOfTime"
+            }
+          ]
+        }
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.expectedSupplyDuration.code",
+        "path": "MedicationRequest.dispenseRequest.expectedSupplyDuration.code",
+        "short": "처방 기간 단위 코드",
+        "example": [
+          {
+            "label": "Value (Preferred)",
+            "valueCode": "d"
+          }
         ]
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].value",
-        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].value",
-        "min": 1
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].unit",
-        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].unit",
-        "min": 1
       }
     ]
   }

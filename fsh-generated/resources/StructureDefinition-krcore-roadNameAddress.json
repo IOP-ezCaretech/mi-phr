@@ -1,9 +1,52 @@
 {
   "resourceType": "StructureDefinition",
   "id": "krcore-roadNameAddress",
+  "meta": {
+    "lastUpdated": "2021-11-09T16:06:30.695+09:00"
+  },
   "url": "http://example.org/StructureDefinition/krcore-roadNameAddress",
-  "name": "RoadNameAddress",
+  "version": "1.0.0",
+  "name": "KRCore_RoadNameAddress_Extension",
+  "title": "KR Core Road Name Address Extension",
   "status": "draft",
+  "publisher": "HL7 Korea",
+  "contact": [
+    {
+      "name": "HL7 Korea",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7korea.or.kr/"
+        },
+        {
+          "system": "email",
+          "value": "contact@healthall.co.kr"
+        }
+      ]
+    },
+    {
+      "name": "HealthAll Inc.",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "contact@healthall.co.kr",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "한국의 도로명 주소를 표기하기 위한 확장",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "KR",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Korea, Republic of"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -26,6 +69,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "한국 도로명 주소 체계",
+        "definition": "한국의 도로명 주소를 표기하기 위한 확장"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "min": 3
@@ -34,6 +83,7 @@
         "id": "Extension.extension:district",
         "path": "Extension.extension",
         "sliceName": "district",
+        "short": "행정구역",
         "min": 1,
         "max": "1"
       },
@@ -61,6 +111,7 @@
         "id": "Extension.extension:roadName",
         "path": "Extension.extension",
         "sliceName": "roadName",
+        "short": "도로명",
         "min": 1,
         "max": "1"
       },
@@ -88,6 +139,7 @@
         "id": "Extension.extension:detailedAddress",
         "path": "Extension.extension",
         "sliceName": "detailedAddress",
+        "short": "상세주소",
         "min": 1,
         "max": "1"
       },
@@ -115,8 +167,9 @@
         "id": "Extension.extension:complements",
         "path": "Extension.extension",
         "sliceName": "complements",
+        "short": "참고항목",
         "min": 0,
-        "max": "*"
+        "max": "1"
       },
       {
         "id": "Extension.extension:complements.extension",
@@ -131,6 +184,7 @@
       {
         "id": "Extension.extension:complements.value[x]",
         "path": "Extension.extension.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "string"

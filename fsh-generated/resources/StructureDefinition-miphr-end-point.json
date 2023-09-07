@@ -3,7 +3,7 @@
   "id": "miphr-end-point",
   "url": "http://example.org/StructureDefinition/miphr-end-point",
   "name": "MIPHREndpoint",
-  "title": "MIPHREndpoint",
+  "title": "MI PHR Endpoint Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -47,30 +47,39 @@
         "fixedCode": "active"
       },
       {
+        "id": "Endpoint.connectionType",
+        "path": "Endpoint.connectionType",
+        "mustSupport": true
+      },
+      {
         "id": "Endpoint.connectionType.system",
         "path": "Endpoint.connectionType.system",
         "min": 1,
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+        "mustSupport": true
       },
       {
         "id": "Endpoint.connectionType.code",
         "path": "Endpoint.connectionType.code",
-        "min": 1
+        "short": "query: dicom-qido-rs | retrive: dicom-wado-rs",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.connectionType.display",
+        "path": "Endpoint.connectionType.display",
+        "short": "query : DICOM-QIDO-RS | retrive : DICOM-WADO-RS"
       },
       {
         "id": "Endpoint.name",
         "path": "Endpoint.name",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Endpoint.managingOrganization",
         "path": "Endpoint.managingOrganization",
-        "min": 1
-      },
-      {
-        "id": "Endpoint.managingOrganization.reference",
-        "path": "Endpoint.managingOrganization.reference",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Endpoint.payloadType",
@@ -81,7 +90,12 @@
         "id": "Endpoint.payloadType.text",
         "path": "Endpoint.payloadType.text",
         "min": 1,
-        "fixedString": "urn:khis:myhw:md:2022"
+        "fixedString": "My Healthway"
+      },
+      {
+        "id": "Endpoint.address",
+        "path": "Endpoint.address",
+        "mustSupport": true
       }
     ]
   }

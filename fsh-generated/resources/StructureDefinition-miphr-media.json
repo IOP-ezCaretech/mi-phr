@@ -3,7 +3,7 @@
   "id": "miphr-media",
   "url": "http://example.org/StructureDefinition/miphr-media",
   "name": "MIPHRMedia",
-  "title": "MIPHRMedia",
+  "title": "MI PHR Media Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -67,44 +67,56 @@
         "min": 1
       },
       {
+        "id": "Media.type",
+        "path": "Media.type",
+        "mustSupport": true
+      },
+      {
         "id": "Media.type.coding.system",
         "path": "Media.type.coding.system",
         "min": 1,
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/media-type"
+        "mustSupport": true
       },
       {
         "id": "Media.type.coding.code",
         "path": "Media.type.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Media.modality",
+        "path": "Media.modality",
+        "mustSupport": true
       },
       {
         "id": "Media.modality.coding.system",
         "path": "Media.modality.coding.system",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Media.modality.coding.code",
         "path": "Media.modality.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Media.subject",
         "path": "Media.subject",
-        "min": 1
-      },
-      {
-        "id": "Media.subject.reference",
-        "path": "Media.subject.reference",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Media.encounter",
         "path": "Media.encounter",
-        "min": 1
-      },
-      {
-        "id": "Media.encounter.reference",
-        "path": "Media.encounter.reference",
         "min": 1
       },
       {
@@ -113,35 +125,51 @@
         "min": 1,
         "type": [
           {
-            "code": "dateTime"
+            "code": "dateTime",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Media.bodySite",
         "path": "Media.bodySite",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Media.bodySite.coding.system",
         "path": "Media.bodySite.coding.system",
         "min": 1,
-        "fixedUri": "http://snomed.info/sct"
+        "mustSupport": true
       },
       {
         "id": "Media.bodySite.coding.code",
         "path": "Media.bodySite.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Media.deviceName",
         "path": "Media.deviceName",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Media.content",
+        "path": "Media.content",
+        "mustSupport": true
       },
       {
         "id": "Media.content.data",
         "path": "Media.content.data",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }

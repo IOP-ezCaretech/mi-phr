@@ -1,11 +1,13 @@
 [EDI]: CodeSystem-miphr-edi.html
 [KCD8]: CodeSystem-miphr-kcd8.html
 [KD]: CodeSystem-miphr-kd.html
-[MIPHRAllergyIntolerance]: StructureDefinition-miphr-allergy-intolerance.html
+[KR_CORE_EDI_Procedure_Codes]: ValueSet-krcore-edi-procedure-codes.html
+[KRCore_InsuranceTypes_Extension]: StructureDefinition-krcore-insuranceTypes.html
+[KRCore_RoadNameAddress_Extension]: StructureDefinition-krcore-roadNameAddress.html
+[KRCore_TestRequestDateTime_Extension]: StructureDefinition-krcore-testRequestDateTime.html
 [MIPHRCondition]: StructureDefinition-miphr-condition.html
 [MIPHRDiagnosticReportImaging]: StructureDefinition-miphr-diagnostic-report-imaging.html
 [MIPHRDiagnosticReportPathology]: StructureDefinition-miphr-diagnostic-report-pathology.html
-[MIPHRDocumentReference]: StructureDefinition-miphr-document-reference.html
 [MIPHREncounter]: StructureDefinition-miphr-encounter.html
 [MIPHREndpoint]: StructureDefinition-miphr-end-point.html
 [MIPHRImagingStudy]: StructureDefinition-miphr-imaging-study.html
@@ -17,7 +19,8 @@
 [MIPHRPatient]: StructureDefinition-miphr-patient.html
 [MIPHRPractitioner]: StructureDefinition-miphr-practitioner.html
 [MIPHRPractitionerRole]: StructureDefinition-miphr-practitioner-role.html
+[MIPHRAllergyIntolerance]: StructureDefinition-miphr-allergy-intolerance.html
+[MIPHRDocumentReference]: StructureDefinition-miphr-document-reference.html
 [MIPHRProcedure]: StructureDefinition-miphr-procedure.html
 [MyHealthwayCondition]: ValueSet-myhealthway-condition.html
 [MyHealthwayMedicationRequest]: ValueSet-myhealthway-medication-request.html
-[RoadNameAddress]: StructureDefinition-krcore-roadNameAddress.html

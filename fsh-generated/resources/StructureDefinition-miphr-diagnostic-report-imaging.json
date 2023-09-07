@@ -3,7 +3,7 @@
   "id": "miphr-diagnostic-report-imaging",
   "url": "http://example.org/StructureDefinition/miphr-diagnostic-report-imaging",
   "name": "MIPHRDiagnosticReportImaging",
-  "title": "MIPHRDiagnosticReportImaging",
+  "title": "MI PHR DiagnosticReport Imaging Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -54,104 +54,170 @@
       {
         "id": "DiagnosticReport.status",
         "path": "DiagnosticReport.status",
-        "fixedCode": "final"
+        "short": "진단보고(진단영상검사) 상태: registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown",
+        "fixedCode": "final",
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
+        "short": "검사 구분(영상, 병리)",
         "min": 1,
         "max": "1",
-        "binding": {
-          "strength": "example",
-          "valueSet": "https://nrces.in/ndhm/fhir/r4/ValueSet/ndhm-diagnostic-report-type"
-        }
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.category.coding",
         "path": "DiagnosticReport.category.coding",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.category.coding.system",
         "path": "DiagnosticReport.category.coding.system",
         "min": 1,
-        "fixedUri": "http://snomed.info/sct"
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.category.coding.code",
         "path": "DiagnosticReport.category.coding.code",
-        "min": 1
-      },
-      {
-        "id": "DiagnosticReport.code.coding.system",
-        "path": "DiagnosticReport.code.coding.system",
         "min": 1,
-        "fixedUri": "https://hira.or.kr/CodeSystem/result-code"
+        "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.code.coding.code",
+        "id": "DiagnosticReport.code",
+        "path": "DiagnosticReport.code",
+        "short": "검사 코드",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding",
+        "path": "DiagnosticReport.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding:EDI",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "EDI",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드 정보",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/ValueSet/krcore-edi-procedure-codes"
+        }
+      },
+      {
+        "id": "DiagnosticReport.code.coding:EDI.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드체계",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding:EDI.code",
         "path": "DiagnosticReport.code.coding.code",
-        "min": 1
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.text",
+        "path": "DiagnosticReport.code.text",
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
-        "min": 1
-      },
-      {
-        "id": "DiagnosticReport.subject.reference",
-        "path": "DiagnosticReport.subject.reference",
-        "min": 1
+        "short": "진단영상검사 대상",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.encounter",
         "path": "DiagnosticReport.encounter",
-        "min": 1
-      },
-      {
-        "id": "DiagnosticReport.encounter.reference",
-        "path": "DiagnosticReport.encounter.reference",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.effective[x]",
         "path": "DiagnosticReport.effective[x]",
+        "short": "검사 일자",
         "min": 1,
         "type": [
           {
-            "code": "dateTime"
+            "code": "dateTime",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ]
           }
-        ]
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.issued",
+        "path": "DiagnosticReport.issued",
+        "short": "진단 보고 일시",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.performer",
+        "path": "DiagnosticReport.performer",
+        "short": "진단 책임자",
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.resultsInterpreter",
         "path": "DiagnosticReport.resultsInterpreter",
-        "max": "1"
-      },
-      {
-        "id": "DiagnosticReport.resultsInterpreter.reference",
-        "path": "DiagnosticReport.resultsInterpreter.reference",
-        "min": 1
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
       },
       {
         "id": "DiagnosticReport.imagingStudy",
         "path": "DiagnosticReport.imagingStudy",
+        "short": "DICOM 이미지",
         "max": "1"
       },
       {
-        "id": "DiagnosticReport.imagingStudy.reference",
-        "path": "DiagnosticReport.imagingStudy.reference",
-        "min": 1
-      },
-      {
-        "id": "DiagnosticReport.media.link.reference",
-        "path": "DiagnosticReport.media.link.reference",
-        "min": 1
+        "id": "DiagnosticReport.media",
+        "path": "DiagnosticReport.media",
+        "short": "참고자료"
       },
       {
         "id": "DiagnosticReport.conclusion",
         "path": "DiagnosticReport.conclusion",
-        "min": 1
+        "short": "검사소견",
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }

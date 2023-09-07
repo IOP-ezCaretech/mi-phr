@@ -1,0 +1,100 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "krcore-testRequestDateTime",
+  "meta": {
+    "lastUpdated": "2021-11-09T16:06:30.695+09:00"
+  },
+  "url": "http://example.org/StructureDefinition/krcore-testRequestDateTime",
+  "version": "1.0.0",
+  "name": "KRCore_TestRequestDateTime_Extension",
+  "title": "KR Core Test Request DateTime Extension",
+  "status": "draft",
+  "publisher": "HL7 Korea",
+  "contact": [
+    {
+      "name": "HL7 Korea",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7korea.or.kr/"
+        },
+        {
+          "system": "email",
+          "value": "contact@healthall.co.kr"
+        }
+      ]
+    },
+    {
+      "name": "HealthAll Inc.",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "contact@healthall.co.kr",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "검사의뢰일을 표기하기 위한 확장",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "KR",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Korea, Republic of"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DiagnosticReport"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "검사의뢰일",
+        "definition": "검사의뢰일을 표기하기 위한 확장"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/StructureDefinition/krcore-testRequestDateTime"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

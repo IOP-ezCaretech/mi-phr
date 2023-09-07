@@ -3,7 +3,7 @@
   "id": "miphr-imaging-study",
   "url": "http://example.org/StructureDefinition/miphr-imaging-study",
   "name": "MIPHRImagingStudy",
-  "title": "MIPHRImagingStudy",
+  "title": "MI PHR ImagingStudy Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -57,56 +57,74 @@
         "min": 1
       },
       {
-        "id": "ImagingStudy.subject.reference",
-        "path": "ImagingStudy.subject.reference",
-        "min": 1
+        "id": "ImagingStudy.status",
+        "path": "ImagingStudy.status",
+        "short": "진단영상 상태: registered | available | cancelled | entered-in-error | unknown"
       },
       {
-        "id": "ImagingStudy.encounter",
-        "path": "ImagingStudy.encounter",
-        "min": 1
-      },
-      {
-        "id": "ImagingStudy.encounter.reference",
-        "path": "ImagingStudy.encounter.reference",
-        "min": 1
+        "id": "ImagingStudy.subject",
+        "path": "ImagingStudy.subject",
+        "short": "진단영상 대상",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.started",
         "path": "ImagingStudy.started",
-        "min": 1
+        "short": "진단영상 촬영 시작 날짜",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.endpoint",
         "path": "ImagingStudy.endpoint",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "ImagingStudy.endpoint.reference",
-        "path": "ImagingStudy.endpoint.reference",
-        "min": 1
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series",
         "path": "ImagingStudy.series",
-        "min": 1
+        "short": "DICOM Series 정보",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.series.uid",
+        "path": "ImagingStudy.series.uid",
+        "short": "DICOM Series UID",
+        "mustSupport": true
+      },
+      {
+        "id": "ImagingStudy.series.modality",
+        "path": "ImagingStudy.series.modality",
+        "short": "DICOM 촬영 장비",
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.modality.system",
         "path": "ImagingStudy.series.modality.system",
         "min": 1,
-        "fixedUri": "http://dicom.nema.org/resources/ontology/DCM"
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.modality.code",
         "path": "ImagingStudy.series.modality.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.description",
         "path": "ImagingStudy.series.description",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.endpoint",
@@ -114,20 +132,21 @@
         "max": "1"
       },
       {
-        "id": "ImagingStudy.series.endpoint.reference",
-        "path": "ImagingStudy.series.endpoint.reference",
-        "min": 1
+        "id": "ImagingStudy.series.bodySite",
+        "path": "ImagingStudy.series.bodySite",
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.bodySite.system",
         "path": "ImagingStudy.series.bodySite.system",
         "min": 1,
-        "fixedUri": "http://snomed.info/sct"
+        "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.bodySite.code",
         "path": "ImagingStudy.series.bodySite.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }

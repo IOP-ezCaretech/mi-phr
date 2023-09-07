@@ -3,7 +3,7 @@
   "id": "miphr-practitioner-role",
   "url": "http://example.org/StructureDefinition/miphr-practitioner-role",
   "name": "MIPHRPractitionerRole",
-  "title": "MIPHRPractitionerRole",
+  "title": "MI PHR PractitionerRole Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -38,43 +38,125 @@
       {
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
-        "min": 1
-      },
-      {
-        "id": "PractitionerRole.practitioner.reference",
-        "path": "PractitionerRole.practitioner.reference",
-        "min": 1
+        "short": "진료의 인적사항",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-practitioner"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.organization",
         "path": "PractitionerRole.organization",
-        "min": 1
+        "short": "의료기관 정보",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-organization"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
-        "id": "PractitionerRole.organization.reference",
-        "path": "PractitionerRole.organization.reference",
-        "min": 1
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "진료의 역할",
+        "min": 1,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/practitioner-role",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PractitionerRole"
+            }
+          ],
+          "description": "The role a person plays representing an organization."
+        }
+      },
+      {
+        "id": "PractitionerRole.code:MDRole",
+        "path": "PractitionerRole.code",
+        "sliceName": "MDRole",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "doctor",
+              "system": "http://terminology.hl7.org/CodeSystem/practitioner-role"
+            }
+          ]
+        },
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.specialty",
         "path": "PractitionerRole.specialty",
-        "min": 1
+        "short": "진료의 진료과목",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.specialty.coding",
         "path": "PractitionerRole.specialty.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 1
       },
       {
-        "id": "PractitionerRole.specialty.coding.system",
-        "path": "PractitionerRole.specialty.coding.system",
+        "id": "PractitionerRole.specialty.coding:HIRA",
+        "path": "PractitionerRole.specialty.coding",
+        "sliceName": "HIRA",
+        "short": "건강보험심사평가원 진료과목 코드 정보",
         "min": 1,
-        "fixedUri": "https://hira.or.kr/CodeSystem/medical-subject"
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-medicaldepartment-codes"
+        }
       },
       {
-        "id": "PractitionerRole.specialty.coding.code",
+        "id": "PractitionerRole.specialty.coding:HIRA.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "건강보험심사평가원 진료과목 코드체계",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty.coding:HIRA.code",
         "path": "PractitionerRole.specialty.coding.code",
-        "min": 1
+        "short": "건강보험심사평가원 진료과목 코드",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty.text",
+        "path": "PractitionerRole.specialty.text",
+        "short": "상세 진료과"
       }
     ]
   }

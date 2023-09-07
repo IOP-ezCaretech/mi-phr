@@ -3,7 +3,7 @@
   "id": "miphr-condition",
   "url": "http://example.org/StructureDefinition/miphr-condition",
   "name": "MIPHRCondition",
-  "title": "MIPHRCondition",
+  "title": "MI PHR Condition Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -48,102 +48,181 @@
       {
         "id": "Condition.identifier",
         "path": "Condition.identifier",
+        "short": "진단정보 식별자",
         "min": 1,
         "max": "1"
       },
       {
         "id": "Condition.identifier.system",
         "path": "Condition.identifier.system",
+        "short": "식별체계",
         "min": 1
       },
       {
         "id": "Condition.identifier.value",
         "path": "Condition.identifier.value",
+        "short": "식별자",
+        "min": 1
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "short": "진단 임상적 상태: active | recurrence | relapse | inactive | remission | resolved",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.clinicalStatus.coding",
+        "path": "Condition.clinicalStatus.coding",
+        "short": "정의된 코드",
         "min": 1
       },
       {
         "id": "Condition.clinicalStatus.coding.system",
         "path": "Condition.clinicalStatus.coding.system",
-        "min": 1
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "mustSupport": true
       },
       {
         "id": "Condition.clinicalStatus.coding.code",
         "path": "Condition.clinicalStatus.coding.code",
-        "min": 1
+        "short": "active | inactive | resolved",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Condition.category",
         "path": "Condition.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "진단 및 주호소 범주",
         "min": 1
       },
       {
-        "id": "Condition.category.coding",
-        "path": "Condition.category.coding",
-        "min": 1
-      },
-      {
-        "id": "Condition.category.coding.system",
-        "path": "Condition.category.coding.system",
-        "min": 1
-      },
-      {
-        "id": "Condition.category.coding.code",
-        "path": "Condition.category.coding.code",
-        "min": 1
+        "id": "Condition.category:EnctrDiag",
+        "path": "Condition.category",
+        "sliceName": "EnctrDiag",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "진단",
+              "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-condition-category-types"
+            }
+          ]
+        },
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-condition-category-codes"
+        }
       },
       {
         "id": "Condition.code",
         "path": "Condition.code",
+        "short": "진단 코드",
         "min": 1,
-        "binding": {
-          "strength": "example",
-          "valueSet": "http://example.org/ValueSet/myhealthway-condition"
-        }
+        "mustSupport": true
       },
       {
         "id": "Condition.code.coding",
         "path": "Condition.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 1
       },
       {
-        "id": "Condition.code.coding.system",
+        "id": "Condition.code.coding:KCD-8",
+        "path": "Condition.code.coding",
+        "sliceName": "KCD-8",
+        "short": "한국표준질병사인분류 8차 코드 정보",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-kcd8-codes"
+        }
+      },
+      {
+        "id": "Condition.code.coding:KCD-8.system",
         "path": "Condition.code.coding.system",
-        "min": 1
+        "short": "한국표준질병사인분류 8차 코드체계",
+        "min": 1,
+        "mustSupport": true
       },
       {
-        "id": "Condition.code.coding.code",
+        "id": "Condition.code.coding:KCD-8.code",
         "path": "Condition.code.coding.code",
-        "min": 1
+        "short": "한국표준질병사인분류 8차 코드",
+        "min": 1,
+        "mustSupport": true
       },
       {
-        "id": "Condition.subject.reference",
-        "path": "Condition.subject.reference",
-        "min": 1
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "short": "진단 대상",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Condition.encounter",
         "path": "Condition.encounter",
-        "min": 1
-      },
-      {
-        "id": "Condition.encounter.reference",
-        "path": "Condition.encounter.reference",
-        "min": 1
+        "short": "진단 관련 내원 정보",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Condition.recordedDate",
         "path": "Condition.recordedDate",
-        "min": 1
+        "short": "진단 일시",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Condition.recorder",
         "path": "Condition.recorder",
-        "min": 1
-      },
-      {
-        "id": "Condition.recorder.reference",
-        "path": "Condition.recorder.reference",
-        "min": 1
+        "short": "진료의 정보",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-practitioner-role"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }

@@ -3,7 +3,7 @@
   "id": "miphr-observation-exam",
   "url": "http://example.org/StructureDefinition/miphr-observation-exam",
   "name": "MIPHRObservationExam",
-  "title": "MIPHRObservationExam",
+  "title": "MI PHR Observation Exam Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -64,76 +64,166 @@
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "fixedCode": "final"
+        "short": "기능검사 상태: registered | preliminary | final | amended +",
+        "fixedCode": "final",
+        "mustSupport": true
       },
       {
         "id": "Observation.category",
         "path": "Observation.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "관찰 및 측정 범주",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-category",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationCategory"
+            }
+          ],
+          "description": "Codes for high level observation categories."
+        }
       },
       {
-        "id": "Observation.category.coding",
-        "path": "Observation.category.coding",
+        "id": "Observation.category:Exam",
+        "path": "Observation.category",
+        "sliceName": "Exam",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "exam",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "검사 코드",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 1
-      },
-      {
-        "id": "Observation.category.coding.system",
-        "path": "Observation.category.coding.system",
-        "min": 1,
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/observation-category"
-      },
-      {
-        "id": "Observation.category.coding.code",
-        "path": "Observation.category.coding.code",
-        "min": 1,
-        "fixedCode": "exam"
       },
       {
         "id": "Observation.code.coding.system",
         "path": "Observation.code.coding.system",
         "min": 1,
-        "fixedUri": "https://hira.or.kr/CodeSystem/result-code"
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding.code",
         "path": "Observation.code.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:EDI",
+        "path": "Observation.code.coding",
+        "sliceName": "EDI",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드 정보",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/ValueSet/krcore-edi-procedure-codes"
+        }
+      },
+      {
+        "id": "Observation.code.coding:EDI.system",
+        "path": "Observation.code.coding.system",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드체계"
+      },
+      {
+        "id": "Observation.code.coding:EDI.code",
+        "path": "Observation.code.coding.code",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드"
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "mustSupport": true
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "min": 1
-      },
-      {
-        "id": "Observation.subject.reference",
-        "path": "Observation.subject.reference",
-        "min": 1
+        "short": "기능검사 대상",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.encounter",
         "path": "Observation.encounter",
-        "min": 1
-      },
-      {
-        "id": "Observation.encounter.reference",
-        "path": "Observation.encounter.reference",
-        "min": 1
+        "short": "내원정보",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "short": "검사 일자",
         "min": 1,
         "type": [
           {
-            "code": "dateTime"
+            "code": "dateTime",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
-        "id": "Observation.performer.reference",
-        "path": "Observation.performer.reference",
-        "min": 1
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "검사 책임자",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
@@ -146,7 +236,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "short": "검사 결과"
       },
       {
         "id": "Observation.value[x]:valueQuantity",
@@ -163,17 +254,25 @@
       {
         "id": "Observation.value[x]:valueQuantity.value",
         "path": "Observation.value[x].value",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]:valueQuantity.unit",
         "path": "Observation.value[x].unit",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]:valueQuantity.system",
         "path": "Observation.value[x].system",
-        "fixedUri": "http://unitsofmeasure.org"
+        "fixedUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]:valueString",
@@ -185,7 +284,14 @@
           {
             "code": "string"
           }
-        ]
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "short": "데이터 부재사유",
+        "mustSupport": true
       },
       {
         "id": "Observation.dataAbsentReason.coding.system",
@@ -199,9 +305,53 @@
         "min": 1
       },
       {
-        "id": "Observation.derivedFrom.reference",
-        "path": "Observation.derivedFrom.reference",
-        "min": 1
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "short": "참고치",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low",
+        "path": "Observation.referenceRange.low",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.value",
+        "path": "Observation.referenceRange.low.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.unit",
+        "path": "Observation.referenceRange.low.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high",
+        "path": "Observation.referenceRange.high",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.value",
+        "path": "Observation.referenceRange.high.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.unit",
+        "path": "Observation.referenceRange.high.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Media"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }

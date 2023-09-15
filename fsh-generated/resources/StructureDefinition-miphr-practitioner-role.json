@@ -102,8 +102,7 @@
               "system": "http://terminology.hl7.org/CodeSystem/practitioner-role"
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "PractitionerRole.specialty",
@@ -144,6 +143,7 @@
         "path": "PractitionerRole.specialty.coding.system",
         "short": "건강보험심사평가원 진료과목 코드체계",
         "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-medical-department",
         "mustSupport": true
       },
       {

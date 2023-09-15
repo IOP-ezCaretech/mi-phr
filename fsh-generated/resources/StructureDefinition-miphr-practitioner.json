@@ -80,6 +80,36 @@
         "mustSupport": true
       },
       {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "short": "진료의 개인 주소"
+      },
+      {
+        "id": "Practitioner.address.extension:krcore-roadNameAddress",
+        "path": "Practitioner.address.extension",
+        "sliceName": "krcore-roadNameAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/krcore-roadNameAddress"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.address.text",
+        "path": "Practitioner.address.text",
+        "short": "주소 텍스트"
+      },
+      {
+        "id": "Practitioner.address.postalCode",
+        "path": "Practitioner.address.postalCode",
+        "short": "우편번호"
+      },
+      {
         "id": "Practitioner.qualification",
         "path": "Practitioner.qualification",
         "short": "진료의 면허 정보",
@@ -129,44 +159,11 @@
       {
         "id": "Practitioner.qualification.code",
         "path": "Practitioner.qualification.code",
-        "short": "면허 및 자격증 정보"
-      },
-      {
-        "id": "Practitioner.qualification.code.coding",
-        "path": "Practitioner.qualification.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Practitioner.qualification.code.coding:MOHW",
-        "path": "Practitioner.qualification.code.coding",
-        "sliceName": "MOHW",
-        "short": "보건복지부 진료의 면허(자격) 종별 정보",
-        "min": 0,
-        "max": "*",
+        "short": "면허 및 자격증 정보",
         "binding": {
           "strength": "required",
           "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-doctor-qualification-codes"
         }
-      },
-      {
-        "id": "Practitioner.qualification.code.coding:MOHW.system",
-        "path": "Practitioner.qualification.code.coding.system",
-        "short": "보건복지부 진료의 면허(자격) 종별 코드체계",
-        "min": 1
-      },
-      {
-        "id": "Practitioner.qualification.code.coding:MOHW.code",
-        "path": "Practitioner.qualification.code.coding.code",
-        "short": "보건복지부 진료의 면허(자격) 종별 코드",
-        "min": 1
       }
     ]
   }

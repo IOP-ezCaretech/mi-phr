@@ -118,8 +118,7 @@
         "sliceName": "Phone",
         "short": "전화번호",
         "min": 0,
-        "max": "*",
-        "mustSupport": true
+        "max": "*"
       },
       {
         "id": "Patient.telecom:Phone.system",
@@ -142,8 +141,7 @@
         "sliceName": "E-mail",
         "short": "이메일",
         "min": 0,
-        "max": "*",
-        "mustSupport": true
+        "max": "*"
       },
       {
         "id": "Patient.telecom:E-mail.system",
@@ -202,6 +200,36 @@
       {
         "id": "Patient.address.postalCode",
         "path": "Patient.address.postalCode",
+        "short": "우편번호"
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "short": "환자의 연락처(예:보호자, 배우자, 친구)"
+      },
+      {
+        "id": "Patient.contact.address.extension:krcore-roadNameAddress",
+        "path": "Patient.contact.address.extension",
+        "sliceName": "krcore-roadNameAddress",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/krcore-roadNameAddress"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact.address.text",
+        "path": "Patient.contact.address.text",
+        "short": "주소 텍스트"
+      },
+      {
+        "id": "Patient.contact.address.postalCode",
+        "path": "Patient.contact.address.postalCode",
         "short": "우편번호"
       },
       {

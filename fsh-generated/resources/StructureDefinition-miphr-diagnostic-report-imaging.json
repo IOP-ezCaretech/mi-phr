@@ -101,21 +101,19 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1,
-        "mustSupport": true
+        }
       },
       {
         "id": "DiagnosticReport.code.coding:EDI",
         "path": "DiagnosticReport.code.coding",
         "sliceName": "EDI",
         "short": "건강보험심사평가원 건강보험요양급여비용 코드 정보",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://example.org/ValueSet/krcore-edi-procedure-codes"
+          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-procedure-codes"
         }
       },
       {
@@ -123,6 +121,7 @@
         "path": "DiagnosticReport.code.coding.system",
         "short": "건강보험심사평가원 건강보험요양급여비용 코드체계",
         "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
         "mustSupport": true
       },
       {
@@ -179,14 +178,12 @@
       {
         "id": "DiagnosticReport.issued",
         "path": "DiagnosticReport.issued",
-        "short": "진단 보고 일시",
-        "mustSupport": true
+        "short": "진단 보고 일시"
       },
       {
         "id": "DiagnosticReport.performer",
         "path": "DiagnosticReport.performer",
-        "short": "진단 책임자",
-        "mustSupport": true
+        "short": "진단 책임자"
       },
       {
         "id": "DiagnosticReport.resultsInterpreter",

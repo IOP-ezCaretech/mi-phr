@@ -191,13 +191,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-allergy-intolerance"
-        },
-        "name": "MIPHRAllergyIntolerance",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/miphr-document-reference"
         },
         "name": "MIPHRDocumentReference",

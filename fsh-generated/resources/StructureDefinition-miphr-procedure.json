@@ -68,17 +68,41 @@
       {
         "id": "Procedure.code.coding",
         "path": "Procedure.code.coding",
-        "mustSupport": true
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
       },
       {
-        "id": "Procedure.code.coding.system",
+        "id": "Procedure.code.coding:EDI",
+        "path": "Procedure.code.coding",
+        "sliceName": "EDI",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드 정보",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-procedure-codes"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:EDI.system",
         "path": "Procedure.code.coding.system",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드체계",
         "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
         "mustSupport": true
       },
       {
-        "id": "Procedure.code.coding.code",
+        "id": "Procedure.code.coding:EDI.code",
         "path": "Procedure.code.coding.code",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드",
         "min": 1,
         "mustSupport": true
       },
@@ -90,6 +114,7 @@
       {
         "id": "Procedure.subject",
         "path": "Procedure.subject",
+        "short": "수술 및 처치 대상",
         "type": [
           {
             "code": "Reference",
@@ -109,6 +134,7 @@
       {
         "id": "Procedure.performed[x]",
         "path": "Procedure.performed[x]",
+        "short": "수술 및 처치 일자",
         "min": 1,
         "type": [
           {

@@ -19,7 +19,6 @@
 [MIPHRPatient]: StructureDefinition-miphr-patient.html
 [MIPHRPractitioner]: StructureDefinition-miphr-practitioner.html
 [MIPHRPractitionerRole]: StructureDefinition-miphr-practitioner-role.html
-[MIPHRAllergyIntolerance]: StructureDefinition-miphr-allergy-intolerance.html
 [MIPHRDocumentReference]: StructureDefinition-miphr-document-reference.html
 [MIPHRProcedure]: StructureDefinition-miphr-procedure.html
 [MyHealthwayCondition]: ValueSet-myhealthway-condition.html

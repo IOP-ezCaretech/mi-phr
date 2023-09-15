@@ -128,27 +128,14 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.code.coding.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.code.coding:EDI",
         "path": "Observation.code.coding",
         "sliceName": "EDI",
         "short": "건강보험심사평가원 건강보험요양급여비용 코드 정보",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "mustSupport": true,
         "binding": {
@@ -159,12 +146,17 @@
       {
         "id": "Observation.code.coding:EDI.system",
         "path": "Observation.code.coding.system",
-        "short": "건강보험심사평가원 건강보험요양급여비용 코드체계"
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드체계",
+        "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-procedure-codes",
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:EDI.code",
         "path": "Observation.code.coding.code",
-        "short": "건강보험심사평가원 건강보험요양급여비용 코드"
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Observation.code.text",
@@ -222,8 +214,7 @@
               "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.value[x]",

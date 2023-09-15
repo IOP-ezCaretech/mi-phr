@@ -105,7 +105,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "exam",
+              "code": "laboratory",
               "system": "http://terminology.hl7.org/CodeSystem/observation-category"
             }
           ]
@@ -127,15 +127,14 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1
+        }
       },
       {
         "id": "Observation.code.coding:EDI",
         "path": "Observation.code.coding",
         "sliceName": "EDI",
         "short": "건강보험심사평가원 건강보험요양급여비용 코드 정보",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "mustSupport": true,
         "binding": {
@@ -148,6 +147,7 @@
         "path": "Observation.code.coding.system",
         "short": "건강보험심사평가원 건강보험요양급여비용 코드체계",
         "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
         "mustSupport": true
       },
       {
@@ -218,8 +218,7 @@
               "http://example.org/StructureDefinition/miphr-practitioner-role"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.value[x]",
@@ -232,7 +231,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "short": "진단검사 측정 결과"
       },
       {
         "id": "Observation.value[x]:valueQuantity",
@@ -365,15 +365,14 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1
+        }
       },
       {
         "id": "Observation.component.code.coding:EDI",
         "path": "Observation.component.code.coding",
         "sliceName": "EDI",
         "short": "건강보험심사평가원 건강보험요양급여비용 코드 정보",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "mustSupport": true,
         "binding": {
@@ -386,6 +385,7 @@
         "path": "Observation.component.code.coding.system",
         "short": "건강보험심사평가원 건강보험요양급여비용 코드체계",
         "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
         "mustSupport": true
       },
       {

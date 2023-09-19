@@ -3,7 +3,7 @@
   "id": "miphr-organization",
   "url": "http://example.org/StructureDefinition/miphr-organization",
   "name": "MIPHROrganization",
-  "title": "MI PHR Organization Profile",
+  "title": "KR CDex Healthcare Organization Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -4,65 +4,65 @@ The following profiles and have been defined for this implementation guide.
 
 #### Patient
 
-- [MI PHR Patient profile](StructureDefinition-miphr-patient.html)
+- [KR CDex Patient profile](StructureDefinition-miphr-patient.html)
 
 #### Organization
 
-- [MI PHR Organization Profile](StructureDefinition-miphr-organization.html)
+- [KR CDex Healthcare Organization Profile](StructureDefinition-miphr-organization.html)
 
 #### Practitioner
 
-- [MI PHR Practitioner Profile](StructureDefinition-miphr-practitioner.html)
+- [KR CDex Practitioner Profile](StructureDefinition-miphr-practitioner.html)
 
 #### PractitionerRole
 
-- [MI PHR PractitionerRole Profile](StructureDefinition-miphr-practitioner-role.html)
+- [KR CDex PractitionerRole Profile](StructureDefinition-miphr-practitioner-role.html)
 
 #### Encounter
 
-- [MI PHR Encounter Profile](StructureDefinition-miphr-encounter.html)
+- [KR CDex Encounter Profile](StructureDefinition-miphr-encounter.html)
 
 #### AllergyIntolerance
 
-- [MI PHR AllergyIntolerance Profile](StructureDefinition-miphr-allergy-intolerance.html)
+- [KR CDex AllergyIntolerance Profile](StructureDefinition-miphr-allergy-intolerance.html)
 
 #### Condition
 
-- [MI PHR Condition Profile](StructureDefinition-miphr-condition.html)
+- [KR CDex Condition Profile](StructureDefinition-miphr-condition.html)
 
 #### MedicationRequest
 
-- [MI PHR MedicationRequest Profile](StructureDefinition-miphr-medication-request.html)
+- [KR CDex MedicationRequest Profile](StructureDefinition-miphr-medication-request.html)
 
 #### Procedure
 
-- [MI PHR Procedure Profile](StructureDefinition-miphr-procedure.html)
+- [KR CDex Procedure Profile](StructureDefinition-miphr-procedure.html)
 
 #### Endpoint
 
-- [MI PHR Endpoint Profile](StructureDefinition-miphr-end-point.html)
+- [KR CDex Endpoint Profile](StructureDefinition-miphr-end-point.html)
 
 #### Media
 
-- [MI PHR Media Profile](StructureDefinition-miphr-media.html)
+- [KR CDex Media Profile](StructureDefinition-miphr-media.html)
 
 #### DocumentReference
 
-- [MI PHR DocumentReference Profile](StructureDefinition-miphr-document-reference.html)
+- [KR CDex DocumentReference Profile](StructureDefinition-miphr-document-reference.html)
 
 #### ImagingStudy
 
-- [MI PHR ImagingStudy Profile](StructureDefinition-miphr-imaging-study.html)
+- [KR CDex ImagingStudy Profile](StructureDefinition-miphr-imaging-study.html)
 
 #### Observation
 
-- [MI PHR ObservationExam Profile](StructureDefinition-miphr-observation-exam.html)
-- [MI PHR ObservationLaboratory Profile](StructureDefinition-miphr-observation-laboratory.html)
+- [KR CDex Observation Profile for Function Test](StructureDefinition-miphr-observation-exam.html)
+- [KR CDex Observation Profile for Laboratory Result](StructureDefinition-miphr-observation-laboratory.html)
 
 #### DiagnosticReport
 
-- [MI PHR DiagnosticReportImaing Profile](StructureDefinition-miphr-diagnostic-report-imaging.html)
-- [MI PHR DiagnosticReportPathology Profile](StructureDefinition-miphr-diagnostic-report-pathology.html)
+- [KR CDex DiagnosticReport Profile for Diagnostic Imaging](StructureDefinition-miphr-diagnostic-report-imaging.html)
+- [KR CDex DiagnosticReport Profile for Patholoy Results](StructureDefinition-miphr-diagnostic-report-pathology.html)
 
 ### Extensions
 

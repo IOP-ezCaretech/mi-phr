@@ -3,7 +3,7 @@
   "id": "miphr-condition",
   "url": "http://example.org/StructureDefinition/miphr-condition",
   "name": "MIPHRCondition",
-  "title": "MI PHR Condition Profile",
+  "title": "KR CDex Condition Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -3,7 +3,7 @@
   "id": "miphr-end-point",
   "url": "http://example.org/StructureDefinition/miphr-end-point",
   "name": "MIPHREndpoint",
-  "title": "MI PHR Endpoint Profile",
+  "title": "KR CDex Endpoint Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

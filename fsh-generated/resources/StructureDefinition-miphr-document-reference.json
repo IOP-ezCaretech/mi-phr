@@ -3,7 +3,7 @@
   "id": "miphr-document-reference",
   "url": "http://example.org/StructureDefinition/miphr-document-reference",
   "name": "MIPHRDocumentReference",
-  "title": "MIPHRDocumentReference",
+  "title": "KR CDex DocumentReference Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

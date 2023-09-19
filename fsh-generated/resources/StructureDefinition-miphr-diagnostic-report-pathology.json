@@ -3,7 +3,7 @@
   "id": "miphr-diagnostic-report-pathology",
   "url": "http://example.org/StructureDefinition/miphr-diagnostic-report-pathology",
   "name": "MIPHRDiagnosticReportPathology",
-  "title": "MI PHR DiagnosticReport Pathology Profile",
+  "title": "KR CDex DiagnosticReport Profile for Patholoy Results",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -3,7 +3,7 @@
   "id": "miphr-patient",
   "url": "http://example.org/StructureDefinition/miphr-patient",
   "name": "MIPHRPatient",
-  "title": "MI PHR Patient Profile",
+  "title": "KR CDex Patient Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

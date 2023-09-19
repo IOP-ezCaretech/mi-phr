@@ -3,7 +3,7 @@
   "id": "miphr-imaging-study",
   "url": "http://example.org/StructureDefinition/miphr-imaging-study",
   "name": "MIPHRImagingStudy",
-  "title": "MI PHR ImagingStudy Profile",
+  "title": "KR CDex ImagingStudy Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

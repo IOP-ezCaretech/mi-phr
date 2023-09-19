@@ -3,7 +3,7 @@
   "id": "miphr-procedure",
   "url": "http://example.org/StructureDefinition/miphr-procedure",
   "name": "MIPHRProcedure",
-  "title": "MIPHRProcedure",
+  "title": "KR CDex Procedure Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

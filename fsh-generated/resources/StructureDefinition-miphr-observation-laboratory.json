@@ -3,7 +3,7 @@
   "id": "miphr-observation-laboratory",
   "url": "http://example.org/StructureDefinition/miphr-observation-laboratory",
   "name": "MIPHRObservationLaboratory",
-  "title": "MI PHR Observation Laboratory Profile",
+  "title": "KR CDex Observation Profile for Laboratory Result",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

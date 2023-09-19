@@ -3,7 +3,7 @@
   "id": "miphr-practitioner-role",
   "url": "http://example.org/StructureDefinition/miphr-practitioner-role",
   "name": "MIPHRPractitionerRole",
-  "title": "MI PHR PractitionerRole Profile",
+  "title": "KR CDex PractitionerRole Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

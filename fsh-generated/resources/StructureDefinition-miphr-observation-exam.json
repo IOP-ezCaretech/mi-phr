@@ -3,7 +3,7 @@
   "id": "miphr-observation-exam",
   "url": "http://example.org/StructureDefinition/miphr-observation-exam",
   "name": "MIPHRObservationExam",
-  "title": "MI PHR Observation Exam Profile",
+  "title": "KR CDex Observation Profile for Function Test",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

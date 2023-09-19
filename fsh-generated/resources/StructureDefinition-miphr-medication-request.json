@@ -3,7 +3,7 @@
   "id": "miphr-medication-request",
   "url": "http://example.org/StructureDefinition/miphr-medication-request",
   "name": "MIPHRMedicationRequest",
-  "title": "MI PHR MedicationRequest Profile",
+  "title": "KR CDex MedicationRequest Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -3,7 +3,7 @@
   "id": "miphr-media",
   "url": "http://example.org/StructureDefinition/miphr-media",
   "name": "MIPHRMedia",
-  "title": "MI PHR Media Profile",
+  "title": "KR CDex Media Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

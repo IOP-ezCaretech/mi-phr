@@ -1,0 +1,259 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.kr.cdex",
+  "url": "http://example.org/ImplementationGuide/hl7.fhir.kr.cdex",
+  "version": "0.1.0",
+  "name": "KRCDEX",
+  "title": "KR CDex",
+  "status": "draft",
+  "publisher": "ezCaretech IOP MI",
+  "contact": [
+    {
+      "name": "ezCaretech IOP MI",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://iop.ezcaretech.com"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "KR",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Korea, Republic of"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.kr.cdex",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "CodeSystem/miphr-edi"
+        },
+        "name": "EDI",
+        "description": "EDI CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miphr-kcd8"
+        },
+        "name": "KCD8",
+        "description": "KCD8 CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miphr-kd"
+        },
+        "name": "KD",
+        "description": "KD CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-condition"
+        },
+        "name": "KR CDex Condition Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-diagnostic-report-imaging"
+        },
+        "name": "KR CDex DiagnosticReport Profile for Diagnostic Imaging",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-diagnostic-report-pathology"
+        },
+        "name": "KR CDex DiagnosticReport Profile for Patholoy Results",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-document-reference"
+        },
+        "name": "KR CDex DocumentReference Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-end-point"
+        },
+        "name": "KR CDex Endpoint Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-organization"
+        },
+        "name": "KR CDex Healthcare Organization Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-imaging-study"
+        },
+        "name": "KR CDex ImagingStudy Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-media"
+        },
+        "name": "KR CDex Media Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-medication-request"
+        },
+        "name": "KR CDex MedicationRequest Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-observation-exam"
+        },
+        "name": "KR CDex Observation Profile for Function Test",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-observation-laboratory"
+        },
+        "name": "KR CDex Observation Profile for Laboratory Result",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-patient"
+        },
+        "name": "KR CDex Patient Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-practitioner"
+        },
+        "name": "KR CDex Practitioner Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-practitioner-role"
+        },
+        "name": "KR CDex PractitionerRole Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-procedure"
+        },
+        "name": "KR CDex Procedure Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/krcore-edi-procedure-codes"
+        },
+        "name": "KR Core EDI Procedure Codes",
+        "description": "KR Core EDI 진료행위 코드집합",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/krcore-insuranceTypes"
+        },
+        "name": "KR Core Insurance Types Extension",
+        "description": "환자의 건강보험유형을 표기하기 위한 확장",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/krcore-roadNameAddress"
+        },
+        "name": "KR Core Road Name Address Extension",
+        "description": "한국의 도로명 주소를 표기하기 위한 확장",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/krcore-testRequestDateTime"
+        },
+        "name": "KR Core Test Request DateTime Extension",
+        "description": "검사의뢰일을 표기하기 위한 확장",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-encounter"
+        },
+        "name": "MI PHR Encounter Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/myhealthway-condition"
+        },
+        "name": "MyHealthway Condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/myhealthway-medication-request"
+        },
+        "name": "MyHealthway MedicationRequest",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles-and-extensions.html",
+          "title": "Profiles and Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

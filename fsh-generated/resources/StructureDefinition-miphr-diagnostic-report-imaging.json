@@ -3,7 +3,7 @@
   "id": "miphr-diagnostic-report-imaging",
   "url": "http://example.org/StructureDefinition/miphr-diagnostic-report-imaging",
   "name": "MIPHRDiagnosticReportImaging",
-  "title": "MI PHR DiagnosticReport Imaging Profile",
+  "title": "KR CDex DiagnosticReport Profile for Diagnostic Imaging",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

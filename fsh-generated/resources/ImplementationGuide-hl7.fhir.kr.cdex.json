@@ -4,7 +4,7 @@
   "url": "http://example.org/ImplementationGuide/hl7.fhir.kr.cdex",
   "version": "0.1.0",
   "name": "KRCDEX",
-  "title": "KR CDex",
+  "title": "KR Clinical Data Exchange Implementation Guide",
   "status": "draft",
   "publisher": "ezCaretech IOP MI",
   "contact": [

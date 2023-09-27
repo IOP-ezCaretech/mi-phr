@@ -51,7 +51,7 @@
         "path": "Patient.identifier.type",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://hins.or.kr/nrc_fhir/ValueSet-krcdex-identifier-types"
+          "valueSet": "https://hins.or.kr/nrc_fhir/ValueSet/krcdex-identifier-types"
         }
       },
       {

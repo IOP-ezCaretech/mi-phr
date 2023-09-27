@@ -5,7 +5,7 @@
   "id": "krcdex-identifier-type",
   "title": "KR CDex Identifier Types",
   "description": "KR CDex 환자 식별자 유형 코드집합",
-  "url": "https://hins.or.kr/nrc_fhir/ValueSet-krcdex-identifier-types",
+  "url": "https://hins.or.kr/nrc_fhir/ValueSet/krcdex-identifier-types",
   "compose": {
     "include": [
       {
@@ -18,15 +18,10 @@
           {
             "code": "NNKOR",
             "display": "National Person Identifier for Republic of Korea"
-          }
-        ]
-      },
-      {
-        "system": "https://hins.or.kr/nrc_fhir/ValueSet-krcdex-identifier-types",
-        "concept": [
+          },
           {
-            "code": "MHID",
-            "display": "My HealthWay ID"
+            "code": "PN",
+            "display": "Person number"
           }
         ]
       }

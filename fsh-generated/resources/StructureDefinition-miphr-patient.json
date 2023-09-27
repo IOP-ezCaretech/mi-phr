@@ -43,33 +43,48 @@
       {
         "id": "Patient.identifier",
         "path": "Patient.identifier",
-        "min": 2
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier.type",
+        "path": "Patient.identifier.type",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://hins.or.kr/nrc_fhir/ValueSet-krcdex-identifier-types"
+        }
       },
       {
         "id": "Patient.identifier.type.coding",
         "path": "Patient.identifier.type.coding",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Patient.identifier.type.coding.system",
         "path": "Patient.identifier.type.coding.system",
         "min": 1,
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+        "mustSupport": true
       },
       {
         "id": "Patient.identifier.type.coding.code",
         "path": "Patient.identifier.type.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Patient.identifier.system",
         "path": "Patient.identifier.system",
-        "min": 1
+        "short": "환자번호: 요양기관 OID | 주민등록번호:https://mois.go.kr/rrn | 마이헬스웨이:https://myhealthway.go.kr",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Patient.identifier.value",
         "path": "Patient.identifier.value",
-        "min": 1
+        "short": "환자번호 | 주민등록번호 | 마이헬스웨이 ID",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Patient.name",
@@ -187,7 +202,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://example.org/StructureDefinition/krcore-roadNameAddress"
+              "https://simplifier.net/fhir/MyHealthWay/StructureDefinition/RoadNameAddress"
             ]
           }
         ]
@@ -195,12 +210,14 @@
       {
         "id": "Patient.address.text",
         "path": "Patient.address.text",
-        "short": "주소 텍스트"
+        "short": "주소 텍스트",
+        "mustSupport": true
       },
       {
         "id": "Patient.address.postalCode",
         "path": "Patient.address.postalCode",
-        "short": "우편번호"
+        "short": "우편번호",
+        "mustSupport": true
       },
       {
         "id": "Patient.contact",
@@ -217,7 +234,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://example.org/StructureDefinition/krcore-roadNameAddress"
+              "https://simplifier.net/fhir/MyHealthWay/StructureDefinition/RoadNameAddress"
             ]
           }
         ]

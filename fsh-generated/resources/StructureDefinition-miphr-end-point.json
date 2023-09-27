@@ -79,6 +79,14 @@
         "id": "Endpoint.managingOrganization",
         "path": "Endpoint.managingOrganization",
         "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-organization"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

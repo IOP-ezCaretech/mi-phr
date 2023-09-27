@@ -62,21 +62,43 @@
       {
         "id": "MedicationRequest.status",
         "path": "MedicationRequest.status",
-        "short": "처방 상태: active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown",
+        "short": "약물 처방 상태: active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown",
         "patternCode": "completed",
         "mustSupport": true
       },
       {
         "id": "MedicationRequest.intent",
         "path": "MedicationRequest.intent",
-        "short": "처방 의도: order | proposal | plan +",
+        "short": "약물 처방 의도: order | proposal | plan +",
         "patternCode": "order",
         "mustSupport": true
       },
       {
+        "id": "MedicationRequest.reported[x]",
+        "path": "MedicationRequest.reported[x]",
+        "short": "지침약 여부",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "patternBoolean": false,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]",
+        "path": "MedicationRequest.medication[x]",
+        "short": "처방 약물 정보",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-medication-codes"
+        }
+      },
+      {
         "id": "MedicationRequest.subject",
         "path": "MedicationRequest.subject",
-        "short": "처방 대상",
+        "short": "환자 정보",
         "type": [
           {
             "code": "Reference",
@@ -90,7 +112,7 @@
       {
         "id": "MedicationRequest.encounter",
         "path": "MedicationRequest.encounter",
-        "short": "내원정보 식별자",
+        "short": "내원정보",
         "min": 1,
         "type": [
           {
@@ -105,14 +127,14 @@
       {
         "id": "MedicationRequest.authoredOn",
         "path": "MedicationRequest.authoredOn",
-        "short": "처방 일시",
+        "short": "약물 처방 일시",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction",
         "path": "MedicationRequest.dosageInstruction",
-        "short": "약물 투여 및 복용 지침",
+        "short": "약물 투여 방법",
         "min": 1,
         "max": "1",
         "mustSupport": true
@@ -128,12 +150,14 @@
         "id": "MedicationRequest.dosageInstruction.timing",
         "path": "MedicationRequest.dosageInstruction.timing",
         "short": "약품 투여 및 복용 시기",
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat",
         "path": "MedicationRequest.dosageInstruction.timing.repeat",
         "short": "약품 투여 및 복용 반복 정보",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -213,10 +237,7 @@
           ],
           "ordered": false,
           "rules": "open"
-        },
-        "short": "1회량",
-        "min": 1,
-        "mustSupport": true
+        }
       },
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity",
@@ -238,6 +259,20 @@
           "strength": "preferred",
           "valueSet": "http://hl7.org/fhir/ValueSet/ucum-units"
         }
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity.value",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].value",
+        "short": "1회 복용량",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity.unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].unit",
+        "short": "1회 복용량 단위",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange",

@@ -92,28 +92,43 @@
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "short": "검사 구분(영상, 병리)",
         "min": 1,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DiagnosticServiceSection"
+            }
+          ],
+          "description": "Codes for diagnostic service sections."
+        }
+      },
+      {
+        "id": "DiagnosticReport.category:Pathology",
+        "path": "DiagnosticReport.category",
+        "sliceName": "Pathology",
+        "min": 1,
         "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding",
-        "path": "DiagnosticReport.category.coding",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding.system",
-        "path": "DiagnosticReport.category.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category.coding.code",
-        "path": "DiagnosticReport.category.coding.code",
-        "min": 1,
-        "mustSupport": true
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "PAT",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+            }
+          ]
+        }
       },
       {
         "id": "DiagnosticReport.code",
@@ -176,7 +191,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://example.org/StructureDefinition/miphr-patient"
             ]
           }
         ],
@@ -186,6 +201,14 @@
         "id": "DiagnosticReport.encounter",
         "path": "DiagnosticReport.encounter",
         "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-encounter"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -195,13 +218,7 @@
         "min": 1,
         "type": [
           {
-            "code": "dateTime",
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                "valueBoolean": true
-              }
-            ]
+            "code": "dateTime"
           }
         ],
         "mustSupport": true
@@ -224,10 +241,11 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "http://example.org/StructureDefinition/miphr-practitioner-role"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.result",
@@ -239,12 +257,34 @@
         "id": "DiagnosticReport.imagingStudy",
         "path": "DiagnosticReport.imagingStudy",
         "short": "DICOM 이미지",
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-imaging-study"
+            ]
+          }
+        ]
       },
       {
         "id": "DiagnosticReport.media",
         "path": "DiagnosticReport.media",
         "short": "참고자료"
+      },
+      {
+        "id": "DiagnosticReport.media.link",
+        "path": "DiagnosticReport.media.link",
+        "short": "참고자료 링크",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-media"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.conclusion",

@@ -3,7 +3,7 @@
   "id": "miphr-allergy-intolerance",
   "url": "http://example.org/StructureDefinition/miphr-allergy-intolerance",
   "name": "MIPHRAllergyIntolerance",
-  "title": "MIPHRAllergyIntolerance",
+  "title": "KR CDex AllergyIntolerance",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -33,6 +33,7 @@
       {
         "id": "AllergyIntolerance.identifier",
         "path": "AllergyIntolerance.identifier",
+        "short": "알레르기 및 불내성 식별자",
         "min": 1,
         "max": "1"
       },
@@ -47,63 +48,106 @@
         "min": 1
       },
       {
+        "id": "AllergyIntolerance.clinicalStatus",
+        "path": "AllergyIntolerance.clinicalStatus",
+        "short": "알레르기 및 불내성 진행 상태: active | inactive | resolved",
+        "mustSupport": true
+      },
+      {
         "id": "AllergyIntolerance.clinicalStatus.coding.system",
         "path": "AllergyIntolerance.clinicalStatus.coding.system",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.clinicalStatus.coding.code",
         "path": "AllergyIntolerance.clinicalStatus.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.verificationStatus",
         "path": "AllergyIntolerance.verificationStatus",
-        "min": 1
+        "short": "알레르기 및 불내성 검증 상태: unconfirmed | confirmed",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.verificationStatus.coding",
         "path": "AllergyIntolerance.verificationStatus.coding",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.verificationStatus.coding.system",
         "path": "AllergyIntolerance.verificationStatus.coding.system",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.verificationStatus.coding.code",
         "path": "AllergyIntolerance.verificationStatus.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.category",
+        "path": "AllergyIntolerance.category",
+        "short": "알레르기 및 불내성 원인 구분: food | medication | environment | biologic",
+        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.code",
         "path": "AllergyIntolerance.code",
-        "min": 1
+        "short": "알레르기 및 불내성 원인 코드",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.code.coding.system",
         "path": "AllergyIntolerance.code.coding.system",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.code.coding.code",
         "path": "AllergyIntolerance.code.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.patient.reference",
-        "path": "AllergyIntolerance.patient.reference",
-        "min": 1
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "short": "환자 정보",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.encounter.reference",
-        "path": "AllergyIntolerance.encounter.reference",
-        "min": 1
+        "id": "AllergyIntolerance.encounter",
+        "path": "AllergyIntolerance.encounter",
+        "short": "내원 정보",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.onset[x]",
         "path": "AllergyIntolerance.onset[x]",
+        "short": "알레르기 및 불내성 기록 일시",
         "type": [
           {
             "code": "dateTime"
@@ -111,9 +155,34 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.recorder.reference",
-        "path": "AllergyIntolerance.recorder.reference",
-        "min": 1
+        "id": "AllergyIntolerance.recorder",
+        "path": "AllergyIntolerance.recorder",
+        "short": "기록 진료의 정보",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-practitioner-role"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.note",
+        "path": "AllergyIntolerance.note",
+        "short": "추가 정보",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.note.text",
+        "path": "AllergyIntolerance.note.text",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.reaction",
+        "path": "AllergyIntolerance.reaction",
+        "short": "알레르기 및 불내성 반응"
       },
       {
         "id": "AllergyIntolerance.reaction.substance.coding.system",

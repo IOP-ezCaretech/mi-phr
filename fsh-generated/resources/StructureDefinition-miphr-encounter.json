@@ -3,7 +3,7 @@
   "id": "miphr-encounter",
   "url": "http://example.org/StructureDefinition/miphr-encounter",
   "name": "MIPHREncounter",
-  "title": "MI PHR Encounter Profile",
+  "title": "KR CDex Encounter Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -124,7 +124,7 @@
       {
         "id": "Encounter.subject",
         "path": "Encounter.subject",
-        "short": "내원 환자",
+        "short": "환자 정보",
         "min": 1,
         "type": [
           {
@@ -145,7 +145,8 @@
       {
         "id": "Encounter.participant.individual",
         "path": "Encounter.participant.individual",
-        "short": "내원 참여 의료인 인적사항 또는 역할"
+        "short": "내원 참여 의료인 인적사항 또는 역할",
+        "mustSupport": true
       },
       {
         "id": "Encounter.period",
@@ -169,7 +170,7 @@
       {
         "id": "Encounter.serviceProvider",
         "path": "Encounter.serviceProvider",
-        "short": "내원 기관",
+        "short": "의료기관 정보",
         "type": [
           {
             "code": "Reference",

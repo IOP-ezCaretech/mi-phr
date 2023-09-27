@@ -81,7 +81,11 @@
       {
         "id": "DocumentReference.type.coding",
         "path": "DocumentReference.type.coding",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://example.org/ValueSet/krcdex-doc-typecodes"
+        }
       },
       {
         "id": "DocumentReference.type.coding.system",
@@ -109,7 +113,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://example.org/StructureDefinition/miphr-patient"
             ]
           }
         ],
@@ -151,13 +155,11 @@
       {
         "id": "DocumentReference.context.encounter",
         "path": "DocumentReference.context.encounter",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
+              "http://example.org/StructureDefinition/miphr-encounter"
             ]
           }
         ],

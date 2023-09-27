@@ -107,6 +107,26 @@
         "mustSupport": true
       },
       {
+        "id": "Procedure.code.coding:ICD-9-CM",
+        "path": "Procedure.code.coding",
+        "sliceName": "ICD-9-CM",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Procedure.code.coding:ICD-9-CM.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/icd9cm",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:ICD-9-CM.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Procedure.code.text",
         "path": "Procedure.code.text",
         "mustSupport": true
@@ -119,7 +139,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://example.org/StructureDefinition/miphr-patient"
             ]
           }
         ],
@@ -129,6 +149,14 @@
         "id": "Procedure.encounter",
         "path": "Procedure.encounter",
         "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-encounter"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -156,7 +184,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "http://example.org/StructureDefinition/miphr-practitioner-role"
             ]
           }
         ],

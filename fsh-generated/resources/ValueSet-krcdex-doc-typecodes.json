@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KRCDexDocTypeCodes",
+  "id": "krcdex-doc-typecodes",
+  "title": "KR CDex Documetation type codes",
+  "url": "http://example.org/ValueSet/krcdex-doc-typecodes",
+  "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use.",
+  "experimental": false,
+  "publisher": "ezCaretech",
+  "version": "4.0.1",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "18842-5",
+            "display": "Discharge summary note"
+          },
+          {
+            "code": "34117-2",
+            "display": "History and physical note"
+          },
+          {
+            "code": "11506-3",
+            "display": "Progress note"
+          },
+          {
+            "code": "11488-4",
+            "display": "Consultation note"
+          },
+          {
+            "code": "11504-8",
+            "display": "Surgical operation note"
+          },
+          {
+            "code": "28570-0",
+            "display": "Procedures note"
+          },
+          {
+            "code": "77597-3",
+            "display": "Orders placed"
+          },
+          {
+            "code": "80565-5",
+            "display": "medication administration flowsheet"
+          },
+          {
+            "code": "34746-8",
+            "display": "Nurse Note"
+          }
+        ]
+      }
+    ]
+  }
+}

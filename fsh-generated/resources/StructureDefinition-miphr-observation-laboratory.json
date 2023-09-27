@@ -297,7 +297,8 @@
       {
         "id": "Observation.referenceRange",
         "path": "Observation.referenceRange",
-        "short": "참고치"
+        "short": "참고치",
+        "mustSupport": true
       },
       {
         "id": "Observation.referenceRange.low",

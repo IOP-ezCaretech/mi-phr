@@ -4,7 +4,7 @@
   "url": "http://example.org/ImplementationGuide/hl7.fhir.kr.cdex",
   "version": "0.1.0",
   "name": "KRCDEX",
-  "title": "KR CDex",
+  "title": "KR Clinical Data Exchange Implementation Guide",
   "status": "draft",
   "publisher": "ezCaretech IOP MI",
   "contact": [
@@ -37,26 +37,9 @@
     "resource": [
       {
         "reference": {
-          "reference": "CodeSystem/miphr-edi"
+          "reference": "StructureDefinition/miphr-allergy-intolerance"
         },
-        "name": "EDI",
-        "description": "EDI CodeSystem",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/miphr-kcd8"
-        },
-        "name": "KCD8",
-        "description": "KCD8 CodeSystem",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/miphr-kd"
-        },
-        "name": "KD",
-        "description": "KD CodeSystem",
+        "name": "KR CDex AllergyIntolerance",
         "exampleBoolean": false
       },
       {
@@ -89,6 +72,20 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/krcdex-doc-typecodes"
+        },
+        "name": "KR CDex Documetation type codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miphr-encounter"
+        },
+        "name": "KR CDex Encounter Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/miphr-end-point"
         },
         "name": "KR CDex Endpoint Profile",
@@ -99,6 +96,14 @@
           "reference": "StructureDefinition/miphr-organization"
         },
         "name": "KR CDex Healthcare Organization Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/krcdex-identifier-type"
+        },
+        "name": "KR CDex Identifier Types",
+        "description": "KR CDex 환자 식별자 유형 코드집합",
         "exampleBoolean": false
       },
       {
@@ -145,7 +150,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-practitioner"
+          "reference": "StructureDefinition/krcdex-practitioner"
         },
         "name": "KR CDex Practitioner Profile",
         "exampleBoolean": false
@@ -162,14 +167,6 @@
           "reference": "StructureDefinition/miphr-procedure"
         },
         "name": "KR CDex Procedure Profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/krcore-edi-procedure-codes"
-        },
-        "name": "KR Core EDI Procedure Codes",
-        "description": "KR Core EDI 진료행위 코드집합",
         "exampleBoolean": false
       },
       {
@@ -194,27 +191,6 @@
         },
         "name": "KR Core Test Request DateTime Extension",
         "description": "검사의뢰일을 표기하기 위한 확장",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/miphr-encounter"
-        },
-        "name": "MI PHR Encounter Profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/myhealthway-condition"
-        },
-        "name": "MyHealthway Condition",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/myhealthway-medication-request"
-        },
-        "name": "MyHealthway MedicationRequest",
         "exampleBoolean": false
       }
     ],

@@ -1,10 +1,5 @@
 ### Value Sets
-
-- [MyHealthWay Condition ValueSet](ValueSet-myhealthway-condition.html)
-- [MyHealthWay MedicationRequest ValueSet](ValueSet-myhealthway-medication-request.html)
+- [KR CDex Documentation type codes](ValueSet-krcdex-doc-typecodes.html)
+- [KR CDex Identifier Types](ValueSet-krcdex-identifier-type.html)
 
 ### CodeSystems
-
-- [KCD8](Codesystem-miphr-kcd8.html)
-- [KD](Codesystem-miphr-kd.html)
-- [EDI](Codesystem-miphr-edi.html)

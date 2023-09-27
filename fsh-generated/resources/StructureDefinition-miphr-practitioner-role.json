@@ -38,12 +38,12 @@
       {
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
-        "short": "진료의 인적사항",
+        "short": "진료의 정보",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-practitioner"
+              "http://example.org/StructureDefinition/krcdex-practitioner"
             ]
           }
         ],
@@ -107,7 +107,7 @@
       {
         "id": "PractitionerRole.specialty",
         "path": "PractitionerRole.specialty",
-        "short": "진료의 진료과목",
+        "short": "진료과",
         "min": 1,
         "mustSupport": true
       },

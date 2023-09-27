@@ -67,7 +67,7 @@
       {
         "id": "Condition.clinicalStatus",
         "path": "Condition.clinicalStatus",
-        "short": "진단 임상적 상태: active | recurrence | relapse | inactive | remission | resolved",
+        "short": "진단 상태: active | recurrence | relapse | inactive | remission | resolved",
         "min": 1,
         "mustSupport": true
       },
@@ -103,7 +103,7 @@
           ],
           "rules": "open"
         },
-        "short": "진단 및 주호소 범주",
+        "short": "진단",
         "min": 1
       },
       {
@@ -116,10 +116,11 @@
           "coding": [
             {
               "code": "진단",
-              "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-condition-category-types"
+              "system": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-condition-category-codes"
             }
           ]
         },
+        "mustSupport": true,
         "binding": {
           "strength": "extensible",
           "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-condition-category-codes"
@@ -164,7 +165,7 @@
         "path": "Condition.code.coding.system",
         "short": "한국표준질병사인분류 8차 코드체계",
         "min": 1,
-        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8",
+        "fixedUri": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/kostat-kcd-8",
         "mustSupport": true
       },
       {
@@ -177,7 +178,7 @@
       {
         "id": "Condition.subject",
         "path": "Condition.subject",
-        "short": "진단 대상",
+        "short": "환자 정보",
         "type": [
           {
             "code": "Reference",
@@ -191,7 +192,7 @@
       {
         "id": "Condition.encounter",
         "path": "Condition.encounter",
-        "short": "진단 관련 내원 정보",
+        "short": "내원 정보",
         "min": 1,
         "type": [
           {

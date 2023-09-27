@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2021-11-09T16:06:30.695+09:00"
   },
-  "url": "http://example.org/StructureDefinition/krcore-roadNameAddress",
+  "url": "https://simplifier.net/fhir/MyHealthWay/StructureDefinition/RoadNameAddress",
   "version": "1.0.0",
   "name": "KRCore_RoadNameAddress_Extension",
   "title": "KR Core Road Name Address Extension",
@@ -194,7 +194,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://example.org/StructureDefinition/krcore-roadNameAddress"
+        "fixedUri": "https://simplifier.net/fhir/MyHealthWay/StructureDefinition/RoadNameAddress"
       },
       {
         "id": "Extension.value[x]",

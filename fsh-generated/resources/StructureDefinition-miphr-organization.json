@@ -76,7 +76,7 @@
       {
         "id": "Organization.type",
         "path": "Organization.type",
-        "short": "의료기관 유형",
+        "short": "의료기관 종별타입",
         "mustSupport": true
       },
       {
@@ -138,18 +138,7 @@
           ],
           "rules": "open"
         },
-        "short": "기관 연락처",
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.telecom.system",
-        "path": "Organization.telecom.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.telecom.value",
-        "path": "Organization.telecom.value",
+        "short": "의료기관 연락처",
         "min": 1,
         "mustSupport": true
       },
@@ -158,19 +147,22 @@
         "path": "Organization.telecom",
         "sliceName": "Phone",
         "short": "전화번호",
-        "min": 0,
-        "max": "*"
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
       },
       {
         "id": "Organization.telecom:Phone.system",
         "path": "Organization.telecom.system",
         "short": "연락처 유형: phone",
+        "min": 1,
         "fixedCode": "phone"
       },
       {
         "id": "Organization.telecom:Phone.value",
         "path": "Organization.telecom.value",
-        "short": "상세 연락처"
+        "short": "상세 연락처",
+        "min": 1
       },
       {
         "id": "Organization.telecom:Fax",
@@ -184,12 +176,14 @@
         "id": "Organization.telecom:Fax.system",
         "path": "Organization.telecom.system",
         "short": "연락처 유형: fax",
+        "min": 1,
         "fixedCode": "fax"
       },
       {
         "id": "Organization.telecom:Fax.value",
         "path": "Organization.telecom.value",
-        "short": "상세 연락처"
+        "short": "상세 연락처",
+        "min": 1
       },
       {
         "id": "Organization.address",
@@ -206,7 +200,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://example.org/StructureDefinition/krcore-roadNameAddress"
+              "https://simplifier.net/fhir/MyHealthWay/StructureDefinition/RoadNameAddress"
             ]
           }
         ]

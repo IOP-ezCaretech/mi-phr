@@ -108,7 +108,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://example.org/StructureDefinition/miphr-patient"
             ]
           }
         ],
@@ -117,7 +117,16 @@
       {
         "id": "Media.encounter",
         "path": "Media.encounter",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Media.created[x]",

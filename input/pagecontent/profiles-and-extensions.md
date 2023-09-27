@@ -67,3 +67,5 @@ The following profiles and have been defined for this implementation guide.
 ### Extensions
 
 - [KR Core Road Name Address Extension](StructureDefinition-krcore-roadNameAddress.html)
+- [KR Core Insurance Types Extension](StructureDefinition-krcore-insuranceTypes.html)
+- [KR Core Test Request DateTime Extension](StructureDefinition-krcore-testRequestDateTime.html)

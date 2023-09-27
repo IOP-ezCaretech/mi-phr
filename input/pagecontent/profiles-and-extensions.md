@@ -12,7 +12,7 @@ The following profiles and have been defined for this implementation guide.
 
 #### Practitioner
 
-- [KR CDex Practitioner Profile](StructureDefinition-miphr-practitioner.html)
+- [KR CDex Practitioner Profile](StructureDefinition-krcdex-practitioner.html)
 
 #### PractitionerRole
 

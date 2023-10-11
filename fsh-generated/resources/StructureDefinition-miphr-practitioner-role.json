@@ -38,7 +38,7 @@
       {
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
-        "short": "진료의 정보",
+        "short": "의료진 정보",
         "type": [
           {
             "code": "Reference",
@@ -75,7 +75,7 @@
           ],
           "rules": "open"
         },
-        "short": "진료의 역할",
+        "short": "의료진 역할",
         "min": 1,
         "binding": {
           "strength": "extensible",

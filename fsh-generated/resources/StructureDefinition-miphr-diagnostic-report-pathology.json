@@ -178,6 +178,48 @@
         "mustSupport": true
       },
       {
+        "id": "DiagnosticReport.code.coding:LOINC",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "LOINC",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding:LOINC.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding:LOINC.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding:SNOMED-CT",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding:SNOMED-CT.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding:SNOMED-CT.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "DiagnosticReport.code.text",
         "path": "DiagnosticReport.code.text",
         "mustSupport": true

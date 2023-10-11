@@ -5,7 +5,7 @@
   "id": "krcdex-identifier-type",
   "title": "KR CDex Identifier Types",
   "description": "KR CDex 환자 식별자 유형 코드집합",
-  "url": "https://hins.or.kr/nrc_fhir/ValueSet/krcdex-identifier-types",
+  "url": "https://example.org/ValueSet/krcdex-identifier-types",
   "compose": {
     "include": [
       {

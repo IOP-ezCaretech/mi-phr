@@ -36,22 +36,21 @@
   "kind": "resource",
   "abstract": false,
   "type": "Patient",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-patient",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Patient.identifier",
         "path": "Patient.identifier",
-        "min": 2,
-        "mustSupport": true
+        "min": 2
       },
       {
         "id": "Patient.identifier.type",
         "path": "Patient.identifier.type",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://hins.or.kr/nrc_fhir/ValueSet/krcdex-identifier-types"
+          "valueSet": "https://example.org/ValueSet/krcdex-identifier-types"
         }
       },
       {
@@ -75,36 +74,22 @@
       {
         "id": "Patient.identifier.system",
         "path": "Patient.identifier.system",
-        "short": "환자번호: 요양기관 OID | 주민등록번호:https://mois.go.kr/rrn | 마이헬스웨이:https://myhealthway.go.kr",
-        "min": 1,
-        "mustSupport": true
+        "short": "환자번호: 요양기관 OID | 주민등록번호:https://mois.go.kr/rrn | 마이헬스웨이:https://myhealthway.go.kr"
       },
       {
         "id": "Patient.identifier.value",
         "path": "Patient.identifier.value",
-        "short": "환자번호 | 주민등록번호 | 마이헬스웨이 ID",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.name",
-        "path": "Patient.name",
-        "short": "성명",
-        "min": 1,
-        "mustSupport": true
+        "short": "환자번호 | 주민등록번호 | 마이헬스웨이 ID"
       },
       {
         "id": "Patient.name.text",
         "path": "Patient.name.text",
-        "short": "성명",
-        "min": 1,
-        "mustSupport": true
+        "short": "성명"
       },
       {
         "id": "Patient.name.family",
         "path": "Patient.name.family",
         "short": "성명(성)",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -114,140 +99,19 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.telecom",
-        "path": "Patient.telecom",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        },
-        "short": "연락처"
-      },
-      {
-        "id": "Patient.telecom:Phone",
-        "path": "Patient.telecom",
-        "sliceName": "Phone",
-        "short": "전화번호",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Patient.telecom:Phone.system",
-        "path": "Patient.telecom.system",
-        "short": "연락처 유형: phone",
-        "min": 1,
-        "fixedCode": "phone",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.telecom:Phone.value",
-        "path": "Patient.telecom.value",
-        "short": "상세 연락처",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.telecom:E-mail",
-        "path": "Patient.telecom",
-        "sliceName": "E-mail",
-        "short": "이메일",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Patient.telecom:E-mail.system",
-        "path": "Patient.telecom.system",
-        "short": "연락처 유형: email",
-        "min": 1,
-        "fixedCode": "email",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.telecom:E-mail.value",
-        "path": "Patient.telecom.value",
-        "short": "상세 연락처",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.gender",
-        "path": "Patient.gender",
-        "short": "성별: male | female | other | unknown",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.birthDate",
-        "path": "Patient.birthDate",
-        "short": "생년월일",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Patient.address",
         "path": "Patient.address",
         "short": "주소"
       },
       {
-        "id": "Patient.address.extension:krcore-roadNameAddress",
-        "path": "Patient.address.extension",
-        "sliceName": "krcore-roadNameAddress",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://simplifier.net/fhir/MyHealthWay/StructureDefinition/RoadNameAddress"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Patient.address.text",
         "path": "Patient.address.text",
-        "short": "주소 텍스트",
         "mustSupport": true
       },
       {
         "id": "Patient.address.postalCode",
         "path": "Patient.address.postalCode",
-        "short": "우편번호",
         "mustSupport": true
-      },
-      {
-        "id": "Patient.contact",
-        "path": "Patient.contact",
-        "short": "환자의 연락처(예:보호자, 배우자, 친구)"
-      },
-      {
-        "id": "Patient.contact.address.extension:krcore-roadNameAddress",
-        "path": "Patient.contact.address.extension",
-        "sliceName": "krcore-roadNameAddress",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://simplifier.net/fhir/MyHealthWay/StructureDefinition/RoadNameAddress"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.contact.address.text",
-        "path": "Patient.contact.address.text",
-        "short": "주소 텍스트"
-      },
-      {
-        "id": "Patient.contact.address.postalCode",
-        "path": "Patient.contact.address.postalCode",
-        "short": "우편번호"
       },
       {
         "id": "Patient.managingOrganization",

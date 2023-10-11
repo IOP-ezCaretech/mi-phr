@@ -33,6 +33,14 @@
   "fhirVersion": [
     "4.0.1"
   ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.kr.core",
+      "version": "1.0.1",
+      "uri": "http://www.hl7korea.or.kr/fhir/krcore/ImplementationGuide/hl7.fhir.kr.core",
+      "id": "hl7_fhir_kr_core"
+    }
+  ],
   "definition": {
     "resource": [
       {
@@ -40,6 +48,20 @@
           "reference": "StructureDefinition/miphr-allergy-intolerance"
         },
         "name": "KR CDex AllergyIntolerance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/krcdex-allergy-codes"
+        },
+        "name": "KR CDex AllergyIntolerance codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/krcdex-allergy-manifestation-codes"
+        },
+        "name": "KR CDex AllergyIntolerance manifestation codes",
         "exampleBoolean": false
       },
       {

@@ -89,11 +89,67 @@
         "id": "MedicationRequest.medication[x]",
         "path": "MedicationRequest.medication[x]",
         "short": "처방 약물 정보",
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-medication-codes"
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding",
+        "path": "MedicationRequest.medication[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
         }
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:EDI",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "EDI",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:EDI.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "patternUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:EDI.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:KD",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "KD",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:KD.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "patternUri": "http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:KD.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.subject",

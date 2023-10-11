@@ -116,7 +116,7 @@
           "coding": [
             {
               "code": "진단",
-              "system": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-condition-category-codes"
+              "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-condition-category-types"
             }
           ]
         },
@@ -172,6 +172,29 @@
         "id": "Condition.code.coding:KCD-8.code",
         "path": "Condition.code.coding.code",
         "short": "한국표준질병사인분류 8차 코드",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:SNOMED-CT",
+        "path": "Condition.code.coding",
+        "sliceName": "SNOMED-CT",
+        "short": "SNOMED-CT 코드",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Condition.code.coding:SNOMED-CT.system",
+        "path": "Condition.code.coding.system",
+        "short": "SNOMED-CT 코드체계",
+        "min": 1,
+        "fixedUri": "https://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:SNOMED-CT.code",
+        "path": "Condition.code.coding.code",
+        "short": "SNOMED-CT 코드",
         "min": 1,
         "mustSupport": true
       },

@@ -38,7 +38,7 @@
       {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
-        "short": "진료의 식별자"
+        "short": "의료진 식별자"
       },
       {
         "id": "Practitioner.identifier.system",
@@ -79,7 +79,7 @@
       {
         "id": "Practitioner.address",
         "path": "Practitioner.address",
-        "short": "진료의 개인 주소"
+        "short": "의료진 개인 주소"
       },
       {
         "id": "Practitioner.address.extension:krcore-roadNameAddress",

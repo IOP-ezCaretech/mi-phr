@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KRCDexMedicationCodes",
+  "id": "krcdex-medication-codes",
+  "title": "KR CDex Medication codes",
+  "url": "http://example.org/ValueSet/krcdex-medication-codes",
+  "experimental": false,
+  "publisher": "ezCaretech",
+  "version": "4.0.1",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "KR",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Korea, Republic of"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/hira-edi-medication"
+      },
+      {
+        "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/kpis-kdcode"
+      }
+    ]
+  }
+}

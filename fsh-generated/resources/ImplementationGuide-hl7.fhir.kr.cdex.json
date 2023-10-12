@@ -144,6 +144,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/krcdex-medication-codes"
+        },
+        "name": "KR CDex Medication codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/miphr-medication-request"
         },
         "name": "KR CDex MedicationRequest Profile",

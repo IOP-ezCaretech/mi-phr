@@ -20,8 +20,8 @@
             "display": "National Person Identifier for Republic of Korea"
           },
           {
-            "code": "PN",
-            "display": "Person number"
+            "code": "PI",
+            "display": "Patient internal identifier"
           }
         ]
       }

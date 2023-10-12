@@ -94,15 +94,18 @@
         "path": "PractitionerRole.code",
         "sliceName": "MDRole",
         "min": 1,
-        "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "doctor",
-              "system": "http://terminology.hl7.org/CodeSystem/practitioner-role"
-            }
-          ]
-        }
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.code:MDRole.coding.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/practitioner-role"
+      },
+      {
+        "id": "PractitionerRole.code:MDRole.coding.code",
+        "path": "PractitionerRole.code.coding.code",
+        "min": 1
       },
       {
         "id": "PractitionerRole.specialty",

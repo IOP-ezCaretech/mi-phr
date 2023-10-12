@@ -12,6 +12,7 @@
 [KR_CDex_Identifier_Types]: ValueSet-krcdex-identifier-type.html
 [MIPHRImagingStudy]: StructureDefinition-miphr-imaging-study.html
 [MIPHRMedia]: StructureDefinition-miphr-media.html
+[KRCDexMedicationCodes]: ValueSet-krcdex-medication-codes.html
 [MIPHRMedicationRequest]: StructureDefinition-miphr-medication-request.html
 [MIPHRObservationExam]: StructureDefinition-miphr-observation-exam.html
 [MIPHRObservationLaboratory]: StructureDefinition-miphr-observation-laboratory.html

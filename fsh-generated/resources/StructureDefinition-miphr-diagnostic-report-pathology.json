@@ -31,41 +31,10 @@
   "kind": "resource",
   "abstract": false,
   "type": "DiagnosticReport",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-diagnosticreport-pathology-results",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "DiagnosticReport.extension",
-        "path": "DiagnosticReport.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "DiagnosticReport.extension:krcore-testRequestDateTime",
-        "path": "DiagnosticReport.extension",
-        "sliceName": "krcore-testRequestDateTime",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://example.org/StructureDefinition/krcore-testRequestDateTime"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
       {
         "id": "DiagnosticReport.identifier",
         "path": "DiagnosticReport.identifier",
@@ -86,96 +55,35 @@
         "id": "DiagnosticReport.status",
         "path": "DiagnosticReport.status",
         "short": "진단보고(병리검사) 상태: registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown",
-        "fixedCode": "final",
-        "mustSupport": true
+        "fixedCode": "final"
       },
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "short": "검사 구분(영상, 병리)",
-        "min": 1,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DiagnosticServiceSection"
-            }
-          ],
-          "description": "Codes for diagnostic service sections."
-        }
+        "min": 2,
+        "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category:Pathology",
+        "id": "DiagnosticReport.category:Path-SNOMEDCT",
         "path": "DiagnosticReport.category",
-        "sliceName": "Pathology",
+        "sliceName": "Path-SNOMEDCT",
         "min": 1,
         "max": "1",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "PAT",
-              "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              "code": "371528001",
+              "system": "http://snomed.info/sct"
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "DiagnosticReport.code",
         "path": "DiagnosticReport.code",
-        "short": "검사 코드",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.code.coding",
-        "path": "DiagnosticReport.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "DiagnosticReport.code.coding:EDI",
-        "path": "DiagnosticReport.code.coding",
-        "sliceName": "EDI",
-        "short": "건강보험심사평가원 건강보험요양급여비용 코드 정보",
-        "min": 0,
-        "max": "*",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-procedure-codes"
-        }
-      },
-      {
-        "id": "DiagnosticReport.code.coding:EDI.system",
-        "path": "DiagnosticReport.code.coding.system",
-        "short": "건강보험심사평가원 건강보험요양급여비용 코드체계",
-        "min": 1,
-        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.code.coding:EDI.code",
-        "path": "DiagnosticReport.code.coding.code",
-        "short": "건강보험심사평가원 건강보험요양급여비용 코드",
-        "min": 1,
-        "mustSupport": true
+        "short": "검사 코드"
       },
       {
         "id": "DiagnosticReport.code.coding:LOINC",
@@ -227,7 +135,6 @@
       {
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
-        "short": "병리검사 대상",
         "min": 1,
         "type": [
           {
@@ -266,16 +173,6 @@
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.issued",
-        "path": "DiagnosticReport.issued",
-        "short": "진단 보고 일시"
-      },
-      {
-        "id": "DiagnosticReport.performer",
-        "path": "DiagnosticReport.performer",
-        "short": "진단 책임자"
-      },
-      {
         "id": "DiagnosticReport.resultsInterpreter",
         "path": "DiagnosticReport.resultsInterpreter",
         "max": "1",
@@ -286,14 +183,7 @@
               "http://example.org/StructureDefinition/miphr-practitioner-role"
             ]
           }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.result",
-        "path": "DiagnosticReport.result",
-        "short": "병리검사 결과",
-        "mustSupport": true
+        ]
       },
       {
         "id": "DiagnosticReport.imagingStudy",
@@ -334,11 +224,6 @@
         "short": "검사소견",
         "min": 1,
         "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.conclusionCode",
-        "path": "DiagnosticReport.conclusionCode",
-        "short": "코드화된 결과 판독 소견"
       }
     ]
   }

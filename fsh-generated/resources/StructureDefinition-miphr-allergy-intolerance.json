@@ -26,7 +26,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "AllergyIntolerance",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-allergyintolerance",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -99,22 +99,29 @@
       {
         "id": "AllergyIntolerance.code",
         "path": "AllergyIntolerance.code",
-        "short": "알레르기 및 불내성 원인 코드",
-        "min": 1,
+        "short": "알레르기 및 불내성 원인 코드"
+      },
+      {
+        "id": "AllergyIntolerance.code.coding:KD",
+        "path": "AllergyIntolerance.code.coding",
+        "sliceName": "KD",
+        "min": 0,
+        "max": "1",
         "mustSupport": true,
         "binding": {
-          "strength": "extensible",
-          "valueSet": "http://example.org/ValueSet/krcdex-allergy-codes"
+          "strength": "required",
+          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-korea-drug-codes"
         }
       },
       {
-        "id": "AllergyIntolerance.code.coding.system",
+        "id": "AllergyIntolerance.code.coding:KD.system",
         "path": "AllergyIntolerance.code.coding.system",
         "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode",
         "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.code.coding.code",
+        "id": "AllergyIntolerance.code.coding:KD.code",
         "path": "AllergyIntolerance.code.coding.code",
         "min": 1,
         "mustSupport": true
@@ -169,8 +176,7 @@
               "http://example.org/StructureDefinition/miphr-practitioner-role"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "AllergyIntolerance.note",
@@ -184,45 +190,20 @@
         "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.reaction",
-        "path": "AllergyIntolerance.reaction",
-        "short": "알레르기 및 불내성 반응"
-      },
-      {
         "id": "AllergyIntolerance.reaction.substance",
         "path": "AllergyIntolerance.reaction.substance",
         "binding": {
-          "strength": "extensible",
-          "valueSet": "http://example.org/ValueSet/krcdex-allergy-codes"
+          "strength": "example",
+          "valueSet": "http://example.org/ValueSet/krcdex-allergyIntolerance-substance-codes"
         }
-      },
-      {
-        "id": "AllergyIntolerance.reaction.substance.coding.system",
-        "path": "AllergyIntolerance.reaction.substance.coding.system",
-        "min": 1
-      },
-      {
-        "id": "AllergyIntolerance.reaction.substance.coding.code",
-        "path": "AllergyIntolerance.reaction.substance.coding.code",
-        "min": 1
       },
       {
         "id": "AllergyIntolerance.reaction.manifestation",
         "path": "AllergyIntolerance.reaction.manifestation",
         "binding": {
-          "strength": "extensible",
-          "valueSet": "http://example.org/ValueSet/krcdex-allergy-manifestation-codes"
+          "strength": "example",
+          "valueSet": "http://example.org/ValueSet/krcdex-allergyIntolerance-manifestation-codes"
         }
-      },
-      {
-        "id": "AllergyIntolerance.reaction.manifestation.coding.system",
-        "path": "AllergyIntolerance.reaction.manifestation.coding.system",
-        "min": 1
-      },
-      {
-        "id": "AllergyIntolerance.reaction.manifestation.coding.code",
-        "path": "AllergyIntolerance.reaction.manifestation.coding.code",
-        "min": 1
       }
     ]
   }

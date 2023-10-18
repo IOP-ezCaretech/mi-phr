@@ -36,6 +36,21 @@
   "differential": {
     "element": [
       {
+        "id": "PractitionerRole.identifier",
+        "path": "PractitionerRole.identifier",
+        "short": "의료진 식별자"
+      },
+      {
+        "id": "PractitionerRole.identifier.system",
+        "path": "PractitionerRole.identifier.system",
+        "short": "식별체계"
+      },
+      {
+        "id": "PractitionerRole.identifier.value",
+        "path": "PractitionerRole.identifier.value",
+        "short": "식별자"
+      },
+      {
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
         "short": "의료진 정보",
@@ -97,6 +112,12 @@
         "max": "1"
       },
       {
+        "id": "PractitionerRole.code:MDRole.coding",
+        "path": "PractitionerRole.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
         "id": "PractitionerRole.code:MDRole.coding.system",
         "path": "PractitionerRole.code.coding.system",
         "min": 1,
@@ -105,7 +126,8 @@
       {
         "id": "PractitionerRole.code:MDRole.coding.code",
         "path": "PractitionerRole.code.coding.code",
-        "min": 1
+        "min": 1,
+        "fixedCode": "doctor"
       },
       {
         "id": "PractitionerRole.specialty",
@@ -135,11 +157,7 @@
         "short": "건강보험심사평가원 진료과목 코드 정보",
         "min": 1,
         "max": "*",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-medicaldepartment-codes"
-        }
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.specialty.coding:HIRA.system",

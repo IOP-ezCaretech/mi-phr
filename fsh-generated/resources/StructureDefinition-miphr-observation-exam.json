@@ -271,7 +271,8 @@
           ],
           "rules": "open"
         },
-        "short": "검사 결과"
+        "short": "검사 결과",
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]:valueQuantity",
@@ -283,7 +284,8 @@
           {
             "code": "Quantity"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]:valueQuantity.value",
@@ -372,6 +374,11 @@
       {
         "id": "Observation.referenceRange.high.unit",
         "path": "Observation.referenceRange.high.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.text",
+        "path": "Observation.referenceRange.text",
         "mustSupport": true
       },
       {

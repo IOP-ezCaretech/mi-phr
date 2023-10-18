@@ -31,165 +31,10 @@
   "kind": "resource",
   "abstract": false,
   "type": "Organization",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-healthcare-organization",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Organization.identifier",
-        "path": "Organization.identifier",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        },
-        "short": "의료기관 식별자",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.identifier:HIRA",
-        "path": "Organization.identifier",
-        "sliceName": "HIRA",
-        "short": "건강보험심사평가원 요양기관 식별 정보",
-        "min": 1,
-        "max": "*",
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.identifier:HIRA.system",
-        "path": "Organization.identifier.system",
-        "min": 1,
-        "fixedUri": "http://www.hl7korea.or.kr/Identifier/hira-krnpi",
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.identifier:HIRA.value",
-        "path": "Organization.identifier.value",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.type",
-        "path": "Organization.type",
-        "short": "의료기관 종별타입",
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.type.coding",
-        "path": "Organization.type.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Organization.type.coding:HIRA",
-        "path": "Organization.type.coding",
-        "sliceName": "HIRA",
-        "short": "건강보험심사평가원 요양기관 종별 구분",
-        "min": 1,
-        "max": "*",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-healthcare-organization-type-codes"
-        }
-      },
-      {
-        "id": "Organization.type.coding:HIRA.system",
-        "path": "Organization.type.coding.system",
-        "min": 1,
-        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-healthcare-organization-types",
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.type.coding:HIRA.code",
-        "path": "Organization.type.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.name",
-        "path": "Organization.name",
-        "short": "의료기관명",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.telecom",
-        "path": "Organization.telecom",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        },
-        "short": "의료기관 연락처",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.telecom:Phone",
-        "path": "Organization.telecom",
-        "sliceName": "Phone",
-        "short": "전화번호",
-        "min": 1,
-        "max": "*",
-        "mustSupport": true
-      },
-      {
-        "id": "Organization.telecom:Phone.system",
-        "path": "Organization.telecom.system",
-        "short": "연락처 유형: phone",
-        "min": 1,
-        "fixedCode": "phone"
-      },
-      {
-        "id": "Organization.telecom:Phone.value",
-        "path": "Organization.telecom.value",
-        "short": "상세 연락처",
-        "min": 1
-      },
-      {
-        "id": "Organization.telecom:Fax",
-        "path": "Organization.telecom",
-        "sliceName": "Fax",
-        "short": "팩스번호",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Organization.telecom:Fax.system",
-        "path": "Organization.telecom.system",
-        "short": "연락처 유형: fax",
-        "min": 1,
-        "fixedCode": "fax"
-      },
-      {
-        "id": "Organization.telecom:Fax.value",
-        "path": "Organization.telecom.value",
-        "short": "상세 연락처",
-        "min": 1
-      },
-      {
-        "id": "Organization.address",
-        "path": "Organization.address",
-        "short": "주소"
-      },
       {
         "id": "Organization.address.extension:krcore-roadNameAddress",
         "path": "Organization.address.extension",
@@ -208,12 +53,13 @@
       {
         "id": "Organization.address.text",
         "path": "Organization.address.text",
-        "short": "전체 주소"
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Organization.address.postalCode",
         "path": "Organization.address.postalCode",
-        "short": "우편번호"
+        "mustSupport": true
       }
     ]
   }

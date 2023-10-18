@@ -106,6 +106,7 @@
       {
         "id": "Patient.address.text",
         "path": "Patient.address.text",
+        "min": 1,
         "mustSupport": true
       },
       {

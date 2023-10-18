@@ -94,37 +94,30 @@
       {
         "id": "Condition.category",
         "path": "Condition.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "short": "진단",
-        "min": 1
-      },
-      {
-        "id": "Condition.category:EnctrDiag",
-        "path": "Condition.category",
-        "sliceName": "EnctrDiag",
+        "short": "진단 및 주호소 정보",
         "min": 1,
         "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "진단",
-              "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-condition-category-types"
-            }
-          ]
-        },
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-condition-category-codes"
-        }
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category.coding",
+        "path": "Condition.category.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category.coding.system",
+        "path": "Condition.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category.coding.code",
+        "path": "Condition.category.coding.code",
+        "min": 1,
+        "fixedCode": "encounter-diagnosis",
+        "mustSupport": true
       },
       {
         "id": "Condition.code",
@@ -196,6 +189,11 @@
         "path": "Condition.code.coding.code",
         "short": "SNOMED-CT 코드",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.text",
+        "path": "Condition.code.text",
         "mustSupport": true
       },
       {

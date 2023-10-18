@@ -1,6 +1,6 @@
 [MIPHRAllergyIntolerance]: StructureDefinition-miphr-allergy-intolerance.html
-[KRCDexAllergyCodes]: ValueSet-krcdex-allergy-codes.html
-[KRCDexAllergyManifestationCodes]: ValueSet-krcdex-allergy-manifestation-codes.html
+[KRCDexAllergyManifestationCodes]: ValueSet-krcdex-allergyIntolerance-manifestation-codes.html
+[KRCDexAllergyCodes]: ValueSet-krcdex-allergyIntolerance-substance-codes.html
 [MIPHRCondition]: StructureDefinition-miphr-condition.html
 [MIPHRDiagnosticReportImaging]: StructureDefinition-miphr-diagnostic-report-imaging.html
 [MIPHRDiagnosticReportPathology]: StructureDefinition-miphr-diagnostic-report-pathology.html

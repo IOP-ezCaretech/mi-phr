@@ -63,14 +63,14 @@
         "id": "MedicationRequest.status",
         "path": "MedicationRequest.status",
         "short": "약물 처방 상태: active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown",
-        "patternCode": "completed",
+        "fixedCode": "completed",
         "mustSupport": true
       },
       {
         "id": "MedicationRequest.intent",
         "path": "MedicationRequest.intent",
         "short": "약물 처방 의도: order | proposal | plan +",
-        "patternCode": "order",
+        "fixedCode": "order",
         "mustSupport": true
       },
       {
@@ -82,17 +82,95 @@
             "code": "boolean"
           }
         ],
-        "patternBoolean": false,
+        "fixedBoolean": false,
         "mustSupport": true
       },
       {
         "id": "MedicationRequest.medication[x]",
         "path": "MedicationRequest.medication[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "처방 약물 정보",
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
           "valueSet": "http://example.org/ValueSet/krcdex-medication-codes"
         }
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept",
+        "path": "MedicationRequest.medication[x]",
+        "sliceName": "medicationCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding",
+        "path": "MedicationRequest.medication[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:EDI",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "EDI",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:EDI.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:EDI.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:KD",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "KD",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:KD.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:KD.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.subject",
@@ -131,6 +209,19 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationRequest.requester",
+        "path": "MedicationRequest.requester",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/miphr-practitioner-role"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "MedicationRequest.dosageInstruction",
         "path": "MedicationRequest.dosageInstruction",
         "short": "약물 투여 방법",
@@ -163,18 +254,21 @@
         "id": "MedicationRequest.dosageInstruction.timing.repeat.frequency",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.frequency",
         "short": "주기 당 약품 투여 및 복용 횟수",
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.period",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.period",
         "short": "약품 투여 및 복용 주기 수치",
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
         "short": "약품 투여 및 복용 주기 단위: s | min | h | d | wk | mo | a",
+        "min": 1,
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -222,6 +316,7 @@
         "path": "MedicationRequest.dosageInstruction.doseAndRate",
         "short": "투여 및 복용량",
         "min": 1,
+        "max": "1",
         "mustSupport": true
       },
       {
@@ -236,14 +331,15 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
         "sliceName": "doseQuantity",
         "short": "1회량 수치 정보",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -272,38 +368,6 @@
         "short": "1회 복용량 단위",
         "min": 1,
         "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange",
-        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
-        "sliceName": "doseRange",
-        "short": "1회량 범위 정보",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Range"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low",
-        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].low",
-        "short": "최소",
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://hl7.org/fhir/ValueSet/ucum-units"
-        }
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high",
-        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].high",
-        "short": "최대",
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://hl7.org/fhir/ValueSet/ucum-units"
-        }
       },
       {
         "id": "MedicationRequest.dispenseRequest",

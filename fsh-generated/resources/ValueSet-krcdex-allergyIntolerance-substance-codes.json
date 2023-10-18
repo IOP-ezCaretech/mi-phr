@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KRCDexAllergyCodes",
+  "id": "krcdex-allergyIntolerance-substance-codes",
+  "title": "KR CDex AllergyIntolerance Substance codes",
+  "url": "http://example.org/ValueSet/krcdex-allergyIntolerance-substance-codes",
+  "experimental": false,
+  "publisher": "ezCaretech",
+  "version": "4.0.1",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "KR",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Korea, Republic of"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode"
+      },
+      {
+        "system": "http://www.whocc.no/atc"
+      }
+    ]
+  }
+}

@@ -52,16 +52,16 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/krcdex-allergy-codes"
+          "reference": "ValueSet/krcdex-allergyIntolerance-manifestation-codes"
         },
-        "name": "KR CDex AllergyIntolerance codes",
+        "name": "KR CDex AllergyIntolerance manifestation codes",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/krcdex-allergy-manifestation-codes"
+          "reference": "ValueSet/krcdex-allergyIntolerance-substance-codes"
         },
-        "name": "KR CDex AllergyIntolerance manifestation codes",
+        "name": "KR CDex AllergyIntolerance Substance codes",
         "exampleBoolean": false
       },
       {

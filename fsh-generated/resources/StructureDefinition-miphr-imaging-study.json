@@ -36,7 +36,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "ImagingStudy",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-imagingstudy",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -64,7 +64,6 @@
       {
         "id": "ImagingStudy.subject",
         "path": "ImagingStudy.subject",
-        "short": "진단영상 대상",
         "type": [
           {
             "code": "Reference",
@@ -93,7 +92,6 @@
       {
         "id": "ImagingStudy.started",
         "path": "ImagingStudy.started",
-        "short": "진단영상 촬영 시작 날짜",
         "min": 1,
         "mustSupport": true
       },
@@ -115,20 +113,17 @@
       {
         "id": "ImagingStudy.series",
         "path": "ImagingStudy.series",
-        "short": "DICOM Series 정보",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.uid",
         "path": "ImagingStudy.series.uid",
-        "short": "DICOM Series UID",
         "mustSupport": true
       },
       {
         "id": "ImagingStudy.series.modality",
         "path": "ImagingStudy.series.modality",
-        "short": "DICOM 촬영 장비",
         "mustSupport": true
       },
       {

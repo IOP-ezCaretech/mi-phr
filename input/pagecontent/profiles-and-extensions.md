@@ -2,70 +2,80 @@
 
 The following profiles and have been defined for this implementation guide.
 
-#### Patient
+#### 환자정보
 
 - [KR CDex Patient profile](StructureDefinition-miphr-patient.html)
 
-#### Organization
+#### 의료기관정보
 
 - [KR CDex Healthcare Organization Profile](StructureDefinition-miphr-organization.html)
 
-#### Practitioner
+#### 의료진정보
 
 - [KR CDex Practitioner Profile](StructureDefinition-krcdex-practitioner.html)
 
-#### PractitionerRole
+#### 의료진역할
 
 - [KR CDex PractitionerRole Profile](StructureDefinition-miphr-practitioner-role.html)
 
-#### Encounter
+#### 내원정보
 
 - [KR CDex Encounter Profile](StructureDefinition-miphr-encounter.html)
 
-#### AllergyIntolerance
+#### 알레르기 및 불내성
 
 - [KR CDex AllergyIntolerance Profile](StructureDefinition-miphr-allergy-intolerance.html)
 
-#### Condition
+#### 진단내역
 
 - [KR CDex Condition Profile](StructureDefinition-miphr-condition.html)
 
-#### MedicationRequest
+#### 약물 처방 정보
 
 - [KR CDex MedicationRequest Profile](StructureDefinition-miphr-medication-request.html)
 
-#### Procedure
+#### 수술 및 처치내역
 
 - [KR CDex Procedure Profile](StructureDefinition-miphr-procedure.html)
 
-#### Endpoint
+#### DICOM 영상 위치 정보
 
 - [KR CDex Endpoint Profile](StructureDefinition-miphr-end-point.html)
 
-#### Media
+#### 참고자료
 
 - [KR CDex Media Profile](StructureDefinition-miphr-media.html)
 
-#### DocumentReference
+#### 진료기록 정보
 
 - [KR CDex DocumentReference Profile](StructureDefinition-miphr-document-reference.html)
 
-#### ImagingStudy
+#### DICOM 이미지정보
 
 - [KR CDex ImagingStudy Profile](StructureDefinition-miphr-imaging-study.html)
 
-#### Observation
+#### 검사
 
-- [KR CDex Observation Profile for Function Test](StructureDefinition-miphr-observation-exam.html)
+##### 진단검사
+
 - [KR CDex Observation Profile for Laboratory Result](StructureDefinition-miphr-observation-laboratory.html)
 
-#### DiagnosticReport
+##### 기타검사
+
+- [KR CDex Observation Profile for Function Test](StructureDefinition-miphr-observation-exam.html)
+
+<!-- #### DiagnosticReport -->
+
+##### 영상검사
 
 - [KR CDex DiagnosticReport Profile for Diagnostic Imaging](StructureDefinition-miphr-diagnostic-report-imaging.html)
+
+##### 병리검사
+
 - [KR CDex DiagnosticReport Profile for Patholoy Results](StructureDefinition-miphr-diagnostic-report-pathology.html)
 
-### Extensions
-
+<!-- ### Extensions
+KR CDex의 환자정보 구조
 - [KR Core Road Name Address Extension](StructureDefinition-krcore-roadNameAddress.html)
 - [KR Core Insurance Types Extension](StructureDefinition-krcore-insuranceTypes.html)
-- [KR Core Test Request DateTime Extension](StructureDefinition-krcore-testRequestDateTime.html)
+- [KR Core Test Request DateTime Extension](StructureDefinition-krcore-testRequestDateTime.html) -->

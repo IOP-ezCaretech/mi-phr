@@ -38,7 +38,7 @@
       {
         "id": "PractitionerRole.identifier",
         "path": "PractitionerRole.identifier",
-        "short": "의료진 식별자"
+        "short": "보건의료인 식별자"
       },
       {
         "id": "PractitionerRole.identifier.system",
@@ -53,7 +53,7 @@
       {
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
-        "short": "의료진 정보",
+        "short": "보건의료인 정보",
         "type": [
           {
             "code": "Reference",
@@ -77,57 +77,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "PractitionerRole.code",
-        "path": "PractitionerRole.code",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "short": "의료진 역할",
-        "min": 1,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/ValueSet/practitioner-role",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "PractitionerRole"
-            }
-          ],
-          "description": "The role a person plays representing an organization."
-        }
-      },
-      {
-        "id": "PractitionerRole.code:MDRole",
-        "path": "PractitionerRole.code",
-        "sliceName": "MDRole",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "PractitionerRole.code:MDRole.coding",
-        "path": "PractitionerRole.code.coding",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "PractitionerRole.code:MDRole.coding.system",
-        "path": "PractitionerRole.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/practitioner-role"
-      },
-      {
-        "id": "PractitionerRole.code:MDRole.coding.code",
-        "path": "PractitionerRole.code.coding.code",
-        "min": 1,
-        "fixedCode": "doctor"
       },
       {
         "id": "PractitionerRole.specialty",

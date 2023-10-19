@@ -81,7 +81,7 @@
         "id": "Condition.clinicalStatus.coding.system",
         "path": "Condition.clinicalStatus.coding.system",
         "min": 1,
-        "patternUri": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/condition-clinical",
         "mustSupport": true
       },
       {

@@ -173,6 +173,28 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:ATC",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "ATC",
+        "short": "약품 성분명",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:ATC.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "fixedUri": "http://www.whocc.no/atc",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:ATC.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "MedicationRequest.subject",
         "path": "MedicationRequest.subject",
         "short": "환자 정보",

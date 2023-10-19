@@ -2,23 +2,23 @@
 
 The following profiles and have been defined for this implementation guide.
 
-#### 환자정보
+#### 환자 정보
 
 - [KR CDex Patient profile](StructureDefinition-miphr-patient.html)
 
-#### 의료기관정보
+#### 의료기관 정보
 
 - [KR CDex Healthcare Organization Profile](StructureDefinition-miphr-organization.html)
 
-#### 의료진정보
+#### 보건의료인 정보
 
 - [KR CDex Practitioner Profile](StructureDefinition-krcdex-practitioner.html)
 
-#### 의료진역할
+#### 보건의료인 역할 정보
 
 - [KR CDex PractitionerRole Profile](StructureDefinition-miphr-practitioner-role.html)
 
-#### 내원정보
+#### 내원 정보
 
 - [KR CDex Encounter Profile](StructureDefinition-miphr-encounter.html)
 
@@ -50,7 +50,7 @@ The following profiles and have been defined for this implementation guide.
 
 - [KR CDex DocumentReference Profile](StructureDefinition-miphr-document-reference.html)
 
-#### DICOM 이미지정보
+#### DICOM 이미지 정보
 
 - [KR CDex ImagingStudy Profile](StructureDefinition-miphr-imaging-study.html)
 
@@ -60,7 +60,7 @@ The following profiles and have been defined for this implementation guide.
 
 - [KR CDex Observation Profile for Laboratory Result](StructureDefinition-miphr-observation-laboratory.html)
 
-##### 기타검사
+##### 기능검사
 
 - [KR CDex Observation Profile for Function Test](StructureDefinition-miphr-observation-exam.html)
 

@@ -38,7 +38,7 @@
       {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
-        "short": "의료진 식별자"
+        "short": "보건의료인 식별자"
       },
       {
         "id": "Practitioner.identifier.system",
@@ -79,7 +79,7 @@
       {
         "id": "Practitioner.address",
         "path": "Practitioner.address",
-        "short": "의료진 개인 주소"
+        "short": "보건의료인 주소"
       },
       {
         "id": "Practitioner.address.extension:krcore-roadNameAddress",
@@ -91,7 +91,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://simplifier.net/fhir/MyHealthWay/StructureDefinition/RoadNameAddress"
+              "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-roadNameAddress"
             ]
           }
         ]

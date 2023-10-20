@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-diagnostic-report-pathology",
-  "url": "http://example.org/StructureDefinition/miphr-diagnostic-report-pathology",
-  "name": "MIPHRDiagnosticReportPathology",
-  "title": "KR CDex DiagnosticReport Profile for Patholoy Results",
+  "id": "krcdex-diagnostic-report-imaging",
+  "url": "http://example.org/StructureDefinition/krcdex-diagnostic-report-imaging",
+  "name": "KRCDexDiagnosticReportImaging",
+  "title": "KR CDex DiagnosticReport Profile for Diagnostic Imaging",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -31,7 +31,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "DiagnosticReport",
-  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-diagnosticreport-pathology-results",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-diagnosticreport-diagnostic-imaging",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -54,7 +54,7 @@
       {
         "id": "DiagnosticReport.status",
         "path": "DiagnosticReport.status",
-        "short": "진단보고(병리검사) 상태: registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown",
+        "short": "진단보고(진단영상검사) 상태: registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown",
         "fixedCode": "final"
       },
       {
@@ -65,15 +65,15 @@
         "mustSupport": true
       },
       {
-        "id": "DiagnosticReport.category:Path-SNOMEDCT",
+        "id": "DiagnosticReport.category:Img-SNOMEDCT",
         "path": "DiagnosticReport.category",
-        "sliceName": "Path-SNOMEDCT",
+        "sliceName": "Img-SNOMEDCT",
         "min": 1,
         "max": "1",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "371528001",
+              "code": "4201000179104",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -140,7 +140,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-patient"
+              "http://example.org/StructureDefinition/krcdex-patient"
             ]
           }
         ],
@@ -154,7 +154,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-encounter"
+              "http://example.org/StructureDefinition/krcdex-encounter"
             ]
           }
         ],
@@ -180,7 +180,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-practitioner-role"
+              "http://example.org/StructureDefinition/krcdex-practitioner-role"
             ]
           }
         ]
@@ -194,7 +194,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-imaging-study"
+              "http://example.org/StructureDefinition/krcdex-imaging-study"
             ]
           }
         ]
@@ -212,7 +212,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-media"
+              "http://example.org/StructureDefinition/krcdex-media"
             ]
           }
         ],
@@ -222,8 +222,7 @@
         "id": "DiagnosticReport.conclusion",
         "path": "DiagnosticReport.conclusion",
         "short": "검사소견",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       }
     ]
   }

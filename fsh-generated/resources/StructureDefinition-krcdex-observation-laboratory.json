@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-observation-exam",
-  "url": "http://example.org/StructureDefinition/miphr-observation-exam",
-  "name": "MIPHRObservationExam",
-  "title": "KR CDex Observation Profile for Function Test",
+  "id": "krcdex-observation-laboratory",
+  "url": "http://example.org/StructureDefinition/krcdex-observation-laboratory",
+  "name": "KRCDexObservationLaboratory",
+  "title": "KR CDex Observation Profile for Laboratory Result",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -41,120 +41,45 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-observation-laboratory-result",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation.identifier",
         "path": "Observation.identifier",
+        "short": "진단검사 식별자",
         "min": 1,
         "max": "1"
       },
       {
         "id": "Observation.identifier.system",
         "path": "Observation.identifier.system",
+        "short": "식별체계",
         "min": 1
       },
       {
         "id": "Observation.identifier.value",
         "path": "Observation.identifier.value",
+        "short": "식별자",
         "min": 1
       },
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "short": "기능검사 상태: registered | preliminary | final | amended +",
-        "fixedCode": "final",
-        "mustSupport": true
+        "short": "진단검사 상태: registered | preliminary | final | amended +",
+        "fixedCode": "final"
       },
       {
         "id": "Observation.category",
         "path": "Observation.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "short": "관찰 및 측정 범주",
-        "min": 1,
         "max": "1",
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/observation-category",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCategory"
-            }
-          ],
-          "description": "Codes for high level observation categories."
-        }
-      },
-      {
-        "id": "Observation.category:Exam",
-        "path": "Observation.category",
-        "sliceName": "Exam",
-        "min": 1,
-        "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "exam",
-              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-            }
-          ]
-        }
+        "mustSupport": true
       },
       {
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "검사 코드",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Observation.code.coding:EDI",
-        "path": "Observation.code.coding",
-        "sliceName": "EDI",
-        "short": "건강보험심사평가원 건강보험요양급여비용 코드 정보",
-        "min": 0,
-        "max": "*",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-procedure-codes"
-        }
-      },
-      {
-        "id": "Observation.code.coding:EDI.system",
-        "path": "Observation.code.coding.system",
-        "short": "건강보험심사평가원 건강보험요양급여비용 코드체계",
-        "min": 1,
-        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:EDI.code",
-        "path": "Observation.code.coding.code",
-        "short": "건강보험심사평가원 건강보험요양급여비용 코드",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -200,20 +125,14 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.text",
-        "path": "Observation.code.text",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "short": "기능검사 대상",
         "min": 1,
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-patient"
+              "http://example.org/StructureDefinition/krcdex-patient"
             ]
           }
         ],
@@ -222,13 +141,13 @@
       {
         "id": "Observation.encounter",
         "path": "Observation.encounter",
-        "short": "내원정보",
+        "short": "내원 정보",
         "min": 1,
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-encounter"
+              "http://example.org/StructureDefinition/krcdex-encounter"
             ]
           }
         ],
@@ -237,7 +156,6 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "검사 일자",
         "min": 1,
         "type": [
           {
@@ -249,12 +167,12 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "검사 책임자",
+        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-practitioner-role"
+              "http://example.org/StructureDefinition/krcdex-practitioner-role"
             ]
           }
         ]
@@ -270,9 +188,7 @@
             }
           ],
           "rules": "open"
-        },
-        "short": "검사 결과",
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.value[x]:valueQuantity",
@@ -284,8 +200,7 @@
           {
             "code": "Quantity"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.value[x]:valueQuantity.value",
@@ -343,8 +258,7 @@
       {
         "id": "Observation.referenceRange",
         "path": "Observation.referenceRange",
-        "short": "참고치",
-        "mustSupport": true
+        "short": "참고치"
       },
       {
         "id": "Observation.referenceRange.low",
@@ -377,18 +291,14 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.referenceRange.text",
-        "path": "Observation.referenceRange.text",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
+        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-media"
+              "http://example.org/StructureDefinition/krcdex-media"
             ]
           }
         ],

@@ -45,7 +45,7 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-allergy-intolerance"
+          "reference": "StructureDefinition/krcdex-allergy-intolerance"
         },
         "name": "KR CDex AllergyIntolerance",
         "exampleBoolean": false
@@ -66,28 +66,28 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-condition"
+          "reference": "StructureDefinition/krcdex-condition"
         },
         "name": "KR CDex Condition Profile",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-diagnostic-report-imaging"
+          "reference": "StructureDefinition/krcdex-diagnostic-report-imaging"
         },
         "name": "KR CDex DiagnosticReport Profile for Diagnostic Imaging",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-diagnostic-report-pathology"
+          "reference": "StructureDefinition/krcdex-diagnostic-report-pathology"
         },
         "name": "KR CDex DiagnosticReport Profile for Patholoy Results",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-document-reference"
+          "reference": "StructureDefinition/krcdex-document-reference"
         },
         "name": "KR CDex DocumentReference Profile",
         "exampleBoolean": false
@@ -101,21 +101,21 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-encounter"
+          "reference": "StructureDefinition/krcdex-encounter"
         },
         "name": "KR CDex Encounter Profile",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-end-point"
+          "reference": "StructureDefinition/krcdex-end-point"
         },
         "name": "KR CDex Endpoint Profile",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-organization"
+          "reference": "StructureDefinition/krcdex-organization"
         },
         "name": "KR CDex Healthcare Organization Profile",
         "exampleBoolean": false
@@ -130,49 +130,49 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-imaging-study"
+          "reference": "StructureDefinition/krcdex-imaging-study"
         },
         "name": "KR CDex ImagingStudy Profile",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-media"
+          "reference": "StructureDefinition/krcdex-media"
         },
         "name": "KR CDex Media Profile",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/krcdex-medication-codes"
+          "reference": "ValueSet/krcdex-medication-clinical-drug"
         },
-        "name": "KR CDex Medication codes",
+        "name": "KR CDex Medication Clinical Drug",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-medication-request"
+          "reference": "StructureDefinition/krcdex-medication-request"
         },
         "name": "KR CDex MedicationRequest Profile",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-observation-exam"
+          "reference": "StructureDefinition/krcdex-observation-exam"
         },
         "name": "KR CDex Observation Profile for Function Test",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-observation-laboratory"
+          "reference": "StructureDefinition/krcdex-observation-laboratory"
         },
         "name": "KR CDex Observation Profile for Laboratory Result",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-patient"
+          "reference": "StructureDefinition/krcdex-patient"
         },
         "name": "KR CDex Patient Profile",
         "exampleBoolean": false
@@ -186,14 +186,14 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-practitioner-role"
+          "reference": "StructureDefinition/krcdex-practitioner-role"
         },
         "name": "KR CDex PractitionerRole Profile",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/miphr-procedure"
+          "reference": "StructureDefinition/krcdex-procedure"
         },
         "name": "KR CDex Procedure Profile",
         "exampleBoolean": false

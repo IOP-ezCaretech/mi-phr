@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-media",
-  "url": "http://example.org/StructureDefinition/miphr-media",
-  "name": "MIPHRMedia",
+  "id": "krcdex-media",
+  "url": "http://example.org/StructureDefinition/krcdex-media",
+  "name": "KRCDexMedia",
   "title": "KR CDex Media Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -108,7 +108,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-patient"
+              "http://example.org/StructureDefinition/krcdex-patient"
             ]
           }
         ],
@@ -122,7 +122,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-encounter"
+              "http://example.org/StructureDefinition/krcdex-encounter"
             ]
           }
         ],

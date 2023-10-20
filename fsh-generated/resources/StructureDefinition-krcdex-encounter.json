@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-encounter",
-  "url": "http://example.org/StructureDefinition/miphr-encounter",
-  "name": "MIPHREncounter",
+  "id": "krcdex-encounter",
+  "url": "http://example.org/StructureDefinition/krcdex-encounter",
+  "name": "KRCDexEncounter",
   "title": "KR CDex Encounter Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -68,7 +68,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-patient"
+              "http://example.org/StructureDefinition/krcdex-patient"
             ]
           }
         ],
@@ -86,7 +86,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-practitioner-role"
+              "http://example.org/StructureDefinition/krcdex-practitioner-role"
             ]
           }
         ],
@@ -105,7 +105,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-organization"
+              "http://example.org/StructureDefinition/krcdex-organization"
             ]
           }
         ],

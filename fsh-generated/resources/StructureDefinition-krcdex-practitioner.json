@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "krcdex-practitioner",
   "url": "http://example.org/StructureDefinition/krcdex-practitioner",
-  "name": "MIPHRPractitioner",
+  "name": "KRCDexPractitioner",
   "title": "KR CDex Practitioner Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -31,14 +31,14 @@
   "kind": "resource",
   "abstract": false,
   "type": "Practitioner",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-medical-doctor",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
-        "short": "보건의료인 식별자"
+        "short": "의료진 식별자"
       },
       {
         "id": "Practitioner.identifier.system",
@@ -51,17 +51,9 @@
         "short": "식별자"
       },
       {
-        "id": "Practitioner.name",
-        "path": "Practitioner.name",
-        "short": "성명",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Practitioner.name.text",
         "path": "Practitioner.name.text",
         "short": "성명(전체)",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -75,36 +67,6 @@
         "path": "Practitioner.name.given",
         "short": "성명(이름)",
         "mustSupport": true
-      },
-      {
-        "id": "Practitioner.address",
-        "path": "Practitioner.address",
-        "short": "보건의료인 주소"
-      },
-      {
-        "id": "Practitioner.address.extension:krcore-roadNameAddress",
-        "path": "Practitioner.address.extension",
-        "sliceName": "krcore-roadNameAddress",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-roadNameAddress"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Practitioner.address.text",
-        "path": "Practitioner.address.text",
-        "short": "주소 텍스트"
-      },
-      {
-        "id": "Practitioner.address.postalCode",
-        "path": "Practitioner.address.postalCode",
-        "short": "우편번호"
       }
     ]
   }

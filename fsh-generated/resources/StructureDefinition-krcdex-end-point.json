@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-end-point",
-  "url": "http://example.org/StructureDefinition/miphr-end-point",
-  "name": "MIPHREndpoint",
+  "id": "krcdex-end-point",
+  "url": "http://example.org/StructureDefinition/krcdex-end-point",
+  "name": "KRCDexEndpoint",
   "title": "KR CDex Endpoint Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -83,7 +83,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-organization"
+              "http://example.org/StructureDefinition/krcdex-organization"
             ]
           }
         ],

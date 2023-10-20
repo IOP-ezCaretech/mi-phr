@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-medication-request",
-  "url": "http://example.org/StructureDefinition/miphr-medication-request",
-  "name": "MIPHRMedicationRequest",
+  "id": "krcdex-medication-request",
+  "url": "http://example.org/StructureDefinition/krcdex-medication-request",
+  "name": "KRCDexMedicationRequest",
   "title": "KR CDex MedicationRequest Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -99,11 +99,7 @@
           "rules": "open"
         },
         "short": "처방 약물 정보",
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "http://example.org/ValueSet/krcdex-medication-codes"
-        }
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept",
@@ -128,49 +124,20 @@
             }
           ],
           "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:ClinicalDrug",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "ClinicalDrug",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://example.org/ValueSet/krcdex-medication-clinical-drug"
         }
-      },
-      {
-        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:EDI",
-        "path": "MedicationRequest.medication[x].coding",
-        "sliceName": "EDI",
-        "min": 0,
-        "max": "*",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:EDI.system",
-        "path": "MedicationRequest.medication[x].coding.system",
-        "min": 1,
-        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:EDI.code",
-        "path": "MedicationRequest.medication[x].coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:KD",
-        "path": "MedicationRequest.medication[x].coding",
-        "sliceName": "KD",
-        "min": 0,
-        "max": "*",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:KD.system",
-        "path": "MedicationRequest.medication[x].coding.system",
-        "min": 1,
-        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:KD.code",
-        "path": "MedicationRequest.medication[x].coding.code",
-        "min": 1,
-        "mustSupport": true
       },
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:ATC",
@@ -202,7 +169,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-patient"
+              "http://example.org/StructureDefinition/krcdex-patient"
             ]
           }
         ],
@@ -217,7 +184,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-encounter"
+              "http://example.org/StructureDefinition/krcdex-encounter"
             ]
           }
         ],
@@ -237,7 +204,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-practitioner-role"
+              "http://example.org/StructureDefinition/krcdex-practitioner-role"
             ]
           }
         ],

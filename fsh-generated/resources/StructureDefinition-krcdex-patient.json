@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-patient",
-  "url": "http://example.org/StructureDefinition/miphr-patient",
-  "name": "MIPHRPatient",
+  "id": "krcdex-patient",
+  "url": "http://example.org/StructureDefinition/krcdex-patient",
+  "name": "KRCDexPatient",
   "title": "KR CDex Patient Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -123,7 +123,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-organization"
+              "http://example.org/StructureDefinition/krcdex-organization"
             ]
           }
         ],

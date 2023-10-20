@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-document-reference",
-  "url": "http://example.org/StructureDefinition/miphr-document-reference",
-  "name": "MIPHRDocumentReference",
+  "id": "krcdex-document-reference",
+  "url": "http://example.org/StructureDefinition/krcdex-document-reference",
+  "name": "KRCDexDocumentReference",
   "title": "KR CDex DocumentReference Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -113,7 +113,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-patient"
+              "http://example.org/StructureDefinition/krcdex-patient"
             ]
           }
         ],
@@ -159,7 +159,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-encounter"
+              "http://example.org/StructureDefinition/krcdex-encounter"
             ]
           }
         ],

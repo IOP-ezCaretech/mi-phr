@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-imaging-study",
-  "url": "http://example.org/StructureDefinition/miphr-imaging-study",
-  "name": "MIPHRImagingStudy",
+  "id": "krcdex-imaging-study",
+  "url": "http://example.org/StructureDefinition/krcdex-imaging-study",
+  "name": "KRCDexImagingStudy",
   "title": "KR CDex ImagingStudy Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -68,7 +68,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-patient"
+              "http://example.org/StructureDefinition/krcdex-patient"
             ]
           }
         ],
@@ -83,7 +83,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-encounter"
+              "http://example.org/StructureDefinition/krcdex-encounter"
             ]
           }
         ],
@@ -104,7 +104,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-end-point"
+              "http://example.org/StructureDefinition/krcdex-end-point"
             ]
           }
         ],
@@ -152,7 +152,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-end-point"
+              "http://example.org/StructureDefinition/krcdex-end-point"
             ]
           }
         ]

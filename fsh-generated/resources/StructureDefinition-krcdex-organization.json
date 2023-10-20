@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-organization",
-  "url": "http://example.org/StructureDefinition/miphr-organization",
-  "name": "MIPHROrganization",
+  "id": "krcdex-organization",
+  "url": "http://example.org/StructureDefinition/krcdex-organization",
+  "name": "KRCDexOrganization",
   "title": "KR CDex Healthcare Organization Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",

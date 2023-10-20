@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-procedure",
-  "url": "http://example.org/StructureDefinition/miphr-procedure",
-  "name": "MIPHRProcedure",
+  "id": "krcdex-procedure",
+  "url": "http://example.org/StructureDefinition/krcdex-procedure",
+  "name": "KRCDexProcedure",
   "title": "KR CDex Procedure Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -94,7 +94,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-patient"
+              "http://example.org/StructureDefinition/krcdex-patient"
             ]
           }
         ],
@@ -108,7 +108,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-encounter"
+              "http://example.org/StructureDefinition/krcdex-encounter"
             ]
           }
         ],
@@ -137,7 +137,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-practitioner-role"
+              "http://example.org/StructureDefinition/krcdex-practitioner-role"
             ]
           }
         ],

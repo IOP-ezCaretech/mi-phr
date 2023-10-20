@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miphr-condition",
-  "url": "http://example.org/StructureDefinition/miphr-condition",
-  "name": "MIPHRCondition",
+  "id": "krcdex-condition",
+  "url": "http://example.org/StructureDefinition/krcdex-condition",
+  "name": "KRCDexCondition",
   "title": "KR CDex Condition Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -204,7 +204,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-patient"
+              "http://example.org/StructureDefinition/krcdex-patient"
             ]
           }
         ],
@@ -219,7 +219,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-encounter"
+              "http://example.org/StructureDefinition/krcdex-encounter"
             ]
           }
         ],
@@ -241,7 +241,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://example.org/StructureDefinition/miphr-practitioner-role"
+              "http://example.org/StructureDefinition/krcdex-practitioner-role"
             ]
           }
         ],

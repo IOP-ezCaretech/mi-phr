@@ -99,6 +99,17 @@
           "rules": "open"
         },
         "short": "처방 약물 정보",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-medication"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

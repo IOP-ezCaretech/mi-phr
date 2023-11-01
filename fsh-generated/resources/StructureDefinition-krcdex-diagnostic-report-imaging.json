@@ -60,24 +60,7 @@
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
-        "short": "검사 구분(영상, 병리)",
-        "min": 2,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category:Img-SNOMEDCT",
-        "path": "DiagnosticReport.category",
-        "sliceName": "Img-SNOMEDCT",
-        "min": 1,
-        "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "4201000179104",
-              "system": "http://snomed.info/sct"
-            }
-          ]
-        },
+        "short": "검사 구분(영상)",
         "mustSupport": true
       },
       {

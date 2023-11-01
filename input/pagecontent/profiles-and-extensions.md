@@ -5,14 +5,17 @@ The following profiles and have been defined for this implementation guide.
 #### 환자 정보
 
 - [KR CDex Patient profile](StructureDefinition-krcdex-patient.html)
+- [KR CDex Patient 2 profile](StructureDefinition-krcdex-patientd.html)
 
 #### 의료기관 정보
 
 - [KR CDex Healthcare Organization Profile](StructureDefinition-krcdex-organization.html)
+- [KR CDex Healthcare Organization 2 Profile](StructureDefinition-krcdex-organizationd.html)
 
 #### 진료의 정보
 
 - [KR CDex Practitioner Profile](StructureDefinition-krcdex-practitioner.html)
+- [KR CDex Practitioner 2 Profile](StructureDefinition-krcdex-practitionerd.html)
 
 #### 진료의 역할 정보
 
@@ -21,8 +24,9 @@ The following profiles and have been defined for this implementation guide.
 #### 내원 정보
 
 - [KR CDex Encounter Profile](StructureDefinition-krcdex-encounter.html)
+- [KR CDex Encounter 2 Profile](StructureDefinition-krcdex-encounterd.html)
 
-#### 알레르기 및 불내성
+#### 알레르기 및 부작용
 
 - [KR CDex AllergyIntolerance Profile](StructureDefinition-krcdex-allergy-intolerance.html)
 
@@ -60,7 +64,7 @@ The following profiles and have been defined for this implementation guide.
 
 - [KR CDex Observation Profile for Laboratory Result](StructureDefinition-krcdex-observation-laboratory.html)
 
-##### 기능검사
+##### 기타검사
 
 - [KR CDex Observation Profile for Function Test](StructureDefinition-krcdex-observation-exam.html)
 

@@ -45,6 +45,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "ValueSet/krcdex-practitionerrole-codes"
+        },
+        "name": "KR CDdex PractitioneRole Codes",
+        "description": "KR CDex 진료의 역할 유형 코드집합",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/krcdex-allergy-intolerance"
         },
         "name": "KR CDex AllergyIntolerance",
@@ -108,6 +116,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/krcdex-encounterd"
+        },
+        "name": "KR CDex Encounter Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/krcdex-end-point"
         },
         "name": "KR CDex Endpoint Profile",
@@ -116,6 +131,13 @@
       {
         "reference": {
           "reference": "StructureDefinition/krcdex-organization"
+        },
+        "name": "KR CDex Healthcare Organization Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/krcdex-organizationd"
         },
         "name": "KR CDex Healthcare Organization Profile",
         "exampleBoolean": false
@@ -179,7 +201,21 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/krcdex-patientd"
+        },
+        "name": "KR CDex Patient Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/krcdex-practitioner"
+        },
+        "name": "KR CDex Practitioner Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/krcdex-practitionerd"
         },
         "name": "KR CDex Practitioner Profile",
         "exampleBoolean": false
@@ -221,6 +257,48 @@
         "name": "KR Core Test Request DateTime Extension",
         "description": "검사의뢰일을 표기하기 위한 확장",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/KRCDexEncounterExample"
+        },
+        "name": "KRCDex Encounter Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-encounterd"
+      },
+      {
+        "reference": {
+          "reference": "Organization/KRCDexOrganizationExample"
+        },
+        "name": "KRCDex Organization Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-organizationd"
+      },
+      {
+        "reference": {
+          "reference": "Patient/KRCDexPatientDExample"
+        },
+        "name": "KRCDex PatientD Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-patientd"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/KRCDexPractitionerExample"
+        },
+        "name": "KRCDex Practitioner Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-practitionerd"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/KRCDexPractitionerRoleExample"
+        },
+        "name": "KRCDex PractitionerRole Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "Patient/krcdex-patient-example-01"
+        },
+        "name": "krcdex-patient-example-01",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-patientd"
       }
     ],
     "page": {

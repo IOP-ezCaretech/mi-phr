@@ -1,0 +1,142 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "krcdex-encounterd",
+  "url": "http://example.org/StructureDefinition/krcdex-encounterd",
+  "name": "KRCDexEncounterD",
+  "title": "KR CDex Encounter Profile",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.extension:krcore-insuranceTypes",
+        "path": "Encounter.extension",
+        "sliceName": "krcore-insuranceTypes",
+        "short": "(KR Core) 환자 건강보험 유형 정보"
+      },
+      {
+        "id": "Encounter.identifier",
+        "path": "Encounter.identifier",
+        "short": "내원정보 식별자",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.identifier.system",
+        "path": "Encounter.identifier.system",
+        "short": "식별체계",
+        "min": 1
+      },
+      {
+        "id": "Encounter.identifier.value",
+        "path": "Encounter.identifier.value",
+        "short": "식별자",
+        "min": 1
+      },
+      {
+        "id": "Encounter.status",
+        "path": "Encounter.status",
+        "fixedCode": "finished"
+      },
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "short": "(KR Core) 진료 구분: AMB | EMER | IMP +"
+      },
+      {
+        "id": "Encounter.class.system",
+        "path": "Encounter.class.system",
+        "short": "(KR Core) 진료 구분 코드체계"
+      },
+      {
+        "id": "Encounter.class.code",
+        "path": "Encounter.class.code",
+        "short": "(KR Core) 진료 구분 코드"
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "short": "환자 정보",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/krcdex-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant",
+        "path": "Encounter.participant",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant.individual",
+        "path": "Encounter.participant.individual",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/krcdex-practitioner-role"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.period.start",
+        "path": "Encounter.period.start",
+        "min": 1
+      },
+      {
+        "id": "Encounter.period.end",
+        "path": "Encounter.period.end",
+        "short": "(KR Core) 종료 일자"
+      },
+      {
+        "id": "Encounter.serviceProvider",
+        "path": "Encounter.serviceProvider",
+        "short": "의료기관 정보",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://example.org/StructureDefinition/krcdex-organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

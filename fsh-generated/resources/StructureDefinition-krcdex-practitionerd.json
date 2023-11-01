@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "krcdex-practitioner",
-  "url": "http://example.org/StructureDefinition/krcdex-practitioner",
-  "name": "KRCDexPractitioner",
+  "id": "krcdex-practitionerd",
+  "url": "http://example.org/StructureDefinition/krcdex-practitionerd",
+  "name": "KRCDexPractitionerD",
   "title": "KR CDex Practitioner Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -31,7 +31,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Practitioner",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-medical-doctor",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -53,15 +53,12 @@
       {
         "id": "Practitioner.name",
         "path": "Practitioner.name",
-        "short": "성명",
-        "min": 1,
-        "mustSupport": true
+        "short": "(KR Core) 성명"
       },
       {
         "id": "Practitioner.name.text",
         "path": "Practitioner.name.text",
         "short": "성명(전체)",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -77,59 +74,51 @@
         "mustSupport": true
       },
       {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "short": "(KR Core) 진료의 개인 주소"
+      },
+      {
+        "id": "Practitioner.address.extension:krcore-roadNameAddress",
+        "path": "Practitioner.address.extension",
+        "sliceName": "krcore-roadNameAddress",
+        "short": "(KR Core) 한국 도로명 주소 체계"
+      },
+      {
+        "id": "Practitioner.address.text",
+        "path": "Practitioner.address.text",
+        "short": "(KR Core) 주소 텍스트"
+      },
+      {
+        "id": "Practitioner.address.postalCode",
+        "path": "Practitioner.address.postalCode",
+        "short": "(KR Core) 우편번호"
+      },
+      {
         "id": "Practitioner.qualification",
         "path": "Practitioner.qualification",
-        "short": "진료의 면허 정보",
-        "mustSupport": true
+        "short": "(KR Core) 진료의 면허 정보"
       },
       {
         "id": "Practitioner.qualification.identifier",
         "path": "Practitioner.qualification.identifier",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        },
-        "short": "진료의 면허 식별 정보",
-        "min": 1,
-        "mustSupport": true
+        "short": "(KR Core) 진료의 면허 식별 정보"
       },
       {
         "id": "Practitioner.qualification.identifier:MOHW",
         "path": "Practitioner.qualification.identifier",
         "sliceName": "MOHW",
-        "short": "보건복지부 진료의 면허 코드 식별 정보",
-        "min": 1,
-        "max": "*",
-        "mustSupport": true
+        "short": "(KR Core) 보건복지부 진료의 면허 코드 식별 정보"
       },
       {
         "id": "Practitioner.qualification.identifier:MOHW.system",
         "path": "Practitioner.qualification.identifier.system",
-        "short": "보건복지부 진료의 면허 코드 식별 체계",
-        "min": 1,
-        "fixedUri": "http://www.hl7korea.or.kr/Identifier/mohw-md-license-id",
-        "mustSupport": true
+        "short": "(KR Core) 보건복지부 진료의 면허 코드 식별 체계"
       },
       {
         "id": "Practitioner.qualification.identifier:MOHW.value",
         "path": "Practitioner.qualification.identifier.value",
-        "short": "보건복지부 진료의 면허 코드",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Practitioner.qualification.code",
-        "path": "Practitioner.qualification.code",
-        "short": "면허 및 자격증 정보",
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-doctor-qualification-codes"
-        }
+        "short": "(KR Core) 보건복지부 진료의 면허 코드"
       }
     ]
   }

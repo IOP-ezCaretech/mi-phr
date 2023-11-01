@@ -1,0 +1,57 @@
+{
+  "resourceType": "Organization",
+  "id": "KRCDexOrganizationExample",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/krcdex-organizationd"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.hl7korea.or.kr/Identifier/hira-krnpi",
+      "value": "11100000"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://www.hl7korea.or.kr/CodeSystem/hira-healthcare-organization-types",
+          "code": "01",
+          "version": "",
+          "display": "상급종합병원"
+        }
+      ]
+    }
+  ],
+  "address": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "district",
+              "valueString": "서울특별시 중구"
+            },
+            {
+              "url": "roadName",
+              "valueString": "덕수궁길"
+            },
+            {
+              "url": "detailedAddress",
+              "valueString": "15"
+            },
+            {
+              "url": "complements",
+              "valueString": "서소문동"
+            }
+          ],
+          "url": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-roadNameAddress"
+        }
+      ],
+      "text": "서울특별시 중구 서소문동 37",
+      "postalCode": "04515"
+    }
+  ],
+  "name": "한국병원"
+}

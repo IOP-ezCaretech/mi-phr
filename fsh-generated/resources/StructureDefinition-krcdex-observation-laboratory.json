@@ -41,7 +41,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-observation-laboratory-result",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -73,13 +73,109 @@
       {
         "id": "Observation.category",
         "path": "Observation.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "검사 구분(진단, 기타)",
+        "min": 1,
         "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-category",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationCategory"
+            }
+          ],
+          "description": "Codes for high level observation categories."
+        }
+      },
+      {
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding.system",
+        "path": "Observation.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding.code",
+        "path": "Observation.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:Laboratory",
+        "path": "Observation.category",
+        "sliceName": "Laboratory",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "검사 코드",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.code.coding:EDI",
+        "path": "Observation.code.coding",
+        "sliceName": "EDI",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드 정보",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-procedure-codes"
+        }
+      },
+      {
+        "id": "Observation.code.coding:EDI.system",
+        "path": "Observation.code.coding.system",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드체계",
+        "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:EDI.code",
+        "path": "Observation.code.coding.code",
+        "short": "건강보험심사평가원 건강보험요양급여비용 코드",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -127,6 +223,7 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "short": "진단검사 대상",
         "min": 1,
         "type": [
           {
@@ -156,6 +253,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "short": "진단검사 일시",
         "min": 1,
         "type": [
           {
@@ -165,8 +263,15 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.issued",
+        "path": "Observation.issued",
+        "short": "진단검사 보고 일시",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.performer",
         "path": "Observation.performer",
+        "short": "검사 책임자",
         "max": "1",
         "type": [
           {
@@ -188,7 +293,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "short": "진단검사 측정 결과"
       },
       {
         "id": "Observation.value[x]:valueQuantity",
@@ -256,9 +362,15 @@
         "min": 1
       },
       {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "short": "검체 정보"
+      },
+      {
         "id": "Observation.referenceRange",
         "path": "Observation.referenceRange",
-        "short": "참고치"
+        "short": "참고치",
+        "mustSupport": true
       },
       {
         "id": "Observation.referenceRange.low",

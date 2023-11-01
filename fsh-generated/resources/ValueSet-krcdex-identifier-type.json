@@ -24,6 +24,15 @@
             "display": "Patient internal identifier"
           }
         ]
+      },
+      {
+        "system": "https://myhealthway.go.kr",
+        "concept": [
+          {
+            "code": "MHID",
+            "display": "My Healthway Identifier"
+          }
+        ]
       }
     ]
   }

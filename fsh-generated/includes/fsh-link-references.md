@@ -1,3 +1,4 @@
+[KR_CDdex_PractitioneRole_Codes]: ValueSet-krcdex-practitionerrole-codes.html
 [KRCDexAllergyIntolerance]: StructureDefinition-krcdex-allergy-intolerance.html
 [KRCDexAllergyManifestationCodes]: ValueSet-krcdex-allergyIntolerance-manifestation-codes.html
 [KRCDexAllergyCodes]: ValueSet-krcdex-allergyIntolerance-substance-codes.html
@@ -7,8 +8,10 @@
 [KRCDexDocumentReference]: StructureDefinition-krcdex-document-reference.html
 [KRCDexDocTypeCodes]: ValueSet-krcdex-doc-typecodes.html
 [KRCDexEncounter]: StructureDefinition-krcdex-encounter.html
+[KRCDexEncounterD]: StructureDefinition-krcdex-encounterd.html
 [KRCDexEndpoint]: StructureDefinition-krcdex-end-point.html
 [KRCDexOrganization]: StructureDefinition-krcdex-organization.html
+[KRCDexOrganizationD]: StructureDefinition-krcdex-organizationd.html
 [KR_CDex_Identifier_Types]: ValueSet-krcdex-identifier-type.html
 [KRCDexImagingStudy]: StructureDefinition-krcdex-imaging-study.html
 [KRCDexMedia]: StructureDefinition-krcdex-media.html
@@ -17,9 +20,17 @@
 [KRCDexObservationExam]: StructureDefinition-krcdex-observation-exam.html
 [KRCDexObservationLaboratory]: StructureDefinition-krcdex-observation-laboratory.html
 [KRCDexPatient]: StructureDefinition-krcdex-patient.html
+[KRCDexPatientD]: StructureDefinition-krcdex-patientd.html
 [KRCDexPractitioner]: StructureDefinition-krcdex-practitioner.html
+[KRCDexPractitionerD]: StructureDefinition-krcdex-practitionerd.html
 [KRCDexPractitionerRole]: StructureDefinition-krcdex-practitioner-role.html
 [KRCDexProcedure]: StructureDefinition-krcdex-procedure.html
 [KRCore_InsuranceTypes_Extension]: StructureDefinition-krcore-insuranceTypes.html
 [KRCore_RoadNameAddress_Extension]: StructureDefinition-krcore-roadNameAddress.html
 [KRCore_TestRequestDateTime_Extension]: StructureDefinition-krcore-testRequestDateTime.html
+[KRCDexEncounterExample]: Encounter-KRCDexEncounterExample.html
+[KRCDexOrganizationExample]: Organization-KRCDexOrganizationExample.html
+[KRCDexPatientDExample]: Patient-KRCDexPatientDExample.html
+[KRCDexPractitionerExample]: Practitioner-KRCDexPractitionerExample.html
+[KRCDexPractitionerRoleExample]: PractitionerRole-KRCDexPractitionerRoleExample.html
+[krcdex-patient-example-01]: Patient-krcdex-patient-example-01.html

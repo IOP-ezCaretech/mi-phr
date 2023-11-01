@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "krcdex-patient",
-  "url": "http://example.org/StructureDefinition/krcdex-patient",
-  "name": "KRCDexPatient",
+  "id": "krcdex-patientd",
+  "url": "http://example.org/StructureDefinition/krcdex-patientd",
+  "name": "KRCDexPatientD",
   "title": "KR CDex Patient Profile",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -74,12 +74,12 @@
       {
         "id": "Patient.identifier.system",
         "path": "Patient.identifier.system",
-        "short": "환자번호: 요양기관 OID | 주민등록번호:https://mois.go.kr/rrn | 마이헬스웨이(MHW) :https://myhealthway.go.kr"
+        "short": "환자번호: 요양기관 OID | 주민등록번호:https://mois.go.kr/rrn | 마이헬스웨이:https://myhealthway.go.kr"
       },
       {
         "id": "Patient.identifier.value",
         "path": "Patient.identifier.value",
-        "short": "환자번호 | 주민등록번호 | 마이헬스웨이(MHW) ID"
+        "short": "환자번호 | 주민등록번호 | 마이헬스웨이 ID"
       },
       {
         "id": "Patient.name.text",
@@ -99,9 +99,62 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "short": "(KR Core) 연락처"
+      },
+      {
+        "id": "Patient.telecom:Phone",
+        "path": "Patient.telecom",
+        "sliceName": "Phone",
+        "short": "(KR Core) 전화번호"
+      },
+      {
+        "id": "Patient.telecom:Phone.system",
+        "path": "Patient.telecom.system",
+        "short": "(KR Core) 연락처 유형: phone"
+      },
+      {
+        "id": "Patient.telecom:Phone.value",
+        "path": "Patient.telecom.value",
+        "short": "(KR Core) 상세 연락처"
+      },
+      {
+        "id": "Patient.telecom:E-mail",
+        "path": "Patient.telecom",
+        "sliceName": "E-mail",
+        "short": "(KR Core) 이메일"
+      },
+      {
+        "id": "Patient.telecom:E-mail.system",
+        "path": "Patient.telecom.system",
+        "short": "(KR Core) 연락처 유형: email"
+      },
+      {
+        "id": "Patient.telecom:E-mail.value",
+        "path": "Patient.telecom.value",
+        "short": "(KR Core) 상세 연락처"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "short": "(KR Core) 성별: male | female | other | unknown"
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "short": "(KR Core) 생년월일"
+      },
+      {
         "id": "Patient.address",
         "path": "Patient.address",
         "short": "주소"
+      },
+      {
+        "id": "Patient.address.extension:krcore-roadNameAddress",
+        "path": "Patient.address.extension",
+        "sliceName": "krcore-roadNameAddress",
+        "short": "(KR Core) 한국 도로명 주소 체계"
       },
       {
         "id": "Patient.address.text",

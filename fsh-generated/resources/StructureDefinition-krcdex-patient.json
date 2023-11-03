@@ -43,6 +43,15 @@
       {
         "id": "Patient.identifier",
         "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 2
       },
       {
@@ -54,32 +63,116 @@
         }
       },
       {
-        "id": "Patient.identifier.type.coding",
+        "id": "Patient.identifier.system",
+        "path": "Patient.identifier.system",
+        "short": "환자번호: 요양기관 OID | 주민등록번호: https://mois.go.kr/rrn | 마이헬스웨이: https://myhealthway.go.kr"
+      },
+      {
+        "id": "Patient.identifier.value",
+        "path": "Patient.identifier.value",
+        "short": "환자번호 | 주민등록번호 | 마이헬스웨이 ID"
+      },
+      {
+        "id": "Patient.identifier:MHID",
+        "path": "Patient.identifier",
+        "sliceName": "MHID",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:MHID.type",
+        "path": "Patient.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:MHID.type.coding",
         "path": "Patient.identifier.type.coding",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier.type.coding.system",
+        "id": "Patient.identifier:MHID.type.coding.system",
         "path": "Patient.identifier.type.coding.system",
         "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier.type.coding.code",
+        "id": "Patient.identifier:MHID.type.coding.code",
         "path": "Patient.identifier.type.coding.code",
+        "min": 1,
+        "fixedCode": "MHID",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:MR",
+        "path": "Patient.identifier",
+        "sliceName": "MR",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:MR.type",
+        "path": "Patient.identifier.type",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier.system",
-        "path": "Patient.identifier.system",
-        "short": "환자번호: 요양기관 OID | 주민등록번호:https://mois.go.kr/rrn | 마이헬스웨이(MHW) :https://myhealthway.go.kr"
+        "id": "Patient.identifier:MR.type.coding",
+        "path": "Patient.identifier.type.coding",
+        "min": 1,
+        "mustSupport": true
       },
       {
-        "id": "Patient.identifier.value",
-        "path": "Patient.identifier.value",
-        "short": "환자번호 | 주민등록번호 | 마이헬스웨이(MHW) ID"
+        "id": "Patient.identifier:MR.type.coding.system",
+        "path": "Patient.identifier.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:MR.type.coding.code",
+        "path": "Patient.identifier.type.coding.code",
+        "min": 1,
+        "fixedCode": "MR",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:NNKOR",
+        "path": "Patient.identifier",
+        "sliceName": "NNKOR",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:NNKOR.type",
+        "path": "Patient.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:NNKOR.type.coding",
+        "path": "Patient.identifier.type.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:NNKOR.type.coding.system",
+        "path": "Patient.identifier.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:NNKOR.type.coding.code",
+        "path": "Patient.identifier.type.coding.code",
+        "min": 1,
+        "fixedCode": "NNKOR",
+        "mustSupport": true
       },
       {
         "id": "Patient.name.text",

@@ -5,17 +5,14 @@ The following profiles and have been defined for this implementation guide.
 #### 환자 정보
 
 - [KR CDex Patient profile](StructureDefinition-krcdex-patient.html)
-- [KR CDex Patient 2 profile](StructureDefinition-krcdex-patientd.html)
 
 #### 의료기관 정보
 
 - [KR CDex Healthcare Organization Profile](StructureDefinition-krcdex-organization.html)
-- [KR CDex Healthcare Organization 2 Profile](StructureDefinition-krcdex-organizationd.html)
 
 #### 진료의 정보
 
 - [KR CDex Practitioner Profile](StructureDefinition-krcdex-practitioner.html)
-- [KR CDex Practitioner 2 Profile](StructureDefinition-krcdex-practitionerd.html)
 
 #### 진료의 역할 정보
 
@@ -24,7 +21,6 @@ The following profiles and have been defined for this implementation guide.
 #### 내원 정보
 
 - [KR CDex Encounter Profile](StructureDefinition-krcdex-encounter.html)
-- [KR CDex Encounter 2 Profile](StructureDefinition-krcdex-encounterd.html)
 
 #### 알레르기 및 부작용
 
@@ -64,11 +60,9 @@ The following profiles and have been defined for this implementation guide.
 
 - [KR CDex Observation Profile for Laboratory Result](StructureDefinition-krcdex-observation-laboratory.html)
 
-##### 기타검사
+##### 기타(기능)검사
 
 - [KR CDex Observation Profile for Function Test](StructureDefinition-krcdex-observation-exam.html)
-
-<!-- #### DiagnosticReport -->
 
 ##### 영상검사
 
@@ -77,9 +71,3 @@ The following profiles and have been defined for this implementation guide.
 ##### 병리검사
 
 - [KR CDex DiagnosticReport Profile for Patholoy Results](StructureDefinition-krcdex-diagnostic-report-pathology.html)
-
-<!-- ### Extensions
-KR CDex의 환자정보 구조
-- [KR Core Road Name Address Extension](StructureDefinition-krcore-roadNameAddress.html)
-- [KR Core Insurance Types Extension](StructureDefinition-krcore-insuranceTypes.html)
-- [KR Core Test Request DateTime Extension](StructureDefinition-krcore-testRequestDateTime.html) -->

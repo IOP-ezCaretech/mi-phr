@@ -25,14 +25,10 @@ KR CDex는 한국에서 사용하는 FHIR 리소스 및 FHIR RESTful API 등을 
 KR CDex에서 Profiling한 FHIR 리소스들은 아래와 같다.
 
 - [KR CDex Patient profile](StructureDefinition-krcdex-patient.html)
-- [KR CDex Patient 2 profile](StructureDefinition-krcdex-patientd.html)
 - [KR CDex Healthcare Organization Profile](StructureDefinition-krcdex-organization.html)
-- [KR CDex Healthcare Organization 2 Profile](StructureDefinition-krcdex-organizationd.html)
 - [KR CDex Practitioner Profile](StructureDefinition-krcdex-practitioner.html)
-- [KR CDex Practitioner 2 Profile](StructureDefinition-krcdex-practitionerd.html)
 - [KR CDex PractitionerRole Profile](StructureDefinition-krcdex-practitioner-role.html)
 - [KR CDex Encounter Profile](StructureDefinition-krcdex-encounter.html)
-- [KR CDex Encounter 2 Profile](StructureDefinition-krcdex-encounterd.html)
 - [KR CDex AllergyIntolerance Profile](StructureDefinition-krcdex-allergy-intolerance.html)
 - [KR CDex Condition Profile](StructureDefinition-krcdex-condition.html)
 - [KR CDex MedicationRequest Profile](StructureDefinition-krcdex-medication-request.html)

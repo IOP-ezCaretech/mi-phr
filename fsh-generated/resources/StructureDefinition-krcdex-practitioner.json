@@ -38,7 +38,7 @@
       {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
-        "short": "의료진 식별자"
+        "short": "진료의 식별자"
       },
       {
         "id": "Practitioner.identifier.system",

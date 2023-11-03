@@ -108,13 +108,29 @@
         "id": "DiagnosticReport.category:Pathology",
         "path": "DiagnosticReport.category",
         "sliceName": "Pathology",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "patternCodeableConcept": {
           "coding": [
             {
               "code": "PAT",
               "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category:Pathology-SNOMEDCT",
+        "path": "DiagnosticReport.category",
+        "sliceName": "Pathology-SNOMEDCT",
+        "min": 0,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "371528001",
+              "system": "http://snomed.info/sct"
             }
           ]
         },

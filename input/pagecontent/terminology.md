@@ -5,6 +5,5 @@
 - [KR CDex Medication Clinical Drug](ValueSet-krcdex-medication-clinical-drug.html)
 - [KR CDex AllergyIntolerance Substance Codes](ValueSet-krcdex-allergyIntolerance-substance-codes.html)
 - [KR CDex AllergyIntolerance Manifestation Codes](ValueSet-krcdex-allergyIntolerance-manifestation-codes.html)
-- [KR CDex PractitioneRole Codes](ValueSet-krcdex-practitionerrole-codes.html)
 
 ### CodeSystems

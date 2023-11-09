@@ -5,6 +5,7 @@
   "name": "KRCDexMedia",
   "title": "KR CDex Media Profile",
   "status": "draft",
+  "description": "__KR CDex__ 의 참고자료에 적용되는 Media 구조.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

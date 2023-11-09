@@ -5,6 +5,7 @@
   "name": "KRCDexImagingStudy",
   "title": "KR CDex ImagingStudy Profile",
   "status": "draft",
+  "description": "__KR CDex__ 의 DICOM 이미지 정보에 적용되는 ImagingStudy 구조.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

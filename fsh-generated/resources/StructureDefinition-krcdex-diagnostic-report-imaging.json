@@ -5,6 +5,7 @@
   "name": "KRCDexDiagnosticReportImaging",
   "title": "KR CDex DiagnosticReport Profile for Diagnostic Imaging",
   "status": "draft",
+  "description": "__KR CDex__ 의 진단영상검사 정보에 적용되는 DiagnosticReport 구조.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

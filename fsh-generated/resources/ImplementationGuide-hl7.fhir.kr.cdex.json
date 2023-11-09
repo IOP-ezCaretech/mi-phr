@@ -56,6 +56,7 @@
           "reference": "StructureDefinition/krcdex-allergy-intolerance"
         },
         "name": "KR CDex AllergyIntolerance",
+        "description": "__KR CDex__ 의 알레르기 및 부작용 정보에 적용되는 AllergyIntolerance 구조.",
         "exampleBoolean": false
       },
       {
@@ -77,6 +78,7 @@
           "reference": "StructureDefinition/krcdex-condition"
         },
         "name": "KR CDex Condition Profile",
+        "description": "__KR CDex__ 의 진단 상태 정보에 적용되는 Condition 구조.",
         "exampleBoolean": false
       },
       {
@@ -84,6 +86,7 @@
           "reference": "StructureDefinition/krcdex-diagnostic-report-imaging"
         },
         "name": "KR CDex DiagnosticReport Profile for Diagnostic Imaging",
+        "description": "__KR CDex__ 의 진단영상검사 정보에 적용되는 DiagnosticReport 구조.",
         "exampleBoolean": false
       },
       {
@@ -91,6 +94,7 @@
           "reference": "StructureDefinition/krcdex-diagnostic-report-pathology"
         },
         "name": "KR CDex DiagnosticReport Profile for Patholoy Results",
+        "description": "__KR CDex__ 의 병리검사 정보에 적용되는 DiagnosticReport 구조.",
         "exampleBoolean": false
       },
       {
@@ -98,6 +102,7 @@
           "reference": "StructureDefinition/krcdex-document-reference"
         },
         "name": "KR CDex DocumentReference Profile",
+        "description": "__KR CDex__ 의 진료기록 정보에 적용되는 DocumentReference 구조.",
         "exampleBoolean": false
       },
       {
@@ -112,6 +117,7 @@
           "reference": "StructureDefinition/krcdex-encounter"
         },
         "name": "KR CDex Encounter Profile",
+        "description": "__KR CDex__ 의 내원 정보에 적용되는 Encounter 구조.",
         "exampleBoolean": false
       },
       {
@@ -126,6 +132,7 @@
           "reference": "StructureDefinition/krcdex-end-point"
         },
         "name": "KR CDex Endpoint Profile",
+        "description": "__KR CDex__ 의 DICOM 영상 위치 정보에 적용되는 Endpoint 구조.",
         "exampleBoolean": false
       },
       {
@@ -133,6 +140,7 @@
           "reference": "StructureDefinition/krcdex-organization"
         },
         "name": "KR CDex Healthcare Organization Profile",
+        "description": "__KR CDex__ 의 의료기관 정보에 적용되는 Organization 구조.",
         "exampleBoolean": false
       },
       {
@@ -155,6 +163,7 @@
           "reference": "StructureDefinition/krcdex-imaging-study"
         },
         "name": "KR CDex ImagingStudy Profile",
+        "description": "__KR CDex__ 의 DICOM 이미지 정보에 적용되는 ImagingStudy 구조.",
         "exampleBoolean": false
       },
       {
@@ -162,6 +171,7 @@
           "reference": "StructureDefinition/krcdex-media"
         },
         "name": "KR CDex Media Profile",
+        "description": "__KR CDex__ 의 참고자료에 적용되는 Media 구조.",
         "exampleBoolean": false
       },
       {
@@ -176,6 +186,7 @@
           "reference": "StructureDefinition/krcdex-medication-request"
         },
         "name": "KR CDex MedicationRequest Profile",
+        "description": "__KR CDex__ 의 약품 처방 정보에 적용되는 MedicationRequest 구조.",
         "exampleBoolean": false
       },
       {
@@ -183,6 +194,7 @@
           "reference": "StructureDefinition/krcdex-observation-exam"
         },
         "name": "KR CDex Observation Profile for Function Test",
+        "description": "__KR CDex__ 의 기타(기능)검사 측정 정보에 적용되는 Observation 구조.",
         "exampleBoolean": false
       },
       {
@@ -190,6 +202,7 @@
           "reference": "StructureDefinition/krcdex-observation-laboratory"
         },
         "name": "KR CDex Observation Profile for Laboratory Result",
+        "description": "__KR CDex__ 의 진단검사 측정 정보에 적용되는 Observation 구조.",
         "exampleBoolean": false
       },
       {
@@ -197,6 +210,7 @@
           "reference": "StructureDefinition/krcdex-patient"
         },
         "name": "KR CDex Patient Profile",
+        "description": "__KR CDex__ 의 환자 정보에 적용되는 Patient 구조.",
         "exampleBoolean": false
       },
       {
@@ -211,6 +225,7 @@
           "reference": "StructureDefinition/krcdex-practitioner"
         },
         "name": "KR CDex Practitioner Profile",
+        "description": "__KR CDex__ 의 진료의 정보에 적용되는 Practitioner 구조.",
         "exampleBoolean": false
       },
       {
@@ -225,6 +240,7 @@
           "reference": "StructureDefinition/krcdex-practitioner-role"
         },
         "name": "KR CDex PractitionerRole Profile",
+        "description": "__KR CDex__ 의 진료의 역할 정보에 적용되는 PractitionerRole 구조.",
         "exampleBoolean": false
       },
       {
@@ -232,6 +248,7 @@
           "reference": "StructureDefinition/krcdex-procedure"
         },
         "name": "KR CDex Procedure Profile",
+        "description": "__KR CDex__ 의 수술 및 처치 정보에 적용되는 Procedure 구조.",
         "exampleBoolean": false
       },
       {
@@ -260,31 +277,108 @@
       },
       {
         "reference": {
+          "reference": "AllergyIntolerance/KRCDexAllergyIntoleranceExample"
+        },
+        "name": "KRCDex AllergyIntolerance Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-allergy-intolerance"
+      },
+      {
+        "reference": {
+          "reference": "Condition/KRCDexConditionExample"
+        },
+        "name": "KRCDex Condition Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-condition"
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/KRCDexDiagnosticReportImagingExample"
+        },
+        "name": "KRCDex DiagnosticReport Imaging Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-diagnostic-report-imaging"
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/KRCDexDiagnosticReportPathologyExample"
+        },
+        "name": "KRCDex DiagnosticReport Pathology Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-diagnostic-report-pathology"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/KRCDexDocumentReferenceExample"
+        },
+        "name": "KRCDex DocumentReference Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-document-reference"
+      },
+      {
+        "reference": {
           "reference": "Encounter/KRCDexEncounterExample"
         },
         "name": "KRCDex Encounter Example",
-        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-encounterd"
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-encounter"
+      },
+      {
+        "reference": {
+          "reference": "Endpoint/KRCDexEndpointExample"
+        },
+        "name": "KRCDex Endpoint Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-end-point"
+      },
+      {
+        "reference": {
+          "reference": "ImagingStudy/KRCDexImagingStudyExample"
+        },
+        "name": "KRCDex ImagingStudy Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-imaging-study"
+      },
+      {
+        "reference": {
+          "reference": "Media/KRCDexMediaExample"
+        },
+        "name": "KRCDex Media Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-media"
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/KRCDexMedicationRequestExample"
+        },
+        "name": "KRCDex MedicationRequest Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-medication-request"
+      },
+      {
+        "reference": {
+          "reference": "Observation/KRCDexObservationLaboratoryExample"
+        },
+        "name": "KRCDex Observation for Laboratory Result Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-observation-laboratory"
+      },
+      {
+        "reference": {
+          "reference": "Observation/KRCDexObservationFunctionTestExample"
+        },
+        "name": "KRCDex Observation Function Test Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-observation-exam"
       },
       {
         "reference": {
           "reference": "Organization/KRCDexOrganizationExample"
         },
         "name": "KRCDex Organization Example",
-        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-organizationd"
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-organization"
       },
       {
         "reference": {
-          "reference": "Patient/KRCDexPatientDExample"
+          "reference": "Patient/KRCDexPatientExample"
         },
-        "name": "KRCDex PatientD Example",
-        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-patientd"
+        "name": "KRCDex Patient Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-patient"
       },
       {
         "reference": {
           "reference": "Practitioner/KRCDexPractitionerExample"
         },
         "name": "KRCDex Practitioner Example",
-        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-practitionerd"
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-practitioner"
       },
       {
         "reference": {
@@ -292,6 +386,13 @@
         },
         "name": "KRCDex PractitionerRole Example",
         "exampleCanonical": "http://example.org/StructureDefinition/krcdex-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/KRCDexProcedureExample"
+        },
+        "name": "KRCDex Procedure Example",
+        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-procedure"
       },
       {
         "reference": {
@@ -314,6 +415,11 @@
         {
           "nameUrl": "downloads.html",
           "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
           "generation": "markdown"
         },
         {

@@ -5,6 +5,7 @@
   "name": "KRCDexDocumentReference",
   "title": "KR CDex DocumentReference Profile",
   "status": "draft",
+  "description": "__KR CDex__ 의 진료기록 정보에 적용되는 DocumentReference 구조.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

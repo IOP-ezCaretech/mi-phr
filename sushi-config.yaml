@@ -80,6 +80,7 @@ menu:
   FHIR Artifacts:
     Profiles and Extensions: profiles-and-extensions.html
     Terminology: terminology.html
+  Examples: examples.html
   Downloads: downloads.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

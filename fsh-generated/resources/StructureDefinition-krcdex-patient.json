@@ -5,6 +5,7 @@
   "name": "KRCDexPatient",
   "title": "KR CDex Patient Profile",
   "status": "draft",
+  "description": "__KR CDex__ 의 환자 정보에 적용되는 Patient 구조.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

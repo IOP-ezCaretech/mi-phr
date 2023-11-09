@@ -5,6 +5,7 @@
   "name": "KRCDexEndpoint",
   "title": "KR CDex Endpoint Profile",
   "status": "draft",
+  "description": "__KR CDex__ 의 DICOM 영상 위치 정보에 적용되는 Endpoint 구조.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

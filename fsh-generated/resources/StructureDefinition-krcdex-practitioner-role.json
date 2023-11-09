@@ -5,6 +5,7 @@
   "name": "KRCDexPractitionerRole",
   "title": "KR CDex PractitionerRole Profile",
   "status": "draft",
+  "description": "__KR CDex__ 의 진료의 역할 정보에 적용되는 PractitionerRole 구조.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -38,7 +39,7 @@
       {
         "id": "PractitionerRole.identifier",
         "path": "PractitionerRole.identifier",
-        "short": "의료진 식별자"
+        "short": "진료의 식별자"
       },
       {
         "id": "PractitionerRole.identifier.system",
@@ -53,7 +54,7 @@
       {
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
-        "short": "의료진 정보",
+        "short": "진료의 정보",
         "min": 1,
         "type": [
           {

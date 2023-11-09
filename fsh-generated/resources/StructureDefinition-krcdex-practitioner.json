@@ -5,6 +5,7 @@
   "name": "KRCDexPractitioner",
   "title": "KR CDex Practitioner Profile",
   "status": "draft",
+  "description": "__KR CDex__ 의 진료의 정보에 적용되는 Practitioner 구조.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -38,7 +39,7 @@
       {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
-        "short": "진료의 식별자"
+        "short": "의료진 식별자"
       },
       {
         "id": "Practitioner.identifier.system",

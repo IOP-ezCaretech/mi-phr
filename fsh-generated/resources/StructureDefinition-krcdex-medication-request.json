@@ -5,6 +5,7 @@
   "name": "KRCDexMedicationRequest",
   "title": "KR CDex MedicationRequest Profile",
   "status": "draft",
+  "description": "__KR CDex__ 의 약품 처방 정보에 적용되는 MedicationRequest 구조.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

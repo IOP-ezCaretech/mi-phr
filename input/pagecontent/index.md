@@ -4,7 +4,7 @@ KR CDex는 환자의 의료 정보(병원 내 임상정보)를 효과적으로 �
 
 ### 배경
 
-KR CDex는 국내 보건의료데이터 교류에 대한 사용례 중 하나로 병원 내 임상 데이터의 효과적인 교환을 위해 만들어 졌으며 다음과 같은 목적을 가진다.
+KR CDex는 국내 보건의료데이터 교류에 대한 사용사례 중 하나로 병원 내 임상 데이터의 효과적인 교환을 위해 만들어 졌으며 다음과 같은 목적을 가진다.
 
 - 표준화된 데이터 교환: KR CDex는 의료 데이터를 효과적으로 교환하기 위한 표준화된 방식을 제공한다.
 - 다양한 임상 시나리오 지원: KR CDex는 병원 내 임상데이터와 관련된 다양한 시나리오(검사, 처방)을 구현을 위한 가장 기본이 되는 정모모델을 지원한다.
@@ -14,11 +14,12 @@ KR CDex는 국내 보건의료데이터 교류에 대한 사용례 중 하나로
 
 KR CDex는 한국에서 사용하는 FHIR 리소스 및 FHIR RESTful API 등을 정의하고 이에 대한 상세한 설명을 문서화하여 제공한다. KR CDex를 구성하는 문서의 목록과 각 문서의 내용은 다음과 같다.
 
-- IG Home: 본 페이지. KR CDex에 대한 소개 및 개발 배경 등에 관한 정보 제공.
+- [IG Home](index.html): 본 페이지. KR CDex에 대한 소개 및 개발 배경 등에 관한 정보 제공.
 - FHIR Artifacts: KR CDex에서 정의한 모든 FHIR 리소스에 대한 상세한 설명 및 정의를 제공.
-  - Profiles and Extensions: KR CDex에서 정의한 프로파일 및 확장 목록을 제공함. 각 프로파일 페이지는 의무 요소 및 필수 지원 요소, 사용 가능한 검색 매개변수 목록 등을 제공.
-  - Terminology: KR CDex에서 정의한 ValueSet과 CodeSystem 리소스 목록 제공.
-- Downloads: 다운로드 가능한 산출물에 대한 링크를 제공.
+  - [Profiles and Extensions](profiles-and-extensions.html): KR CDex에서 정의한 프로파일 및 확장 목록을 제공함. 각 프로파일 페이지는 의무 요소 및 필수 지원 요소, 사용 가능한 검색 매개변수 목록 등을 제공.
+  - [Terminology](terminology.html): KR CDex에서 정의한 ValueSet과 CodeSystem 리소스 목록 제공.
+- [Examples](examples.html): KR CDex를 적용한 시스템에서 생성 및 활용하는 FHIR Resources 예제를 제공. 각 FHIR Resources 예제는 하나 이상의 KR CDex 프로파일을 준수.
+- [Downloads](downloads.html): 다운로드 가능한 산출물에 대한 링크를 제공
 
 ### KR CDex Profiles
 

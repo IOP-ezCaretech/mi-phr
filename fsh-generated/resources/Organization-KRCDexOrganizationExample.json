@@ -3,7 +3,7 @@
   "id": "KRCDexOrganizationExample",
   "meta": {
     "profile": [
-      "http://example.org/StructureDefinition/krcdex-organizationd"
+      "http://example.org/StructureDefinition/krcdex-organization"
     ]
   },
   "identifier": [

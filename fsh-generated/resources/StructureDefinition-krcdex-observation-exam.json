@@ -5,6 +5,7 @@
   "name": "KRCDexObservationExam",
   "title": "KR CDex Observation Profile for Function Test",
   "status": "draft",
+  "description": "__KR CDex__ 의 기타(기능)검사 측정 정보에 적용되는 Observation 구조.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

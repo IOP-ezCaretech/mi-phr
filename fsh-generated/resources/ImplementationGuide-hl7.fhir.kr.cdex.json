@@ -56,7 +56,7 @@
           "reference": "StructureDefinition/krcdex-allergy-intolerance"
         },
         "name": "KR CDex AllergyIntolerance",
-        "description": "__KR CDex__ 의 알레르기 및 부작용 정보에 적용되는 AllergyIntolerance 구조.",
+        "description": "__KR CDex__ 의 알레르기 및 불내성 정보에 적용되는 AllergyIntolerance 구조.",
         "exampleBoolean": false
       },
       {
@@ -122,13 +122,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/krcdex-encounterd"
-        },
-        "name": "KR CDex Encounter Profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/krcdex-end-point"
         },
         "name": "KR CDex Endpoint Profile",
@@ -141,13 +134,6 @@
         },
         "name": "KR CDex Healthcare Organization Profile",
         "description": "__KR CDex__ 의 의료기관 정보에 적용되는 Organization 구조.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/krcdex-organizationd"
-        },
-        "name": "KR CDex Healthcare Organization Profile",
         "exampleBoolean": false
       },
       {
@@ -215,24 +201,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/krcdex-patientd"
-        },
-        "name": "KR CDex Patient Profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/krcdex-practitioner"
         },
         "name": "KR CDex Practitioner Profile",
         "description": "__KR CDex__ 의 진료의 정보에 적용되는 Practitioner 구조.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/krcdex-practitionerd"
-        },
-        "name": "KR CDex Practitioner Profile",
         "exampleBoolean": false
       },
       {
@@ -399,7 +371,7 @@
           "reference": "Patient/krcdex-patient-example-01"
         },
         "name": "krcdex-patient-example-01",
-        "exampleCanonical": "http://example.org/StructureDefinition/krcdex-patientd"
+        "exampleBoolean": true
       }
     ],
     "page": {

@@ -8,10 +8,8 @@
 [KRCDexDocumentReference]: StructureDefinition-krcdex-document-reference.html
 [KRCDexDocTypeCodes]: ValueSet-krcdex-doc-typecodes.html
 [KRCDexEncounter]: StructureDefinition-krcdex-encounter.html
-[KRCDexEncounterD]: StructureDefinition-krcdex-encounterd.html
 [KRCDexEndpoint]: StructureDefinition-krcdex-end-point.html
 [KRCDexOrganization]: StructureDefinition-krcdex-organization.html
-[KRCDexOrganizationD]: StructureDefinition-krcdex-organizationd.html
 [KR_CDex_Identifier_Types]: ValueSet-krcdex-identifier-type.html
 [KRCDexImagingStudy]: StructureDefinition-krcdex-imaging-study.html
 [KRCDexMedia]: StructureDefinition-krcdex-media.html
@@ -20,9 +18,7 @@
 [KRCDexObservationExam]: StructureDefinition-krcdex-observation-exam.html
 [KRCDexObservationLaboratory]: StructureDefinition-krcdex-observation-laboratory.html
 [KRCDexPatient]: StructureDefinition-krcdex-patient.html
-[KRCDexPatientD]: StructureDefinition-krcdex-patientd.html
 [KRCDexPractitioner]: StructureDefinition-krcdex-practitioner.html
-[KRCDexPractitionerD]: StructureDefinition-krcdex-practitionerd.html
 [KRCDexPractitionerRole]: StructureDefinition-krcdex-practitioner-role.html
 [KRCDexProcedure]: StructureDefinition-krcdex-procedure.html
 [KRCore_InsuranceTypes_Extension]: StructureDefinition-krcore-insuranceTypes.html

@@ -21,7 +21,7 @@
 
 - [KR CDex Encounter](Encounter-KRCDexEncounterExample.html)
 
-#### 알레르기 및 부작용
+#### 알레르기 및 불내성
 
 - [KR CDex AllergyIntolerance](AllergyIntolerance-KRCDexAllergyIntoleranceExample.html)
 

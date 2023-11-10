@@ -22,7 +22,7 @@ The following profiles and have been defined for this implementation guide.
 
 - [KR CDex Encounter Profile](StructureDefinition-krcdex-encounter.html)
 
-#### 알레르기 및 부작용
+#### 알레르기 및 불내성
 
 - [KR CDex AllergyIntolerance Profile](StructureDefinition-krcdex-allergy-intolerance.html)
 

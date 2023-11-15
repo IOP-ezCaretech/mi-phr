@@ -54,56 +54,81 @@
       {
         "id": "Media.identifier",
         "path": "Media.identifier",
+        "short": "참고자료 식별자",
         "min": 1,
         "max": "1"
       },
       {
         "id": "Media.identifier.system",
         "path": "Media.identifier.system",
+        "short": "식별체계",
         "min": 1
       },
       {
         "id": "Media.identifier.value",
         "path": "Media.identifier.value",
+        "short": "식별자",
         "min": 1
+      },
+      {
+        "id": "Media.status",
+        "path": "Media.status",
+        "short": "참고자료 생성상태"
       },
       {
         "id": "Media.type",
         "path": "Media.type",
+        "short": "참고자료 타입",
         "mustSupport": true
+      },
+      {
+        "id": "Media.type.coding",
+        "path": "Media.type.coding",
+        "short": "정의된 코드"
       },
       {
         "id": "Media.type.coding.system",
         "path": "Media.type.coding.system",
+        "short": "코드체계",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Media.type.coding.code",
         "path": "Media.type.coding.code",
+        "short": "코드값",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Media.modality",
         "path": "Media.modality",
+        "short": "촬영장비",
         "mustSupport": true
+      },
+      {
+        "id": "Media.modality.coding",
+        "path": "Media.modality.coding",
+        "short": "정의된 코드"
       },
       {
         "id": "Media.modality.coding.system",
         "path": "Media.modality.coding.system",
+        "short": "코드체계",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Media.modality.coding.code",
         "path": "Media.modality.coding.code",
+        "short": "코드값",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Media.subject",
         "path": "Media.subject",
+        "short": "환자 정보",
         "min": 1,
         "type": [
           {
@@ -118,6 +143,7 @@
       {
         "id": "Media.encounter",
         "path": "Media.encounter",
+        "short": "내원 정보",
         "min": 1,
         "type": [
           {
@@ -132,6 +158,7 @@
       {
         "id": "Media.created[x]",
         "path": "Media.created[x]",
+        "short": "참고자료 생성일시",
         "min": 1,
         "type": [
           {
@@ -149,35 +176,41 @@
       {
         "id": "Media.bodySite",
         "path": "Media.bodySite",
+        "short": "촬영부위",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Media.bodySite.coding.system",
         "path": "Media.bodySite.coding.system",
+        "short": "코드체계",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Media.bodySite.coding.code",
         "path": "Media.bodySite.coding.code",
+        "short": "코드값",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Media.deviceName",
         "path": "Media.deviceName",
+        "short": "참고자료 장비명칭",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Media.content",
         "path": "Media.content",
+        "short": "참고자료 첨부",
         "mustSupport": true
       },
       {
         "id": "Media.content.data",
         "path": "Media.content.data",
+        "short": "참고자료 인코딩 데이터",
         "min": 1,
         "mustSupport": true
       }

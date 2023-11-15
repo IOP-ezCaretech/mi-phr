@@ -75,6 +75,14 @@
       },
       {
         "reference": {
+          "reference": "CapabilityStatement/krcdex-capabilitystatement-client"
+        },
+        "name": "KR CDex Client CapabilityStatement",
+        "description": "개별 환자 정보 생성 및 쿼리를 담당하는 KR CDex Client의 예상 기능을 설명. KR CDex Server에서 지원하는 FHIR Profiles, RESTful Operations, Search Parameters의 전체 목록은 [KR CDex Server CapabilityStatement](CapabilityStatement-krcdex-capabilitystatement-server.html)에 정의됨. KR CDex Client는 이 목록에서 사용 사례 및 기타 상황별 요구 사항에 따라 필요한 데이터에 접근할 수 있음.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/krcdex-condition"
         },
         "name": "KR CDex Condition Profile",
@@ -221,6 +229,14 @@
         },
         "name": "KR CDex Procedure Profile",
         "description": "__KR CDex__ 의 수술 및 처치 정보에 적용되는 Procedure 구조.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/krcdex-capabilitystatement-server"
+        },
+        "name": "KR CDex Server CapabilityStatement",
+        "description": "KR CDex Client가 요청한 쿼리에 대한 응답을 제공할 책임이 있는 KR CDex Server의 예상 기능을 설명. KR CDex Server에서 지원하는 FHIR Profiles, RESTful Operations, Search Parameters의 전체 목록을 정의함. KR CDex Client는 이 목록에서 사용 사례 및 기타 상황별 요구 사항에 따라 필요한 데이터에 접근할 수 있음.",
         "exampleBoolean": false
       },
       {

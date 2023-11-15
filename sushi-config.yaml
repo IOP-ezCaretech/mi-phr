@@ -80,6 +80,8 @@ menu:
   FHIR Artifacts:
     Profiles and Extensions: profiles-and-extensions.html
     Terminology: terminology.html
+    KR CDex Server CapabilityStatement: CapabilityStatement-krcdex-capabilitystatement-server.html
+    KR CDex Client CapabilityStatement: CapabilityStatement-krcdex-capabilitystatement-client.html
   Examples: examples.html
   Downloads: downloads.html
 

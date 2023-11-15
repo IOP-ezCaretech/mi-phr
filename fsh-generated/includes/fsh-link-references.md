@@ -2,6 +2,7 @@
 [KRCDexAllergyIntolerance]: StructureDefinition-krcdex-allergy-intolerance.html
 [KRCDexAllergyManifestationCodes]: ValueSet-krcdex-allergyIntolerance-manifestation-codes.html
 [KRCDexAllergyCodes]: ValueSet-krcdex-allergyIntolerance-substance-codes.html
+[krcdex-capabilitystatement-client]: CapabilityStatement-krcdex-capabilitystatement-client.html
 [KRCDexCondition]: StructureDefinition-krcdex-condition.html
 [KRCDexDiagnosticReportImaging]: StructureDefinition-krcdex-diagnostic-report-imaging.html
 [KRCDexDiagnosticReportPathology]: StructureDefinition-krcdex-diagnostic-report-pathology.html
@@ -21,6 +22,7 @@
 [KRCDexPractitioner]: StructureDefinition-krcdex-practitioner.html
 [KRCDexPractitionerRole]: StructureDefinition-krcdex-practitioner-role.html
 [KRCDexProcedure]: StructureDefinition-krcdex-procedure.html
+[krcdex-capabilitystatement-server]: CapabilityStatement-krcdex-capabilitystatement-server.html
 [KRCore_InsuranceTypes_Extension]: StructureDefinition-krcore-insuranceTypes.html
 [KRCore_RoadNameAddress_Extension]: StructureDefinition-krcore-roadNameAddress.html
 [KRCore_TestRequestDateTime_Extension]: StructureDefinition-krcore-testRequestDateTime.html

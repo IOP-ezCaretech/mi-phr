@@ -84,25 +84,35 @@
       {
         "id": "PractitionerRole.code",
         "path": "PractitionerRole.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "short": "진료의 역할",
-        "max": "1"
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/practitioner-role"
+        }
       },
       {
-        "id": "PractitionerRole.code.coding",
-        "path": "PractitionerRole.code.coding",
-        "short": "정의된 코드",
-        "min": 1
-      },
-      {
-        "id": "PractitionerRole.code.coding.system",
-        "path": "PractitionerRole.code.coding.system",
-        "short": "코드값",
-        "min": 1
-      },
-      {
-        "id": "PractitionerRole.code.coding.code",
-        "path": "PractitionerRole.code.coding.code",
-        "min": 1
+        "id": "PractitionerRole.code:MDRole",
+        "path": "PractitionerRole.code",
+        "sliceName": "MDRole",
+        "min": 0,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "doctor",
+              "system": "http://terminology.hl7.org/CodeSystem/practitioner-role"
+            }
+          ]
+        }
       },
       {
         "id": "PractitionerRole.specialty",

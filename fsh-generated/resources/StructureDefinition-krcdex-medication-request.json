@@ -389,15 +389,7 @@
         "id": "MedicationRequest.dispenseRequest.expectedSupplyDuration",
         "path": "MedicationRequest.dispenseRequest.expectedSupplyDuration",
         "short": "처방 기간: s | min | h | d | wk | mo | a",
-        "mustSupport": true,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "UnitsOfTime"
-            }
-          ]
-        }
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.dispenseRequest.expectedSupplyDuration.code",
@@ -408,7 +400,11 @@
             "label": "Value (Preferred)",
             "valueCode": "d"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/units-of-time|4.0.1"
+        }
       }
     ]
   }

@@ -24,6 +24,12 @@
       <li>
         <a href="terminology.html">Terminology</a>
       </li>
+      <li>
+        <a href="CapabilityStatement-krcdex-capabilitystatement-server.html">KR CDex Server CapabilityStatement</a>
+      </li>
+      <li>
+        <a href="CapabilityStatement-krcdex-capabilitystatement-client.html">KR CDex Client CapabilityStatement</a>
+      </li>
     </ul>
   </li>
   <li>

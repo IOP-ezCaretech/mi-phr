@@ -75,7 +75,7 @@
             }
           ],
           "supportedProfile": [
-            "https://example.org/StructureDefinition/krcdex-patient"
+            "http://example.org/StructureDefinition/krcdex-patient"
           ],
           "_supportedProfile": [
             {

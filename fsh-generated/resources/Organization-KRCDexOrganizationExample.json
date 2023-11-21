@@ -18,7 +18,6 @@
         {
           "system": "http://www.hl7korea.or.kr/CodeSystem/hira-healthcare-organization-types",
           "code": "01",
-          "version": "",
           "display": "상급종합병원"
         }
       ]

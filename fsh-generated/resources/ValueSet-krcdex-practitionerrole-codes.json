@@ -5,7 +5,7 @@
   "id": "krcdex-practitionerrole-codes",
   "title": "KR CDdex PractitioneRole Codes",
   "description": "KR CDex 진료의 역할 유형 코드집합",
-  "url": "https://example.org/ValueSet/krcdex-practitionerrole-codes",
+  "url": "http://example.org/ValueSet/krcdex-practitionerrole-codes",
   "compose": {
     "include": [
       {

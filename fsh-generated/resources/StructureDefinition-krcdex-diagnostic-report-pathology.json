@@ -60,7 +60,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://example.org/StructureDefinition/krcore-testRequestDateTime"
+              "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-testRequestDateTime"
             ]
           }
         ],
@@ -150,7 +150,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "$this"
+              "path": "system"
             }
           ],
           "rules": "open"

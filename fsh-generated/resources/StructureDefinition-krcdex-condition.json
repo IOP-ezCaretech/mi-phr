@@ -134,7 +134,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "$this"
+              "path": "system"
             }
           ],
           "rules": "open"

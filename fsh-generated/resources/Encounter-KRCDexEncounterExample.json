@@ -42,7 +42,7 @@
     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
   },
   "subject": {
-    "reference": "KRCDexPatientDExample"
+    "reference": "Patient/KRCDexPatientExample"
   },
   "serviceProvider": {
     "reference": "Organization/KRCDexOrganizationExample"

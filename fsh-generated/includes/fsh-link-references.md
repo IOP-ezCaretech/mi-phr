@@ -23,9 +23,6 @@
 [KRCDexPractitionerRole]: StructureDefinition-krcdex-practitioner-role.html
 [KRCDexProcedure]: StructureDefinition-krcdex-procedure.html
 [krcdex-capabilitystatement-server]: CapabilityStatement-krcdex-capabilitystatement-server.html
-[KRCore_InsuranceTypes_Extension]: StructureDefinition-krcore-insuranceTypes.html
-[KRCore_RoadNameAddress_Extension]: StructureDefinition-krcore-roadNameAddress.html
-[KRCore_TestRequestDateTime_Extension]: StructureDefinition-krcore-testRequestDateTime.html
 [KRCDexAllergyIntoleranceExample]: AllergyIntolerance-KRCDexAllergyIntoleranceExample.html
 [KRCDexConditionExample]: Condition-KRCDexConditionExample.html
 [KRCDexDiagnosticReportImagingExample]: DiagnosticReport-KRCDexDiagnosticReportImagingExample.html

@@ -15,8 +15,8 @@
   "code": {
     "coding": [
       {
-        "code": "R3505",
         "system": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
+        "code": "R3505",
         "display": "체외충격파쇄석술[신,요관, 방광결석 또는 담석, 췌석]"
       }
     ]

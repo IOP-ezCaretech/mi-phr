@@ -79,7 +79,11 @@
         "sliceName": "LOINC",
         "min": 0,
         "max": "*",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-codes"
+        }
       },
       {
         "id": "Observation.code.coding:LOINC.system",
@@ -100,7 +104,11 @@
         "sliceName": "SNOMED-CT",
         "min": 0,
         "max": "*",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-methods"
+        }
       },
       {
         "id": "Observation.code.coding:SNOMED-CT.system",

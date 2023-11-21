@@ -68,7 +68,10 @@
         "sliceName": "ICD-9-CM",
         "min": 0,
         "max": "*",
-        "mustSupport": true
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM"
+        }
       },
       {
         "id": "Procedure.code.coding:ICD-9-CM.system",

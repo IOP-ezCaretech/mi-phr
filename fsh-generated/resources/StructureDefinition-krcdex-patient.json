@@ -47,8 +47,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "type"
+              "type": "pattern",
+              "path": "type.coding"
             }
           ],
           "rules": "open"
@@ -60,7 +60,7 @@
         "path": "Patient.identifier.type",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://example.org/ValueSet/krcdex-identifier-types"
+          "valueSet": "http://example.org/ValueSet/krcdex-identifier-type"
         }
       },
       {
@@ -82,30 +82,13 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:MHID.type",
-        "path": "Patient.identifier.type",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Patient.identifier:MHID.type.coding",
         "path": "Patient.identifier.type.coding",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:MHID.type.coding.system",
-        "path": "Patient.identifier.type.coding.system",
-        "min": 1,
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:MHID.type.coding.code",
-        "path": "Patient.identifier.type.coding.code",
-        "min": 1,
-        "fixedCode": "MHID",
-        "mustSupport": true
+        "patternCoding": {
+          "code": "MHID",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+        }
       },
       {
         "id": "Patient.identifier:MR",
@@ -116,30 +99,13 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:MR.type",
-        "path": "Patient.identifier.type",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Patient.identifier:MR.type.coding",
         "path": "Patient.identifier.type.coding",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:MR.type.coding.system",
-        "path": "Patient.identifier.type.coding.system",
-        "min": 1,
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:MR.type.coding.code",
-        "path": "Patient.identifier.type.coding.code",
-        "min": 1,
-        "fixedCode": "MR",
-        "mustSupport": true
+        "patternCoding": {
+          "code": "MR",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+        }
       },
       {
         "id": "Patient.identifier:NNKOR",
@@ -150,30 +116,13 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:NNKOR.type",
-        "path": "Patient.identifier.type",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Patient.identifier:NNKOR.type.coding",
         "path": "Patient.identifier.type.coding",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:NNKOR.type.coding.system",
-        "path": "Patient.identifier.type.coding.system",
-        "min": 1,
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:NNKOR.type.coding.code",
-        "path": "Patient.identifier.type.coding.code",
-        "min": 1,
-        "fixedCode": "NNKOR",
-        "mustSupport": true
+        "patternCoding": {
+          "code": "NNKOR",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+        }
       },
       {
         "id": "Patient.name.text",

@@ -73,7 +73,7 @@
       {
         "id": "Media.status",
         "path": "Media.status",
-        "short": "참고자료 생성상태"
+        "short": "참고자료 생성상태: preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"
       },
       {
         "id": "Media.type",

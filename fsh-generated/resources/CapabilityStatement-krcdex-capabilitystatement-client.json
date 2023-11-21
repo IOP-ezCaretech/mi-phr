@@ -1,7 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "krcdex-capabilitystatement-client",
-  "url": "https://example.org/CapabilityStatement/krcdex-capabilitystatement-client",
+  "url": "http://example.org/CapabilityStatement/krcdex-capabilitystatement-client",
   "jurisdiction": [
     {
       "coding": [
@@ -14,7 +14,7 @@
     }
   ],
   "instantiates": [
-    "https://example.org/StructureDefinition/krcdex-capabilitystatement-client"
+    "http://example.org/StructureDefinition/krcdex-capabilitystatement-client"
   ],
   "_instantiates": [
     {
@@ -68,7 +68,7 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "SHOULD"
+              "valueCode": "SHALL"
             }
           ],
           "supportedProfile": [
@@ -247,10 +247,9 @@
                   "valueCode": "SHOULD"
                 }
               ],
-              "name": "telecom",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-patient-telecom",
-              "type": "token",
-              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+              "name": "organization",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-patient-organization",
+              "type": "reference"
             }
           ],
           "type": "Patient"
@@ -559,18 +558,6 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "name": "identifier",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-practitioner-identifier",
-              "type": "token",
-              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
               "name": "name",
               "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-practitioner-name",
               "type": "string"
@@ -744,7 +731,7 @@
             }
           ],
           "supportedProfile": [
-            "http://example.org/StructureDefinition/krcdex-allergy-intolerance"
+            "http://example.org/StructureDefinition/krcdex-encounter"
           ],
           "_supportedProfile": [
             {
@@ -850,10 +837,22 @@
                   "valueCode": "MAY"
                 }
               ],
-              "name": "category",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-allergyintolerance-category",
-              "type": "token",
-              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+              "name": "participant",
+              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-encounter-participant",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "patient",
+              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-encounter-patient",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
             },
             {
               "extension": [
@@ -862,11 +861,133 @@
                   "valueCode": "MAY"
                 }
               ],
-              "name": "clinical-status",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-allergyintolerance-clinical-status",
+              "name": "service-provider",
+              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-encounter-service-provider",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-encounter-identifier",
               "type": "token",
               "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+            }
+          ],
+          "type": "Encounter"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHOULD"
+            }
+          ],
+          "supportedProfile": [
+            "http://example.org/StructureDefinition/krcdex-allergy-intolerance"
+          ],
+          "_supportedProfile": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "create"
             },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "vread"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "update"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "patch"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "delete"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "code": "history-instance"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "code": "history-type"
+            }
+          ],
+          "referencePolicy": [
+            "resolves"
+          ],
+          "searchParam": [
             {
               "extension": [
                 {
@@ -878,30 +999,6 @@
               "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-allergyintolerance-code",
               "type": "token",
               "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "manifestation",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-allergyintolerance-manifestation",
-              "type": "token",
-              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "onset",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-allergyintolerance-onset",
-              "type": "date",
-              "documentation": "클라이언트는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 제공해야 한다. 서버는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 지원해야 한다."
             },
             {
               "extension": [
@@ -919,11 +1016,11 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "status",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-encounter-status",
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-allergyintolerance-identifier",
               "type": "token",
               "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
             }
@@ -1041,30 +1138,6 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "category",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-condition-category",
-              "type": "token",
-              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "clinical-status",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-condition-clinical-status",
-              "type": "token",
-              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                   "valueCode": "SHALL"
                 }
               ],
@@ -1077,37 +1150,13 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "recorded-date",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-condition-recorded-date",
-              "type": "date",
-              "documentation": "클라이언트는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 제공해야 한다. 서버는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "encounter",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-condition-encounter",
+              "name": "patient",
+              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-condition-patient",
               "type": "reference",
               "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "onset-date",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-condition-onset-date",
-              "type": "date",
-              "documentation": "클라이언트는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 제공해야 한다. 서버는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 지원해야 한다."
             },
             {
               "extension": [
@@ -1116,10 +1165,10 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "name": "patient",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-condition-patient",
-              "type": "reference",
-              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-condition-identifier",
+              "type": "token",
+              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
             }
           ],
           "type": "Condition"
@@ -1235,18 +1284,6 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "authoredon",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-medicationrequest-authoredon",
-              "type": "date",
-              "documentation": "클라이언트는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 제공해야 한다. 서버는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                   "valueCode": "SHOULD"
                 }
               ],
@@ -1271,11 +1308,23 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "status",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-medicationrequest-status",
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-medicationrequest-identifier",
+              "type": "token",
+              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "code",
+              "definition": "http://example.org/SearchParameter/krcore-sp-medicationrequest-code",
               "type": "token",
               "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
             }
@@ -1429,11 +1478,11 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "status",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-procedure-status",
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-procedure-identifier",
               "type": "token",
               "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
             }
@@ -1587,25 +1636,37 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "started",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-imagingstudy-started",
-              "type": "date",
-              "documentation": "클라이언트는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 제공해야 한다. 서버는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 지원해야 한다."
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-imagingstudy-identifier",
+              "type": "token",
+              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
             },
             {
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "status",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-imagingstudy-status",
-              "type": "token",
-              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+              "name": "encounter",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-imagingstudy-encounter",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "endpoint",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-imagingstudy-endpoint",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
             }
           ],
           "type": "ImagingStudy"
@@ -1730,18 +1791,6 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHOULD"
-                }
-              ],
-              "name": "issued",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-observation-issued",
-              "type": "date",
-              "documentation": "클라이언트는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 제공해야 한다. 서버는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                   "valueCode": "SHALL"
                 }
               ],
@@ -1759,40 +1808,6 @@
               ],
               "name": "code",
               "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-observation-code",
-              "type": "token",
-              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "code-value-quantity",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-observation-code-value-quantity",
-              "type": "composite"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "code-value-string",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-observation-code-value-string",
-              "type": "composite"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "data-absent-reason",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-observation-data-absent-reason",
               "type": "token",
               "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
             },
@@ -1836,35 +1851,25 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHOULD"
                 }
               ],
-              "name": "status",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-observation-status",
+              "name": "encounter",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-observation-encounter",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-observation-identifier",
               "type": "token",
               "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "value-quantity",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-observation-value-quantity",
-              "type": "quantity"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "value-string",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-observation-value-string",
-              "type": "string"
             }
           ],
           "type": "Observation"
@@ -1989,25 +1994,13 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "request-date",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-diagnosticreport-request-date",
-              "type": "date",
-              "documentation": "클라이언트는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 제공해야 한다. 서버는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "study",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-diagnosticreport-study",
-              "type": "reference",
-              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-diagnosticreport-identifier",
+              "type": "token",
+              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
             },
             {
               "extension": [
@@ -2037,18 +2030,6 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "issued",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-diagnosticreport-issued",
-              "type": "date",
-              "documentation": "클라이언트는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 제공해야 한다. 서버는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 지원해야 한다."
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                   "valueCode": "SHALL"
                 }
               ],
@@ -2061,13 +2042,25 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "encounter",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-diagnosticreport-encounter",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                   "valueCode": "MAY"
                 }
               ],
-              "name": "performer",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-diagnosticreport-performer",
-              "type": "reference",
-              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+              "name": "date",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-diagnosticreport-date",
+              "type": "date",
+              "documentation": "클라이언트는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 제공해야 한다. 서버는 **반드시(SHALL)** *second* + *time offset* 수준의 정확도를 가지는 값을 지원해야 한다."
             },
             {
               "extension": [
@@ -2085,13 +2078,13 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHOULD"
                 }
               ],
-              "name": "status",
-              "definition": "http://www.hl7korea.or.kr/fhir/krcore/SearchParameter/krcore-sp-diagnosticreport-status",
-              "type": "token",
-              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+              "name": "media",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-diagnosticreport-media",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
             }
           ],
           "type": "DiagnosticReport"
@@ -2192,6 +2185,55 @@
           "referencePolicy": [
             "resolves"
           ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-endpoint-identifier",
+              "type": "token",
+              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "connection-type",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-endpoint-connection-type",
+              "type": "token",
+              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "name",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-endpoint-connection-type",
+              "type": "string"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "organization",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-endpoint-organization",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+            }
+          ],
           "type": "Endpoint"
         },
         {
@@ -2290,6 +2332,56 @@
           "referencePolicy": [
             "resolves"
           ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-media-identifier",
+              "type": "token",
+              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "patient",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-media-patient",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "encounter",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-media-encounter",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "site",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-media-site",
+              "type": "token",
+              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+            }
+          ],
           "type": "Media"
         },
         {
@@ -2387,6 +2479,68 @@
           ],
           "referencePolicy": [
             "resolves"
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "identifier",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-documentreference-identifier",
+              "type": "token",
+              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "type",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-documentreference-type",
+              "type": "token",
+              "documentation": "클라이언트는 적어도 `code` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `system`과 `code` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `system`과 `code` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "patient",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-documentreference-patient",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "encounter",
+              "definition": "http://example.org/SearchParameter/krcdex-sp-documentreference-encounter",
+              "type": "reference",
+              "documentation": "클라이언트는 적어도 `id` 값을 **반드시(SHALL)** 제공해야 하며, **선택적(MAY)**으로 `Type`과 `id` 값을 모두 제공할 수 있다. 서버는 **반드시(SHALL)** `Type`과 `id` 값을 모두 지원해야 한다."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHOULD"
+                }
+              ],
+              "name": "date",
+              "definition": "http://example.org/SearchParameter/krcore-sp-documentreference-date",
+              "type": "date",
+              "documentation": "클라이언트는 **반드시(SHALL)** *day* 수준의 정확도를 가지는 값을 제공해야 한다. 서버는 **반드시(SHALL)** *day* 수준의 정확도를 가지는 값을 지원해야 한다."
+            }
           ],
           "type": "DocumentReference"
         }

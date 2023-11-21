@@ -48,7 +48,7 @@
       {
         "id": "Endpoint.status",
         "path": "Endpoint.status",
-        "short": "조회 대상 상태",
+        "short": "조회 대상 상태: active | suspended | error | off | entered-in-error | test",
         "fixedCode": "active"
       },
       {
@@ -74,7 +74,7 @@
       {
         "id": "Endpoint.connectionType.display",
         "path": "Endpoint.connectionType.display",
-        "short": "query : DICOM-QIDO-RS | retrive : DICOM-WADO-RS"
+        "short": "query : DICOM QIDO-RS | retrive : DICOM WADO-RS"
       },
       {
         "id": "Endpoint.name",

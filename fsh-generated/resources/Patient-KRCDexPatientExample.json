@@ -11,8 +11,8 @@
       "type": {
         "coding": [
           {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MR"
+            "code": "MR",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
           }
         ]
       },
@@ -23,8 +23,8 @@
       "type": {
         "coding": [
           {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "MHID"
+            "code": "MHID",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
           }
         ]
       },

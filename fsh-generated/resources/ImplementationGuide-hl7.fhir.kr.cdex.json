@@ -241,30 +241,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/krcore-insuranceTypes"
-        },
-        "name": "KR Core Insurance Types Extension",
-        "description": "환자의 건강보험유형을 표기하기 위한 확장",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/krcore-roadNameAddress"
-        },
-        "name": "KR Core Road Name Address Extension",
-        "description": "한국의 도로명 주소를 표기하기 위한 확장",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/krcore-testRequestDateTime"
-        },
-        "name": "KR Core Test Request DateTime Extension",
-        "description": "검사의뢰일을 표기하기 위한 확장",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "AllergyIntolerance/KRCDexAllergyIntoleranceExample"
         },
         "name": "KRCDex AllergyIntolerance Example",

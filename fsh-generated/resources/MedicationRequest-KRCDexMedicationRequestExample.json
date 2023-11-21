@@ -16,7 +16,7 @@
     "coding": [
       {
         "code": "653400910",
-        "system": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication",
+        "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/hira-edi-medication",
         "display": "케토라신정(케토롤락트로메타민)_(10mg/1정)"
       }
     ]

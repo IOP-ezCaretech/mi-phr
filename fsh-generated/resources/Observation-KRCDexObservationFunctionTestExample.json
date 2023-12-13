@@ -26,8 +26,8 @@
   "code": {
     "coding": [
       {
-        "code": "F6001",
         "system": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
+        "code": "F6001",
         "display": "호흡기능검사-기본폐기능검사[기류용적폐검사를하지않는경우]"
       }
     ],

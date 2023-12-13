@@ -84,17 +84,36 @@
       {
         "id": "Media.type.coding",
         "path": "Media.type.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "ordered": false
+        },
         "short": "정의된 코드"
       },
       {
-        "id": "Media.type.coding.system",
-        "path": "Media.type.coding.system",
-        "short": "코드체계",
-        "min": 1,
+        "id": "Media.type.coding:FHIR-MediaType",
+        "path": "Media.type.coding",
+        "sliceName": "FHIR-MediaType",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
-        "id": "Media.type.coding.code",
+        "id": "Media.type.coding:FHIR-MediaType.system",
+        "path": "Media.type.coding.system",
+        "short": "코드체계",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/media-type",
+        "mustSupport": true
+      },
+      {
+        "id": "Media.type.coding:FHIR-MediaType.code",
         "path": "Media.type.coding.code",
         "short": "코드값",
         "min": 1,
@@ -181,14 +200,37 @@
         "mustSupport": true
       },
       {
-        "id": "Media.bodySite.coding.system",
-        "path": "Media.bodySite.coding.system",
-        "short": "코드체계",
-        "min": 1,
+        "id": "Media.bodySite.coding",
+        "path": "Media.bodySite.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "ordered": false
+        }
+      },
+      {
+        "id": "Media.bodySite.coding:SNOMED-CT",
+        "path": "Media.bodySite.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
-        "id": "Media.bodySite.coding.code",
+        "id": "Media.bodySite.coding:SNOMED-CT.system",
+        "path": "Media.bodySite.coding.system",
+        "short": "코드체계",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Media.bodySite.coding:SNOMED-CT.code",
         "path": "Media.bodySite.coding.code",
         "short": "코드값",
         "min": 1,

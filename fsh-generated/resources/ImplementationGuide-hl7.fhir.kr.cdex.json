@@ -36,7 +36,7 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.kr.core",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "uri": "http://www.hl7korea.or.kr/fhir/krcore/ImplementationGuide/hl7.fhir.kr.core",
       "id": "hl7_fhir_kr_core"
     }
@@ -64,6 +64,7 @@
           "reference": "ValueSet/krcdex-allergyIntolerance-manifestation-codes"
         },
         "name": "KR CDex AllergyIntolerance manifestation codes",
+        "description": "KR CDex 알레르기 및 불내성 반응 증상 코드 집합",
         "exampleBoolean": false
       },
       {
@@ -71,6 +72,7 @@
           "reference": "ValueSet/krcdex-allergyIntolerance-substance-codes"
         },
         "name": "KR CDex AllergyIntolerance Substance codes",
+        "description": "KR CDex 알레르기 및 불내성 반응 물질 코드 집합",
         "exampleBoolean": false
       },
       {
@@ -101,7 +103,7 @@
         "reference": {
           "reference": "StructureDefinition/krcdex-diagnostic-report-pathology"
         },
-        "name": "KR CDex DiagnosticReport Profile for Patholoy Results",
+        "name": "KR CDex DiagnosticReport Profile for Pathology Results",
         "description": "__KR CDex__ 의 병리검사 정보에 적용되는 DiagnosticReport 구조.",
         "exampleBoolean": false
       },
@@ -118,6 +120,7 @@
           "reference": "ValueSet/krcdex-doc-typecodes"
         },
         "name": "KR CDex Documetation type codes",
+        "description": "KR CDex 진료기록정보 문서 타입 코드 집합",
         "exampleBoolean": false
       },
       {
@@ -142,6 +145,14 @@
         },
         "name": "KR CDex Healthcare Organization Profile",
         "description": "__KR CDex__ 의 의료기관 정보에 적용되는 Organization 구조.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/krcdex-identifier-type"
+        },
+        "name": "KR CDex Identifier Type",
+        "description": "KR CDex 환자 식별자 유형 코드체계",
         "exampleBoolean": false
       },
       {
@@ -173,6 +184,7 @@
           "reference": "ValueSet/krcdex-medication-clinical-drug"
         },
         "name": "KR CDex Medication Clinical Drug",
+        "description": "KR CDex 처방 약물의 EDI, KD 코드 집합",
         "exampleBoolean": false
       },
       {
@@ -357,13 +369,6 @@
         },
         "name": "KRCDex Procedure Example",
         "exampleCanonical": "http://example.org/StructureDefinition/krcdex-procedure"
-      },
-      {
-        "reference": {
-          "reference": "Patient/krcdex-patient-example-01"
-        },
-        "name": "krcdex-patient-example-01",
-        "exampleBoolean": true
       }
     ],
     "page": {

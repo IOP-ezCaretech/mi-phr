@@ -32,7 +32,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "DiagnosticReport",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-diagnosticreport-diagnostic-imaging",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -56,39 +56,13 @@
         "id": "DiagnosticReport.status",
         "path": "DiagnosticReport.status",
         "short": "진단보고(진단영상검사) 상태: registered | partial | preliminary | modified | final | amended | corrected | appended | cancelled | entered-in-error | unknown",
-        "fixedCode": "final",
-        "mustSupport": true
+        "fixedCode": "final"
       },
       {
         "id": "DiagnosticReport.category",
         "path": "DiagnosticReport.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "short": "검사 구분(영상)",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.category:Imaging",
-        "path": "DiagnosticReport.category",
-        "sliceName": "Imaging",
-        "min": 0,
         "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "IMG",
-              "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-            }
-          ]
-        },
         "mustSupport": true
       },
       {
@@ -110,46 +84,7 @@
       {
         "id": "DiagnosticReport.code",
         "path": "DiagnosticReport.code",
-        "short": "검사 코드",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.code.coding",
-        "path": "DiagnosticReport.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "DiagnosticReport.code.coding:EDI",
-        "path": "DiagnosticReport.code.coding",
-        "sliceName": "EDI",
-        "min": 0,
-        "max": "*",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-edi-procedure-codes"
-        }
-      },
-      {
-        "id": "DiagnosticReport.code.coding:EDI.system",
-        "path": "DiagnosticReport.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
-        "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.code.coding:EDI.code",
-        "path": "DiagnosticReport.code.coding.code",
-        "min": 1,
-        "mustSupport": true
+        "short": "검사 코드"
       },
       {
         "id": "DiagnosticReport.code.coding:LOINC",
@@ -201,7 +136,6 @@
       {
         "id": "DiagnosticReport.subject",
         "path": "DiagnosticReport.subject",
-        "short": "진단영상검사 대상",
         "min": 1,
         "type": [
           {
@@ -238,16 +172,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "DiagnosticReport.issued",
-        "path": "DiagnosticReport.issued",
-        "short": "진단 보고 일시"
-      },
-      {
-        "id": "DiagnosticReport.performer",
-        "path": "DiagnosticReport.performer",
-        "short": "진단 책임자"
       },
       {
         "id": "DiagnosticReport.resultsInterpreter",
@@ -299,8 +223,7 @@
         "id": "DiagnosticReport.conclusion",
         "path": "DiagnosticReport.conclusion",
         "short": "검사소견",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       }
     ]
   }

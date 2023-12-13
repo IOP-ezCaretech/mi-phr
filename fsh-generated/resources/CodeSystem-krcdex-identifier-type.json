@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "KRCDexIdentifierType",
+  "id": "krcdex-identifier-type",
+  "title": "KR CDex Identifier Type",
+  "description": "KR CDex 환자 식별자 유형 코드체계",
+  "url": "http://example.org/CodeSystem/krcdex-identifier-type",
+  "concept": [
+    {
+      "code": "MHID",
+      "display": "My Healthway Identifier"
+    }
+  ],
+  "experimental": false,
+  "count": 1
+}

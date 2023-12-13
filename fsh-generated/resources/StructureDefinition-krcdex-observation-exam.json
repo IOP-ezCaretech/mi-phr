@@ -69,6 +69,11 @@
         "fixedCode": "final"
       },
       {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "max": "1"
+      },
+      {
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "검사 코드"

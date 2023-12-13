@@ -193,6 +193,7 @@
       {
         "id": "AllergyIntolerance.reaction.substance",
         "path": "AllergyIntolerance.reaction.substance",
+        "short": "반응 물질",
         "binding": {
           "strength": "example",
           "valueSet": "http://example.org/ValueSet/krcdex-allergyIntolerance-substance-codes"

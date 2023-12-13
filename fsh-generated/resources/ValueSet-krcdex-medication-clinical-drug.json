@@ -4,6 +4,7 @@
   "name": "KRCDexMedicationClinicalDrug",
   "id": "krcdex-medication-clinical-drug",
   "title": "KR CDex Medication Clinical Drug",
+  "description": "KR CDex 처방 약물의 EDI, KD 코드 집합",
   "url": "http://example.org/ValueSet/krcdex-medication-clinical-drug",
   "experimental": false,
   "publisher": "ezCaretech",
@@ -22,10 +23,10 @@
   "compose": {
     "include": [
       {
-        "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/hira-edi-medication"
+        "system": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication"
       },
       {
-        "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/kpis-kdcode"
+        "system": "http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode"
       }
     ]
   }

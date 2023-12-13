@@ -6,6 +6,7 @@
   "title": "KR CDex Identifier Types",
   "description": "KR CDex 환자 식별자 유형 코드집합",
   "url": "http://example.org/ValueSet/krcdex-identifier-type",
+  "experimental": false,
   "compose": {
     "include": [
       {
@@ -18,7 +19,12 @@
           {
             "code": "NNKOR",
             "display": "National Person Identifier for Republic of Korea"
-          },
+          }
+        ]
+      },
+      {
+        "system": "http://example.org/CodeSystem/krcdex-identifier-type",
+        "concept": [
           {
             "code": "MHID",
             "display": "My Healthway Identifier"

@@ -15,8 +15,8 @@
   "medicationCodeableConcept": {
     "coding": [
       {
+        "system": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication",
         "code": "653400910",
-        "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/hira-edi-medication",
         "display": "케토라신정(케토롤락트로메타민)_(10mg/1정)"
       }
     ]
@@ -33,8 +33,9 @@
       "route": {
         "coding": [
           {
-            "code": "PO",
-            "system": "http://snomed.info/sct"
+            "code": "26643006",
+            "system": "http://snomed.info/sct",
+            "display": "Oral route (qualifier value)"
           }
         ]
       },
@@ -42,9 +43,9 @@
         {
           "doseQuantity": {
             "value": 1,
-            "unit": "알",
+            "unit": "mL",
             "system": "http://unitsofmeasure.org",
-            "code": "{tbl}"
+            "code": "mL"
           }
         }
       ],

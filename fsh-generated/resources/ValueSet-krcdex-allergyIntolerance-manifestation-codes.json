@@ -4,6 +4,7 @@
   "name": "KRCDexAllergyManifestationCodes",
   "id": "krcdex-allergyIntolerance-manifestation-codes",
   "title": "KR CDex AllergyIntolerance manifestation codes",
+  "description": "KR CDex 알레르기 및 불내성 반응 증상 코드 집합",
   "url": "http://example.org/ValueSet/krcdex-allergyIntolerance-manifestation-codes",
   "experimental": false,
   "publisher": "ezCaretech",

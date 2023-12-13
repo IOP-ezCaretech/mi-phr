@@ -11,6 +11,7 @@
 [KRCDexEncounter]: StructureDefinition-krcdex-encounter.html
 [KRCDexEndpoint]: StructureDefinition-krcdex-end-point.html
 [KRCDexOrganization]: StructureDefinition-krcdex-organization.html
+[KRCDexIdentifierType]: CodeSystem-krcdex-identifier-type.html
 [KR_CDex_Identifier_Types]: ValueSet-krcdex-identifier-type.html
 [KRCDexImagingStudy]: StructureDefinition-krcdex-imaging-study.html
 [KRCDexMedia]: StructureDefinition-krcdex-media.html
@@ -40,4 +41,3 @@
 [KRCDexPractitionerExample]: Practitioner-KRCDexPractitionerExample.html
 [KRCDexPractitionerRoleExample]: PractitionerRole-KRCDexPractitionerRoleExample.html
 [KRCDexProcedureExample]: Procedure-KRCDexProcedureExample.html
-[krcdex-patient-example-01]: Patient-krcdex-patient-example-01.html

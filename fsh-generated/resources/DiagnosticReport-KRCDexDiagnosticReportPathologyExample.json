@@ -6,6 +6,12 @@
       "http://example.org/StructureDefinition/krcdex-diagnostic-report-pathology"
     ]
   },
+  "extension": [
+    {
+      "url": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-testRequestDateTime",
+      "valueDateTime": "2023-04-01"
+    }
+  ],
   "identifier": [
     {
       "system": "http://www.example.com",
@@ -16,8 +22,8 @@
     {
       "coding": [
         {
-          "code": "PAT",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "PAT"
         }
       ]
     }

@@ -24,6 +24,14 @@
     {
       "coding": [
         {
+          "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-condition-category-types",
+          "code": "진단"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
           "system": "http://terminology.hl7.org/CodeSystem/condition-category",
           "code": "encounter-diagnosis"
         }
@@ -33,9 +41,14 @@
   "code": {
     "coding": [
       {
-        "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/kostat-kcd-8",
+        "system": "http://www.hl7korea.or.kr/CodeSystem/kostat-kcd-8",
         "code": "N20.1",
         "display": "요관의 결석"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "25064002",
+        "display": "Headache"
       }
     ]
   },

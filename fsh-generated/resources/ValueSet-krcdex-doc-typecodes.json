@@ -4,6 +4,7 @@
   "name": "KRCDexDocTypeCodes",
   "id": "krcdex-doc-typecodes",
   "title": "KR CDex Documetation type codes",
+  "description": "KR CDex 진료기록정보 문서 타입 코드 집합",
   "url": "http://example.org/ValueSet/krcdex-doc-typecodes",
   "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use.",
   "experimental": false,

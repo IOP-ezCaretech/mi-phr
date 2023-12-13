@@ -62,6 +62,7 @@
         "path": "Endpoint.connectionType.system",
         "short": "코드체계",
         "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
         "mustSupport": true
       },
       {
@@ -108,12 +109,13 @@
         "id": "Endpoint.payloadType.text",
         "path": "Endpoint.payloadType.text",
         "min": 1,
-        "fixedString": "My Healthway"
+        "fixedString": "MyHealthWay"
       },
       {
         "id": "Endpoint.address",
         "path": "Endpoint.address",
         "short": "조회 대상 주소(URL)",
+        "fixedUrl": "khis:myhw:md:2022",
         "mustSupport": true
       }
     ]

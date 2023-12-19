@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "myhealthway-endpoint",
+  "url": "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-endpoint",
+  "name": "MyHealthWayEndpointProfile",
+  "title": "MyHealthWay Endpoint Profile",
+  "status": "active",
+  "description": "__MyHealthWay__ 의 DICOM 영상 위치 정보에 적용되는 Endpoint 구조.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Endpoint",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Endpoint",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Endpoint.identifier",
+        "path": "Endpoint.identifier",
+        "short": "조회 대상 식별자",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Endpoint.identifier.system",
+        "path": "Endpoint.identifier.system",
+        "short": "식별체계",
+        "min": 1
+      },
+      {
+        "id": "Endpoint.identifier.value",
+        "path": "Endpoint.identifier.value",
+        "short": "식별자",
+        "min": 1
+      },
+      {
+        "id": "Endpoint.status",
+        "path": "Endpoint.status",
+        "short": "조회 대상 상태: active | suspended | error | off | entered-in-error | test",
+        "fixedCode": "active"
+      },
+      {
+        "id": "Endpoint.connectionType",
+        "path": "Endpoint.connectionType",
+        "short": "조회 대상 연결 타입",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.connectionType.system",
+        "path": "Endpoint.connectionType.system",
+        "short": "코드체계",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.connectionType.code",
+        "path": "Endpoint.connectionType.code",
+        "short": "query: dicom-qido-rs | retrive: dicom-wado-rs",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.connectionType.display",
+        "path": "Endpoint.connectionType.display",
+        "short": "query : DICOM QIDO-RS | retrive : DICOM WADO-RS"
+      },
+      {
+        "id": "Endpoint.name",
+        "path": "Endpoint.name",
+        "short": "조회 대상 명칭",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.managingOrganization",
+        "path": "Endpoint.managingOrganization",
+        "short": "정보 조회 대상 제공기관",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Endpoint.payloadType",
+        "path": "Endpoint.payloadType",
+        "short": "제공 정보 유형",
+        "max": "1"
+      },
+      {
+        "id": "Endpoint.payloadType.text",
+        "path": "Endpoint.payloadType.text",
+        "min": 1,
+        "fixedString": "MyHealthWay"
+      },
+      {
+        "id": "Endpoint.address",
+        "path": "Endpoint.address",
+        "short": "조회 대상 주소(URL)",
+        "fixedUrl": "khis:myhw:md:2022",
+        "mustSupport": true
+      }
+    ]
+  }
+}

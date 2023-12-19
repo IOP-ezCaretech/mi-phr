@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MyHealthWayIdentifierTypes",
+  "id": "myhealthway-identifier-types",
+  "title": "MyHealthWay Identifier Types",
+  "description": "MyHealthWay 환자 식별자 유형 코드체계",
+  "url": "https://hins.or.kr/fhir/MyHealthWay/CodeSystem/myhealthway-identifier-types",
+  "concept": [
+    {
+      "code": "MHID",
+      "display": "My Healthway Identifier"
+    }
+  ],
+  "experimental": false,
+  "count": 1
+}

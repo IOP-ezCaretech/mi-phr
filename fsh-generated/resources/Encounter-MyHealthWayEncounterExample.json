@@ -1,0 +1,50 @@
+{
+  "resourceType": "Encounter",
+  "id": "MyHealthWayEncounterExample",
+  "meta": {
+    "profile": [
+      "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-encounter"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.hl7korea.or.kr/Identifier/hira-krnpi",
+      "value": "example"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-insuranceTypes",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "4",
+            "system": "http://www.hl7korea.or.kr/CodeSystem/hira-insurance-types",
+            "display": "건강보험"
+          }
+        ]
+      }
+    }
+  ],
+  "participant": [
+    {
+      "individual": {
+        "reference": "PractitionerRole/MyHealthWayPractitionerRoleExample"
+      }
+    }
+  ],
+  "period": {
+    "start": "2023-04-30"
+  },
+  "status": "finished",
+  "class": {
+    "code": "AMB",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+  },
+  "subject": {
+    "reference": "Patient/MyHealthWayPatientExample"
+  },
+  "serviceProvider": {
+    "reference": "Organization/MyHealthWayOrganizationExample"
+  }
+}

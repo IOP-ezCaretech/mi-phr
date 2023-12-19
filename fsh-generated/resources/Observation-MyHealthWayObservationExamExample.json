@@ -1,0 +1,56 @@
+{
+  "resourceType": "Observation",
+  "id": "MyHealthWayObservationExamExample",
+  "meta": {
+    "profile": [
+      "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-observation-exam"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.example.com",
+      "value": "observation-function-test-example"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "exam",
+          "display": "Exam"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
+        "code": "F6001",
+        "display": "호흡기능검사-기본폐기능검사[기류용적폐검사를하지않는경우]"
+      }
+    ],
+    "text": "FVC"
+  },
+  "performer": [
+    {
+      "reference": "PractitionerRole/MyHealthWayPractitionerRoleExample"
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 78,
+    "comparator": ">=",
+    "unit": "%",
+    "code": "%"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/MyHealthWayPatientExample"
+  },
+  "effectiveDateTime": "2023-04-01",
+  "encounter": {
+    "reference": "Encounter/MyHealthWayEncounterExample"
+  }
+}

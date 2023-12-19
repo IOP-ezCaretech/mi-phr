@@ -1,0 +1,54 @@
+{
+  "resourceType": "Media",
+  "id": "MyHealthWayMediaExample",
+  "meta": {
+    "profile": [
+      "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-media"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.example.com",
+      "value": "media-example"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/media-type",
+        "code": "image",
+        "display": "Image"
+      }
+    ]
+  },
+  "modality": {
+    "coding": [
+      {
+        "code": "diagram",
+        "system": "http://terminology.hl7.org/CodeSystem/media-modality"
+      }
+    ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "85151006",
+        "display": "Structure of left hand (body structure)"
+      }
+    ]
+  },
+  "content": {
+    "contentType": "text/plain",
+    "data": "ZGF0YSBleGFtcGxl"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/MyHealthWayPatientExample"
+  },
+  "encounter": {
+    "reference": "Encounter/MyHealthWayEncounterExample"
+  },
+  "createdDateTime": "2017-12-17",
+  "deviceName": "Acme Camera"
+}

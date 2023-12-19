@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MyHealthWayMedicationClinicalDrug",
+  "id": "myhealthway-medication-clinical-drug",
+  "title": "MyHealthWay Medication Clinical Drug",
+  "description": "MyHealthWay 처방 약물의 EDI, KD 코드 집합",
+  "url": "https://hins.or.kr/fhir/MyHealthWay/ValueSet/myhealthway-medication-clinical-drug",
+  "experimental": false,
+  "publisher": "한국보건의료정보원",
+  "version": "4.0.1",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "KR",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Korea, Republic of"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication"
+      },
+      {
+        "system": "http://www.hl7korea.or.kr/CodeSystem/kpis-kdcode"
+      }
+    ]
+  }
+}

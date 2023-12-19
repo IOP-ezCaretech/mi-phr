@@ -1,0 +1,44 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "MyHealthWayDocumentReferenceExample",
+  "meta": {
+    "profile": [
+      "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-documentreference"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.example.com",
+      "value": "documentReference-example"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "34117-2",
+        "display": "History and physical note"
+      }
+    ]
+  },
+  "content": [
+    {
+      "attachment": {
+        "contentType": "text/plain",
+        "data": "ZGF0YSBleGFtcGxl"
+      }
+    }
+  ],
+  "context": {
+    "encounter": [
+      {
+        "reference": "Encounter/MyHealthWayEncounterExample"
+      }
+    ]
+  },
+  "status": "current",
+  "subject": {
+    "reference": "Patient/MyHealthWayPatientExample"
+  },
+  "date": "2013-07-01T23:11:33+10:00"
+}

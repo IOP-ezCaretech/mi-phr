@@ -1,0 +1,39 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "MyHealthWayImagingStudyExample",
+  "meta": {
+    "profile": [
+      "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-imagingstudy"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.example.com",
+      "value": "imagingStudy-example"
+    }
+  ],
+  "endpoint": [
+    {
+      "reference": "Endpoint/MyHealthWayEndpointExample"
+    }
+  ],
+  "series": [
+    {
+      "uid": "1.22.333.666666.4444.0123456789.55555.55555.0123456789",
+      "modality": {
+        "code": "US",
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "display": "Ultrasound"
+      },
+      "description": "Ultrasound"
+    }
+  ],
+  "status": "registered",
+  "subject": {
+    "reference": "Patient/MyHealthWayPatientExample"
+  },
+  "started": "2023-04-01T14:05:00+09:00",
+  "encounter": {
+    "reference": "Encounter/MyHealthWayEncounterExample"
+  }
+}

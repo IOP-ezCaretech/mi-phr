@@ -1,73 +1,71 @@
 ### Profiles
 
-The following profiles and have been defined for this implementation guide.
+MyHealthWay에서 정의된 profile들은 다음과 같다.
 
 #### 환자 정보
 
-- [KR CDex Patient profile](StructureDefinition-krcdex-patient.html)
+- [MyHealthWay Patient profile](StructureDefinition-myhealthway-patient.html)
 
 #### 의료기관 정보
 
-- [KR CDex Healthcare Organization Profile](StructureDefinition-krcdex-organization.html)
+- [MyHealthWay Organization Profile](StructureDefinition-myhealthway-organization.html)
 
 #### 진료의 정보
 
-- [KR CDex Practitioner Profile](StructureDefinition-krcdex-practitioner.html)
+- [MyHealthWay Practitioner Profile](StructureDefinition-myhealthway-practitioner.html)
 
 #### 진료의 역할 정보
 
-- [KR CDex PractitionerRole Profile](StructureDefinition-krcdex-practitioner-role.html)
+- [MyHealthWay PractitionerRole Profile](StructureDefinition-myhealthway-practitionerrole.html)
 
 #### 내원 정보
 
-- [KR CDex Encounter Profile](StructureDefinition-krcdex-encounter.html)
-
-#### 알레르기 및 불내성
-
-- [KR CDex AllergyIntolerance Profile](StructureDefinition-krcdex-allergy-intolerance.html)
+- [MyHealthWay Encounter Profile](StructureDefinition-myhealthway-encounter.html)
 
 #### 진단내역
 
-- [KR CDex Condition Profile](StructureDefinition-krcdex-condition.html)
+- [MyHealthWay Condition Profile](StructureDefinition-myhealthway-condition.html)
 
-#### 약물 처방 정보
+#### 약물처방 내역
 
-- [KR CDex MedicationRequest Profile](StructureDefinition-krcdex-medication-request.html)
+- [MyHealthWay MedicationRequest Profile](StructureDefinition-myhealthway-medicationrequest.html)
 
-#### 수술 및 처치내역
+#### 기타(기능)검사
 
-- [KR CDex Procedure Profile](StructureDefinition-krcdex-procedure.html)
+- [MyHealthWay Observation Profile for Exam](StructureDefinition-myhealthway-observation-exam.html)
 
-#### DICOM 영상 위치 정보
+#### 진단검사
 
-- [KR CDex Endpoint Profile](StructureDefinition-krcdex-end-point.html)
+- [MyHealthWay Observation Profile for Laboratory Result](StructureDefinition-myhealthway-observation-laboratory.html)
 
-#### 참고자료
+#### 영상검사
 
-- [KR CDex Media Profile](StructureDefinition-krcdex-media.html)
+- [MyHealthWay DiagnosticReport Profile for Diagnostic Imaging](StructureDefinition-myhealthway-diagnosticreport-imaging.html)
 
-#### 진료기록 정보
+#### 병리검사
 
-- [KR CDex DocumentReference Profile](StructureDefinition-krcdex-document-reference.html)
+- [MyHealthWay DiagnosticReport Profile for Pathology Result](StructureDefinition-myhealthway-diagnosticreport-pathology.html)
 
 #### DICOM 이미지 정보
 
-- [KR CDex ImagingStudy Profile](StructureDefinition-krcdex-imaging-study.html)
+- [MyHealthWay ImagingStudy Profile](StructureDefinition-myhealthway-imagingstudy.html)
 
-#### 검사
+#### DICOM 영상 위치 정보
 
-##### 진단검사
+- [MyHealthWay Endpoint Profile](StructureDefinition-myhealthway-endpoint.html)
 
-- [KR CDex Observation Profile for Laboratory Result](StructureDefinition-krcdex-observation-laboratory.html)
+#### 참고자료
 
-##### 기타(기능)검사
+- [MyHealthWay Media Profile](StructureDefinition-myhealthway-media.html)
 
-- [KR CDex Observation Profile for Function Test](StructureDefinition-krcdex-observation-exam.html)
+#### 수술 내역(수술 및 처치)
 
-##### 영상검사
+- [MyHealthWay Procedure Profile](StructureDefinition-myhealthway-procedure.html)
 
-- [KR CDex DiagnosticReport Profile for Diagnostic Imaging](StructureDefinition-krcdex-diagnostic-report-imaging.html)
+#### 알러지 및 부작용(불내성)
 
-##### 병리검사
+- [MyHealthWay AllergyIntolerance Profile](StructureDefinition-myhealthway-allergyintolerance.html)
 
-- [KR CDex DiagnosticReport Profile for Patholoy Results](StructureDefinition-krcdex-diagnostic-report-pathology.html)
+#### 진료기록 정보
+
+- [MyHealthWay DocumentReference Profile](StructureDefinition-myhealthway-documentreference.html)

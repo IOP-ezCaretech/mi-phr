@@ -1,0 +1,238 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "myhealthway-condition",
+  "url": "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-condition",
+  "name": "MyHealthWayConditionProfile",
+  "title": "MyHealthWay Condition Profile",
+  "status": "active",
+  "description": "__MyHealthWay__ 의 진단 상태 정보에 적용되는 Condition 구조.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-condition-encounter-diagnosis",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.identifier",
+        "path": "Condition.identifier",
+        "short": "진단정보 식별자",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Condition.identifier.system",
+        "path": "Condition.identifier.system",
+        "short": "식별체계",
+        "min": 1
+      },
+      {
+        "id": "Condition.identifier.value",
+        "path": "Condition.identifier.value",
+        "short": "식별자",
+        "min": 1
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "short": "진단 상태: active | recurrence | relapse | inactive | remission | resolved"
+      },
+      {
+        "id": "Condition.clinicalStatus.coding",
+        "path": "Condition.clinicalStatus.coding",
+        "short": "정의된 코드",
+        "min": 1
+      },
+      {
+        "id": "Condition.clinicalStatus.coding.system",
+        "path": "Condition.clinicalStatus.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.clinicalStatus.coding.code",
+        "path": "Condition.clinicalStatus.coding.code",
+        "short": "active | inactive | resolved",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category",
+        "path": "Condition.category",
+        "short": "진단 및 주호소 정보",
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category:EnctrDiag",
+        "path": "Condition.category",
+        "sliceName": "EnctrDiag",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category:EnctrDiag.coding",
+        "path": "Condition.category.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category:EnctrDiag.coding.system",
+        "path": "Condition.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-condition-category-types",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category:EnctrDiag.coding.code",
+        "path": "Condition.category.coding.code",
+        "min": 1,
+        "fixedCode": "진단",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category:Diag",
+        "path": "Condition.category",
+        "sliceName": "Diag",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category:Diag.coding",
+        "path": "Condition.category.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category:Diag.coding.system",
+        "path": "Condition.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.category:Diag.coding.code",
+        "path": "Condition.category.coding.code",
+        "min": 1,
+        "fixedCode": "encounter-diagnosis",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "short": "진단 코드"
+      },
+      {
+        "id": "Condition.code.coding:SNOMED-CT",
+        "path": "Condition.code.coding",
+        "sliceName": "SNOMED-CT",
+        "short": "SNOMED-CT 코드",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Condition.code.coding:SNOMED-CT.system",
+        "path": "Condition.code.coding.system",
+        "short": "SNOMED-CT 코드체계",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:SNOMED-CT.code",
+        "path": "Condition.code.coding.code",
+        "short": "SNOMED-CT 코드",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.text",
+        "path": "Condition.code.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "short": "환자 정보",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.encounter",
+        "path": "Condition.encounter",
+        "short": "내원 정보",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
+        "short": "진단 일시"
+      },
+      {
+        "id": "Condition.recorder",
+        "path": "Condition.recorder",
+        "short": "진료의 정보",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-practitionerrole"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

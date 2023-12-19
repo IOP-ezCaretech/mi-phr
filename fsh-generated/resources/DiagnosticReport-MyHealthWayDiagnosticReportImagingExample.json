@@ -1,0 +1,58 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "MyHealthWayDiagnosticReportImagingExample",
+  "meta": {
+    "profile": [
+      "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-diagnosticreport-imaging"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.example.com",
+      "value": "diagnosticReport-imaging-example"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "IMG",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "4201000179104",
+          "system": "http://snomed.info/sct"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
+        "code": "EB423",
+        "display": "흉부-유방·액와부 초음파-정밀"
+      }
+    ]
+  },
+  "media": [
+    {
+      "link": {
+        "reference": "Media/MyHealthWayMediaExample"
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/MyHealthWayPatientExample"
+  },
+  "encounter": {
+    "reference": "Encounter/MyHealthWayEncounterExample"
+  },
+  "effectiveDateTime": "2023-04-01",
+  "conclusion": "좌측 유방 종양 의심"
+}

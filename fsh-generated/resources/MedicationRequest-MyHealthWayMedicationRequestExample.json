@@ -1,0 +1,68 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "MyHealthWayMedicationRequestExample",
+  "meta": {
+    "profile": [
+      "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-medicationrequest"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.example.com",
+      "value": "medicationRequest-example"
+    }
+  ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-medication",
+        "code": "653400910",
+        "display": "케토라신정(케토롤락트로메타민)_(10mg/1정)"
+      }
+    ]
+  },
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "code": "26643006",
+            "system": "http://snomed.info/sct",
+            "display": "Oral route (qualifier value)"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "mL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL"
+          }
+        }
+      ],
+      "text": "하루 3알 복용"
+    }
+  ],
+  "status": "completed",
+  "intent": "order",
+  "reportedBoolean": false,
+  "subject": {
+    "reference": "Patient/MyHealthWayPatientExample"
+  },
+  "encounter": {
+    "reference": "Encounter/MyHealthWayEncounterExample"
+  },
+  "authoredOn": "2023-11-01",
+  "requester": {
+    "reference": "PractitionerRole/MyHealthWayPractitionerRoleExample"
+  }
+}

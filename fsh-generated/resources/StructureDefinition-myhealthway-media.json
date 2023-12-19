@@ -1,0 +1,261 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "myhealthway-media",
+  "url": "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-media",
+  "name": "MyHealthWayMediaProfile",
+  "title": "MyHealthWay Media Profile",
+  "status": "active",
+  "description": "__MyHealthWay__ 의 참고자료에 적용되는 Media 구조.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "dicom",
+      "uri": "http://nema.org/dicom",
+      "name": "DICOM Tag Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Media",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Media",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Media.identifier",
+        "path": "Media.identifier",
+        "short": "참고자료 식별자",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Media.identifier.system",
+        "path": "Media.identifier.system",
+        "short": "식별체계",
+        "min": 1
+      },
+      {
+        "id": "Media.identifier.value",
+        "path": "Media.identifier.value",
+        "short": "식별자",
+        "min": 1
+      },
+      {
+        "id": "Media.status",
+        "path": "Media.status",
+        "short": "참고자료 생성상태: preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"
+      },
+      {
+        "id": "Media.type",
+        "path": "Media.type",
+        "short": "참고자료 타입",
+        "mustSupport": true
+      },
+      {
+        "id": "Media.type.coding",
+        "path": "Media.type.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "ordered": false
+        },
+        "short": "정의된 코드"
+      },
+      {
+        "id": "Media.type.coding:FHIR-MediaType",
+        "path": "Media.type.coding",
+        "sliceName": "FHIR-MediaType",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Media.type.coding:FHIR-MediaType.system",
+        "path": "Media.type.coding.system",
+        "short": "코드체계",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/media-type",
+        "mustSupport": true
+      },
+      {
+        "id": "Media.type.coding:FHIR-MediaType.code",
+        "path": "Media.type.coding.code",
+        "short": "코드값",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Media.modality",
+        "path": "Media.modality",
+        "short": "촬영장비",
+        "mustSupport": true
+      },
+      {
+        "id": "Media.modality.coding",
+        "path": "Media.modality.coding",
+        "short": "정의된 코드"
+      },
+      {
+        "id": "Media.modality.coding.system",
+        "path": "Media.modality.coding.system",
+        "short": "코드체계",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Media.modality.coding.code",
+        "path": "Media.modality.coding.code",
+        "short": "코드값",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Media.subject",
+        "path": "Media.subject",
+        "short": "환자 정보",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Media.encounter",
+        "path": "Media.encounter",
+        "short": "내원 정보",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Media.created[x]",
+        "path": "Media.created[x]",
+        "short": "참고자료 생성일시",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Media.bodySite",
+        "path": "Media.bodySite",
+        "short": "촬영부위",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Media.bodySite.coding",
+        "path": "Media.bodySite.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "ordered": false
+        }
+      },
+      {
+        "id": "Media.bodySite.coding:SNOMED-CT",
+        "path": "Media.bodySite.coding",
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Media.bodySite.coding:SNOMED-CT.system",
+        "path": "Media.bodySite.coding.system",
+        "short": "코드체계",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Media.bodySite.coding:SNOMED-CT.code",
+        "path": "Media.bodySite.coding.code",
+        "short": "코드값",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Media.deviceName",
+        "path": "Media.deviceName",
+        "short": "참고자료 장비명칭",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Media.content",
+        "path": "Media.content",
+        "short": "참고자료 첨부",
+        "mustSupport": true
+      },
+      {
+        "id": "Media.content.data",
+        "path": "Media.content.data",
+        "short": "참고자료 인코딩 데이터",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

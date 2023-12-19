@@ -1,9 +1,9 @@
 ### Value Sets
-
-- [KR CDex Documentation type codes](ValueSet-krcdex-doc-typecodes.html)
-- [KR CDex Identifier Types](ValueSet-krcdex-identifier-type.html)
-- [KR CDex Medication Clinical Drug](ValueSet-krcdex-medication-clinical-drug.html)
-- [KR CDex AllergyIntolerance Substance Codes](ValueSet-krcdex-allergyIntolerance-substance-codes.html)
-- [KR CDex AllergyIntolerance Manifestation Codes](ValueSet-krcdex-allergyIntolerance-manifestation-codes.html)
+- [MyHealthWay Identifier Type Codes](ValueSet-myhealthway-identifier-type-codes.html)
+- [MyHealthWay Document Type Codes](ValueSet-myhealthway-doc-type-codes.html)
+- [MyHealthWay Medication Clinical Drug](ValueSet-myhealthway-medication-clinical-drug.html)
+- [MyHealthWay AllergyIntolerance Substance Codes](ValueSet-myhealthway-allergyintolerance-substance-codes.html)
+- [MyHealthWay AllergyIntolerance Manifestation Codes](ValueSet-myhealthway-allergyintolerance-manifestation-codes.html)
 
 ### CodeSystems
+- [MyHealthWay Identifier Types](CodeSystem-myhealthway-identifier-types.html)

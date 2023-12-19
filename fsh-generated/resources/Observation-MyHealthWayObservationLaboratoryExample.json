@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "id": "MyHealthWayObservationLaboratoryExample",
+  "meta": {
+    "profile": [
+      "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-observation-laboratory"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.example.com",
+      "value": "observation-laboratory-result-example"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.hl7korea.or.kr/CodeSystem/hira-edi-procedure",
+        "code": "D0002030",
+        "display": "일반혈액검사(CBC)-[혈구세포-장비측정]_적혈구수"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "reference": "PractitionerRole/MyHealthWayPractitionerRoleExample"
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 4.23,
+    "unit": "10⁶/uL",
+    "code": "10*6/uL"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/MyHealthWayPatientExample"
+  },
+  "effectiveDateTime": "2023-04-25",
+  "issued": "2023-04-25T15:25:52+09:00",
+  "encounter": {
+    "reference": "Encounter/MyHealthWayEncounterExample"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "myhealthway-organization",
+  "url": "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-organization",
+  "name": "MyHealthWayOrganizationProfile",
+  "title": "MyHealthWay Organization Profile",
+  "status": "active",
+  "description": "__MyHealthWay__ 의 의료기관 정보에 적용되는 Organization 구조.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://www.hl7korea.or.kr/fhir/krcore/StructureDefinition/krcore-healthcare-organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.address.text",
+        "path": "Organization.address.text",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.address.postalCode",
+        "path": "Organization.address.postalCode",
+        "mustSupport": true
+      }
+    ]
+  }
+}

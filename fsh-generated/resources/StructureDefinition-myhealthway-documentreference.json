@@ -1,0 +1,186 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "myhealthway-documentreference",
+  "url": "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-documentreference",
+  "name": "MyHealthWayDocumentReferenceProfile",
+  "title": "MyHealthWay DocumentReference Profile",
+  "status": "active",
+  "description": "__MyHealthWay__ 의 진료기록 정보에 적용되는 DocumentReference 구조.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "fhircomposition",
+      "uri": "http://hl7.org/fhir/composition",
+      "name": "FHIR Composition"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "xds",
+      "uri": "http://ihe.net/xds",
+      "name": "XDS metadata equivalent"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference.identifier",
+        "path": "DocumentReference.identifier",
+        "short": "진료기록 정보 식별자",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DocumentReference.identifier.system",
+        "path": "DocumentReference.identifier.system",
+        "short": "식별체계",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.identifier.value",
+        "path": "DocumentReference.identifier.value",
+        "short": "식별자",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.status",
+        "path": "DocumentReference.status",
+        "short": "문서 상태",
+        "fixedCode": "current"
+      },
+      {
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "short": "문서 타입",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.type.coding",
+        "path": "DocumentReference.type.coding",
+        "short": "정의된 코드",
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://hins.or.kr/fhir/MyHealthWay/ValueSet/myhealthway-doc-type-codes"
+        }
+      },
+      {
+        "id": "DocumentReference.type.coding.system",
+        "path": "DocumentReference.type.coding.system",
+        "short": "코드체계",
+        "min": 1,
+        "fixedUri": "http://loinc.org",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.type.coding.code",
+        "path": "DocumentReference.type.coding.code",
+        "short": "코드값",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.type.text",
+        "path": "DocumentReference.type.text",
+        "short": "코드값 텍스트",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.subject",
+        "path": "DocumentReference.subject",
+        "short": "환자 정보",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.date",
+        "path": "DocumentReference.date",
+        "short": "문서 생성 일시. {연}-{월}-{일}T{시}:{분}:{초}",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content",
+        "path": "DocumentReference.content",
+        "short": "문서 정보",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content.attachment",
+        "path": "DocumentReference.content.attachment",
+        "short": "문서 첨부",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content.attachment.contentType",
+        "path": "DocumentReference.content.attachment.contentType",
+        "short": "첨부문서타입",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.content.attachment.data",
+        "path": "DocumentReference.content.attachment.data",
+        "short": "첨부문서",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.context",
+        "path": "DocumentReference.context",
+        "short": "첨부문서 관련정보(내원정보)",
+        "mustSupport": true
+      },
+      {
+        "id": "DocumentReference.context.encounter",
+        "path": "DocumentReference.context.encounter",
+        "short": "내원 정보",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hins.or.kr/fhir/MyHealthWay/StructureDefinition/myhealthway-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -196,7 +196,7 @@
         "short": "반응 물질",
         "binding": {
           "strength": "example",
-          "valueSet": "https://hins.or.kr/fhir/MyHealthWay/ValueSet/myhealthway-allergyIntolerance-substance-codes"
+          "valueSet": "https://hins.or.kr/fhir/MyHealthWay/ValueSet/myhealthway-allergyintolerance-substance-codes"
         }
       },
       {
@@ -204,7 +204,7 @@
         "path": "AllergyIntolerance.reaction.manifestation",
         "binding": {
           "strength": "example",
-          "valueSet": "https://hins.or.kr/fhir/MyHealthWay/ValueSet/myhealthway-allergyIntolerance-manifestation-codes"
+          "valueSet": "https://hins.or.kr/fhir/MyHealthWay/ValueSet/myhealthway-allergyintolerance-manifestation-codes"
         }
       }
     ]

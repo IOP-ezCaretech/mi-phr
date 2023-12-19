@@ -13,7 +13,7 @@
    <name value="MyHealthWay"/>
    <title value="MyHealthWay"/>
    <status value="active"/>
-   <date value="2023-12-19T14:29:30+09:00"/>
+   <date value="2023-12-19T16:35:17+09:00"/>
    <publisher value="한국보건의료정보원"/>
    <contact>
       <name value="한국보건의료정보원"/>
@@ -733,10 +733,10 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-myhealthway-allergyIntolerance-manifestation-codes.html"/>
+            <valueUri value="ValueSet-myhealthway-allergyintolerance-manifestation-codes.html"/>
          </extension>
          <reference>
-            <reference value="ValueSet/myhealthway-allergyIntolerance-manifestation-codes"/>
+            <reference value="ValueSet/myhealthway-allergyintolerance-manifestation-codes"/>
          </reference>
          <name value="MyHealthWay AllergyIntolerance Manifestation Codes"/>
          <description value="MyHealthWay 알레르기 및 불내성 반응 증상 코드 집합"/>
@@ -751,10 +751,10 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-myhealthway-allergyIntolerance-substance-codes.html"/>
+            <valueUri value="ValueSet-myhealthway-allergyintolerance-substance-codes.html"/>
          </extension>
          <reference>
-            <reference value="ValueSet/myhealthway-allergyIntolerance-substance-codes"/>
+            <reference value="ValueSet/myhealthway-allergyintolerance-substance-codes"/>
          </reference>
          <name value="MyHealthWay AllergyIntolerance Substance Codes"/>
          <description value="MyHealthWay 알레르기 및 불내성 반응 물질 코드 집합"/>
@@ -1269,12 +1269,12 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-myhealthway-allergyIntolerance-manifestation-codes.html"/>
+               <nameUrl value="ValueSet-myhealthway-allergyintolerance-manifestation-codes.html"/>
                <title value="MyHealthWay AllergyIntolerance Manifestation Codes"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-myhealthway-allergyIntolerance-substance-codes.html"/>
+               <nameUrl value="ValueSet-myhealthway-allergyintolerance-substance-codes.html"/>
                <title value="MyHealthWay AllergyIntolerance Substance Codes"/>
                <generation value="generated"/>
             </page>

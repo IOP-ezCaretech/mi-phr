@@ -1,7 +1,7 @@
 [MyHealthWayAllergyIntoleranceExample]: AllergyIntolerance-MyHealthWayAllergyIntoleranceExample.html
-[MyHealthWayAllergyManifestationCodes]: ValueSet-myhealthway-allergyIntolerance-manifestation-codes.html
+[MyHealthWayAllergyManifestationCodes]: ValueSet-myhealthway-allergyintolerance-manifestation-codes.html
 [MyHealthWayAllergyIntoleranceProfile]: StructureDefinition-myhealthway-allergyintolerance.html
-[MyHealthWayAllergySubstanceCodes]: ValueSet-myhealthway-allergyIntolerance-substance-codes.html
+[MyHealthWayAllergySubstanceCodes]: ValueSet-myhealthway-allergyintolerance-substance-codes.html
 [myhealthway-capabilitystatement-client]: CapabilityStatement-myhealthway-capabilitystatement-client.html
 [MyHealthWayConditionExample]: Condition-MyHealthWayConditionExample.html
 [MyHealthWayConditionProfile]: StructureDefinition-myhealthway-condition.html

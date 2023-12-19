@@ -52,7 +52,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/myhealthway-allergyIntolerance-manifestation-codes"
+          "reference": "ValueSet/myhealthway-allergyintolerance-manifestation-codes"
         },
         "name": "MyHealthWay AllergyIntolerance Manifestation Codes",
         "description": "MyHealthWay 알레르기 및 불내성 반응 증상 코드 집합",
@@ -68,7 +68,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/myhealthway-allergyIntolerance-substance-codes"
+          "reference": "ValueSet/myhealthway-allergyintolerance-substance-codes"
         },
         "name": "MyHealthWay AllergyIntolerance Substance Codes",
         "description": "MyHealthWay 알레르기 및 불내성 반응 물질 코드 집합",

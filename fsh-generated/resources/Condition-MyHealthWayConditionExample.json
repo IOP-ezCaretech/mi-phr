@@ -24,16 +24,16 @@
     {
       "coding": [
         {
-          "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-condition-category-types",
-          "code": "진단"
+          "code": "진단",
+          "system": "http://www.hl7korea.or.kr/fhir/krcore/CodeSystem/krcore-condition-category-types"
         }
       ]
     },
     {
       "coding": [
         {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code": "encounter-diagnosis"
+          "code": "encounter-diagnosis",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category"
         }
       ]
     }
